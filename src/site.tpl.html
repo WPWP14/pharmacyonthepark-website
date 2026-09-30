@@ -1791,11 +1791,12 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <p class="lede">For general questions only. Please don't include prescription or health information here. For anything about a prescription, call <span class="nw">407-977-9779</span>.</p>
       </div>
       <form class="contact" id="contactForm" novalidate>
-        <label>Name<input id="cf-name" name="name" required autocomplete="name"></label>
+        <label>First name<input id="cf-first" name="first" required autocomplete="given-name"></label>
+        <label>Last name<input id="cf-last" name="last" required autocomplete="family-name"></label>
         <label>Phone or email<input id="cf-reach" name="reach" required autocomplete="email"></label>
-        <label class="full">I'm a…<select id="cf-type" name="type"><option>Patient</option><option>Pet owner</option><option>Prescriber office</option><option>Other</option></select></label>
+        <label>I'm a…<select id="cf-type" name="type"><option>Patient</option><option>Pet owner</option><option>Prescriber office</option><option>Other</option></select></label>
         <label class="full">Message<textarea id="cf-msg" name="message" required></textarea></label>
-        <div class="full"><button class="btn primary" type="submit">Email this message</button></div>
+        <div class="full"><button class="btn primary" type="submit">Send message</button></div>
         <p class="formmsg" id="cf-out" hidden></p>
       </form>
     </div>
@@ -2120,12 +2121,22 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
   var form = document.getElementById('contactForm'), out = document.getElementById('cf-out');
   form.addEventListener('submit', function(e){
     e.preventDefault();
-    var name=document.getElementById('cf-name').value.trim(), reach=document.getElementById('cf-reach').value.trim(), msg=document.getElementById('cf-msg').value.trim(), type=document.getElementById('cf-type').value;
+    var first=document.getElementById('cf-first').value.trim(), last=document.getElementById('cf-last').value.trim(), reach=document.getElementById('cf-reach').value.trim(), msg=document.getElementById('cf-msg').value.trim(), type=document.getElementById('cf-type').value;
     out.hidden=false;
-    if(!name||!reach||!msg){ out.textContent='Please add your name, a way to reach you, and a message.'; return; }
-    var body = 'Name: '+name+'\nContact: '+reach+'\nI am a: '+type+'\n\n'+msg;
-    location.href = 'mailto:info@pharmacyonthepark.com?subject='+encodeURIComponent('Website question from '+name)+'&body='+encodeURIComponent(body);
-    out.textContent='Your email app should open with this message ready to send. If it doesn’t, email info@pharmacyonthepark.com or call 407-977-9779.';
+    if(!first||!last||!reach||!msg){ out.textContent='Please add your first name, last name, a way to reach you, and a message.'; return; }
+    // Messages go to the "Website messages" Google Form (responses are saved to a linked Google Sheet).
+    var data = new URLSearchParams();
+    data.append('entry.1787486215', first);
+    data.append('entry.520141484', last);
+    data.append('entry.1347570678', reach);
+    data.append('entry.710215180', type);
+    data.append('entry.1586296598', msg);
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true; out.textContent = 'Sending…';
+    fetch('https://docs.google.com/forms/d/e/1FAIpQLSe2iczAUgRvjVE3Jba9FlBm-mD4kBabRvUjGl25FuBYZNtiFQ/formResponse', {method:'POST', mode:'no-cors', body:data})
+      .then(function(){ form.reset(); out.textContent='Thanks, '+first+'. Your message was sent. We’ll get back to you soon.'; })
+      .catch(function(){ out.textContent='Sorry, your message didn’t go through. Please call 407-977-9779 or email info@pharmacyonthepark.com.'; })
+      .then(function(){ btn.disabled = false; });
   });
 })();
 </script>
