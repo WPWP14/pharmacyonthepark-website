@@ -1,7 +1,7 @@
 # Pharmacy on the Park website: notes for Claude
 
 Family-owned retail and compounding pharmacy at 784 S. Central Ave, Oviedo, FL 32765.
-Owner/pharmacist: Ian Tasman, PharmD. Pharmacists: Cristina Treskovich, Melissa Nadal. Technician: Jeni Paz-Rodriguez.
+Owner/pharmacist: Ian Tasman, PharmD. Pharmacists: Cristina Treskovich, Melissa Nadal.
 Phone 407-977-9779 · Fax 407-977-0079 · info@pharmacyonthepark.com · NCPDP 5747239 · NPI 1720664709
 Hours: Mon–Fri 9 a.m.–6 p.m., Sat 9 a.m.–noon, Sun closed. Domain: pharmacyonthepark.com
 
