@@ -605,6 +605,60 @@
   "flavorMore": []
  },
  {
+  "aud": [
+   "people"
+  ],
+  "avoid": "Sun exposure, which makes melasma worse. Use sunscreen daily.",
+  "cat": "SKIN",
+  "catName": "Skin and hair",
+  "combos": [
+   "Azelaic acid",
+   "Kojic acid",
+   "Niacinamide",
+   "Vitamin C"
+  ],
+  "flavorMore": [],
+  "flavors": [],
+  "forms": [
+   "Cream"
+  ],
+  "how": "Azelaic acid, kojic acid and vitamin C each slow pigment production, and niacinamide reduces the transfer of pigment to the skin surface.",
+  "id": "azelaic-kojic-melasma-cream",
+  "img": "cream",
+  "isCombo": true,
+  "n": 249,
+  "name": "Azelaic acid and kojic acid melasma cream",
+  "side": "Stinging, itching, redness or dryness, usually mild and early in treatment.",
+  "uses": "Melasma and dark spots, without hydroquinone. Made with azelaic acid 18%, kojic acid 4%, niacinamide 3% and vitamin C 2%."
+ },
+ {
+  "aud": [
+   "people"
+  ],
+  "avoid": "Sun exposure, which makes melasma worse. Use sunscreen daily.",
+  "cat": "SKIN",
+  "catName": "Skin and hair",
+  "combos": [
+   "Azelaic acid",
+   "Tranexamic acid",
+   "Kojic acid",
+   "Niacinamide"
+  ],
+  "flavorMore": [],
+  "flavors": [],
+  "forms": [
+   "Cream"
+  ],
+  "how": "Tranexamic acid calms the signals that switch on pigment cells. Azelaic acid and kojic acid slow pigment production, and niacinamide reduces the transfer of pigment to the skin surface.",
+  "id": "azelaic-tranexamic-melasma-cream",
+  "img": "cream",
+  "isCombo": true,
+  "n": 250,
+  "name": "Azelaic acid and tranexamic acid melasma cream",
+  "side": "Stinging, itching, redness or dryness, usually mild and early in treatment.",
+  "uses": "Melasma and dark spots, without hydroquinone. Made with azelaic acid 12%, tranexamic acid 5%, kojic acid 4% and niacinamide 3%."
+ },
+ {
   "id": "azithromycin",
   "name": "Azithromycin",
   "cat": "ABX",
@@ -2743,6 +2797,32 @@
   "flavorMore": []
  },
  {
+  "aud": [
+   "people"
+  ],
+  "avoid": "Pregnancy. People who have been told to avoid estrogen, such as those with an estrogen-sensitive cancer, unless their prescriber approves. Use sunscreen daily.",
+  "cat": "SKIN",
+  "catName": "Skin and hair",
+  "combos": [
+   "Estriol",
+   "Hyaluronic acid",
+   "Tretinoin"
+  ],
+  "flavorMore": [],
+  "flavors": [],
+  "forms": [
+   "Cream"
+  ],
+  "how": "Estriol, a mild estrogen, supports skin thickness, collagen and moisture. Tretinoin speeds skin cell turnover, and hyaluronic acid holds moisture.",
+  "id": "estriol-tretinoin-anti-aging-cream",
+  "img": "cream",
+  "isCombo": true,
+  "n": 248,
+  "name": "Estriol and tretinoin anti-aging cream",
+  "side": "Dryness, peeling or sun sensitivity. Estriol is a hormone, and a small amount can be absorbed through the skin.",
+  "uses": "Aging skin and fine lines on the face and neck. Made with estriol 0.3%, hyaluronic acid 0.5% and tretinoin 0.02%."
+ },
+ {
   "id": "famciclovir",
   "name": "Famciclovir",
   "cat": "ABX",
@@ -3364,6 +3444,59 @@
   "how": "Blocks tyrosinase, the enzyme that makes skin pigment.",
   "avoid": "Long-term continuous use, which can darken skin. Use sunscreen.",
   "flavorMore": []
+ },
+ {
+  "aud": [
+   "people"
+  ],
+  "avoid": "Pregnancy. Long-term continuous use, which can darken or thin the skin. Use sunscreen daily.",
+  "cat": "SKIN",
+  "catName": "Skin and hair",
+  "combos": [
+   "Hydroquinone",
+   "Tretinoin",
+   "Niacinamide",
+   "Hydrocortisone"
+  ],
+  "flavorMore": [],
+  "flavors": [],
+  "forms": [
+   "Cream"
+  ],
+  "how": "Hydroquinone blocks tyrosinase, the enzyme that makes skin pigment. Tretinoin speeds skin cell turnover and helps hydroquinone work, hydrocortisone calms irritation, and niacinamide reduces the transfer of pigment to the skin surface.",
+  "id": "hydroquinone-12-melasma-cream",
+  "img": "cream",
+  "isCombo": true,
+  "n": 252,
+  "name": "Hydroquinone 12% melasma cream",
+  "side": "Irritation, redness, peeling and sun sensitivity. For limited-duration use with close prescriber follow-up.",
+  "uses": "Stubborn melasma and dark spots. A high-strength cream made with hydroquinone 12%, tretinoin 0.05%, niacinamide 2% and hydrocortisone 2.5%."
+ },
+ {
+  "aud": [
+   "people"
+  ],
+  "avoid": "Long-term continuous use, which can darken skin. Pregnancy. Use sunscreen daily.",
+  "cat": "SKIN",
+  "catName": "Skin and hair",
+  "combos": [
+   "Hydroquinone",
+   "Niacinamide",
+   "Vitamin C"
+  ],
+  "flavorMore": [],
+  "flavors": [],
+  "forms": [
+   "Cream"
+  ],
+  "how": "Hydroquinone blocks tyrosinase, the enzyme that makes skin pigment. Vitamin C also slows pigment production, and niacinamide reduces the transfer of pigment to the skin surface.",
+  "id": "hydroquinone-5-melasma-cream",
+  "img": "cream",
+  "isCombo": true,
+  "n": 251,
+  "name": "Hydroquinone 5% melasma cream",
+  "side": "Irritation or redness. For limited-duration use.",
+  "uses": "Melasma and dark spots. Made with hydroquinone 5%, niacinamide 3% and vitamin C 1%."
  },
  {
   "id": "hydroxyzine",
@@ -7017,6 +7150,86 @@
   "how": "A vitamin A derivative that speeds skin cell turnover and unclogs pores.",
   "avoid": "Pregnancy. Increases sun sensitivity.",
   "flavorMore": []
+ },
+ {
+  "aud": [
+   "people"
+  ],
+  "avoid": "Pregnancy. Long-term continuous hydroquinone use, which can darken skin. Use sunscreen daily.",
+  "cat": "SKIN",
+  "catName": "Skin and hair",
+  "combos": [
+   "Tretinoin",
+   "Hydroquinone",
+   "Niacinamide",
+   "Hyaluronic acid"
+  ],
+  "flavorMore": [],
+  "flavors": [],
+  "forms": [
+   "Cream"
+  ],
+  "how": "Tretinoin speeds skin cell turnover, hydroquinone blocks tyrosinase (the enzyme that makes skin pigment), niacinamide reduces pigment transfer and supports the skin barrier, and hyaluronic acid holds moisture.",
+  "id": "tretinoin-hydroquinone-chest-cream",
+  "img": "cream",
+  "isCombo": true,
+  "n": 246,
+  "name": "Tretinoin and hydroquinone chest cream",
+  "side": "Dryness, peeling, irritation and sun sensitivity.",
+  "uses": "Sun damage, dark spots and fine lines on the chest. Made with tretinoin 0.01%, hydroquinone 7%, niacinamide 3% and hyaluronic acid 0.5%."
+ },
+ {
+  "aud": [
+   "people"
+  ],
+  "avoid": "Pregnancy. Use sunscreen daily.",
+  "cat": "SKIN",
+  "catName": "Skin and hair",
+  "combos": [
+   "Tretinoin",
+   "Niacinamide",
+   "Hyaluronic acid"
+  ],
+  "flavorMore": [],
+  "flavors": [],
+  "forms": [
+   "Cream"
+  ],
+  "how": "Tretinoin speeds skin cell turnover and supports collagen, niacinamide supports the skin barrier and evens tone, and hyaluronic acid holds moisture.",
+  "id": "tretinoin-neck-cream",
+  "img": "cream",
+  "isCombo": true,
+  "n": 247,
+  "name": "Tretinoin neck cream",
+  "side": "Dryness, peeling, redness or sun sensitivity.",
+  "uses": "Fine lines, crepey texture and uneven tone on the neck. Made with tretinoin 0.03%, niacinamide 3% and hyaluronic acid 0.5%."
+ },
+ {
+  "aud": [
+   "people"
+  ],
+  "avoid": "Pregnancy. Getting it in the eyes. Use sunscreen daily.",
+  "cat": "SKIN",
+  "catName": "Skin and hair",
+  "combos": [
+   "Tretinoin",
+   "Caffeine",
+   "Hyaluronic acid",
+   "Niacinamide"
+  ],
+  "flavorMore": [],
+  "flavors": [],
+  "forms": [
+   "Serum"
+  ],
+  "how": "Tretinoin speeds skin cell turnover, caffeine tightens small blood vessels to reduce darkness and puffiness, hyaluronic acid holds moisture, and niacinamide supports the skin barrier and evens tone.",
+  "id": "tretinoin-under-eye-serum",
+  "img": "cream",
+  "isCombo": true,
+  "n": 245,
+  "name": "Tretinoin under-eye serum",
+  "side": "Dryness, mild peeling, redness or sun sensitivity.",
+  "uses": "Dark circles and fine wrinkles under the eyes. A gentle serum made with tretinoin 0.001%, caffeine 1%, hyaluronic acid 2% and niacinamide 2%."
  },
  {
   "id": "triamcinolone",
