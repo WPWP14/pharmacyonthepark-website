@@ -320,6 +320,8 @@ header.top{box-shadow:0 1px 0 var(--line),0 8px 24px rgba(11,34,48,.04);border-b
 .path{padding:0;overflow:hidden;border:1px solid var(--line);box-shadow:0 1px 2px rgba(11,34,48,.04)}
 .path.p1,.path.p2,.path.p3{border-top:1px solid var(--line)}
 .path .media{height:150px;display:grid;place-items:center;position:relative}
+.path .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.petphoto{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r-lg);box-shadow:var(--shadow-lg)}
 .path.p1 .media{background:linear-gradient(135deg,var(--tint-blue),var(--surface))}
 .path.p2 .media{background:linear-gradient(135deg,var(--tint-green),var(--surface))}
 .path.p3 .media{background:linear-gradient(135deg,var(--surface),var(--tint-blue))}
@@ -854,7 +856,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
           </div>
         </a>
         <a class="path p2" href="#veterinary">
-          <div class="media"><svg><use href="#s-pet"/></svg></div>
+          <div class="media"><img src="/photos/bennie-card.jpg" alt="Bennie, a golden puppy, lying in the grass" width="900" height="384" loading="lazy"></div>
           <div class="body">
             <span class="who">For my pet</span>
             <h3>Veterinary pharmacy</h3>
@@ -1366,6 +1368,8 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <p class="lede">And a pharmacy team your office can actually reach. We compound for dogs, cats, exotics and other animals, subject to formulation review.</p>
         <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Call 407-977-9779</a><a class="btn ghost" href="#fip">FIP medication</a></div>
       </div>
+      <div class="stack" style="gap:18px;min-width:0">
+      <img class="petphoto" src="/photos/bennie-running.jpg" alt="Bennie, a golden puppy, running across the grass" width="1200" height="800">
       <div class="card">
         <h3>Pet-friendly forms</h3>
         <div class="chips"><span>Flavored suspensions</span><span>Capsules</span><span>Tablets</span><span>Transdermals</span><span>Treats</span><span>Pastes</span><span>Ear packs</span></div>
@@ -1373,6 +1377,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <div class="chips"><span>Chicken</span><span>Beef</span><span>Tuna</span><span>Grilled Salmon</span><span>Duck</span><span>Bacon</span><span>Peanut Butter</span><span>Catnip</span><span>Marshmallow</span></div>
         <h3 style="margin-top:8px">Common examples</h3>
         <div class="chips"><span>Cisapride</span><span>Gabapentin</span><span>Methimazole</span><span>Metronidazole</span><span>Pimobendan</span><span>Prednisolone</span><span>Sildenafil</span><span>Trilostane</span><span>Ursodiol</span></div>
+      </div>
       </div>
     </div>
   </section>
