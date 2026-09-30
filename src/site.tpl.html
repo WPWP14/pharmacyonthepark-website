@@ -22,6 +22,10 @@ nav.main a.nl[aria-current="page"]{background:var(--park-blue);color:var(--on-bl
 .sub a{padding:10px 12px;border-radius:10px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.93rem}
 .sub a:hover,.sub a[aria-current="page"]{background:var(--tint-blue);color:var(--park-blue)}
 .item:hover .sub,.item:focus-within .sub{display:block}
+.sub .subhead{display:block;padding:12px 12px 4px;margin-top:4px;border-top:1px solid var(--line);font:800 .72rem/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--green-text)}
+.sub div.cond{display:grid;grid-template-columns:1fr 1fr;border:0;box-shadow:none;padding:0;background:none;min-width:440px}
+.sub div.cond a{font-weight:500;padding:7px 12px}
+@media (max-width:520px){.sub div.cond{grid-template-columns:1fr}}
 .head-actions{display:flex;align-items:center;gap:10px;flex:none}
 .head-phone{display:none;flex-direction:column;line-height:1.15;text-decoration:none;color:var(--ink);font-variant-numeric:tabular-nums}
 .head-phone small{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--green-text)}
@@ -35,6 +39,8 @@ nav.main a.nl[aria-current="page"]{background:var(--park-blue);color:var(--on-bl
   nav.main a.nl{padding:13px 14px;width:100%}
   .sub{position:static;display:block;padding:0 0 4px 16px}
   .sub div{border:0;box-shadow:none;padding:0;background:none}
+  .sub div.cond{min-width:0}
+  .sub .subhead{border-top:0;padding-left:12px}
   .head-actions .btn{display:none}
 }
 @media (max-width:600px){.head-phone{display:none}.brand img{height:42px}}
@@ -746,8 +752,8 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
     <nav class="main" id="mainNav" aria-label="Main">
       <div class="item"><a class="nl" href="#retail">Retail Pharmacy</a><div class="sub"><div><a href="#retail">Transfers and refills</a><a href="#supplements">Supplements</a></div></div></div>
-      <div class="item"><a class="nl" href="#compounding">Human Compounding</a><div class="sub"><div><a href="#hormone-therapy">Hormone therapy</a><a href="#ldn">Low-dose naltrexone (LDN)</a><a href="#medications">Medication library</a></div></div></div>
-      <div class="item"><a class="nl" href="#veterinary">Veterinary Pharmacy</a><div class="sub"><div><a href="#fip">FIP medication</a><a href="#medications">Medication library</a></div></div></div>
+      <div class="item"><a class="nl" href="#compounding">Human Compounding</a><div class="sub"><div><a href="#hormone-therapy">Hormone therapy</a><a href="#ldn">Low-dose naltrexone (LDN)</a><a href="#medications">Medication library</a><span class="subhead">Conditions we treat</span><div class="cond"><a href="/medications/#people-skin">Skin and hair</a><a href="/medications/#people-men">Men's and sexual health</a><a href="/medications/#people-pain">Pain and inflammation</a><a href="/medications/#people-thy">Thyroid</a><a href="/medications/#people-endo">Endocrine and metabolic</a><a href="/medications/#people-heart">Heart and blood pressure</a><a href="/medications/#people-gi">Stomach and digestion</a><a href="/medications/#people-behav">Behavior, mood and sleep</a><a href="/medications/#people-neuro">Seizures and nerve pain</a><a href="/medications/#people-allergy">Allergy and breathing</a><a href="/medications/#people-abx">Infections and parasites</a><a href="/medications/#people-immune">Immune and cancer care</a><a href="/medications/#people-uro">Kidney and urinary</a><a href="/medications/#people-liver">Liver support</a><a href="/medications/#people-nutr">Vitamins and nutrients</a><a href="/medications/#people-numb">Numbing and anesthetics</a><a href="/medications/#people-eent">Eye, ear and nose</a><a href="/medications/#people-oral">Mouth and throat</a></div></div></div></div>
+      <div class="item"><a class="nl" href="#veterinary">Veterinary Pharmacy</a><div class="sub"><div><a href="#fip">FIP medication</a><a href="#medications">Medication library</a><span class="subhead">Conditions we treat</span><div class="cond"><a href="/medications/#pets-heart">Heart and blood pressure</a><a href="/medications/#pets-uro">Kidney and urinary</a><a href="/medications/#pets-endo">Endocrine and metabolic</a><a href="/medications/#pets-gi">Stomach and digestion</a><a href="/medications/#pets-liver">Liver support</a><a href="/medications/#pets-abx">Infections and parasites</a><a href="/medications/#pets-immune">Immune and cancer care</a><a href="/medications/#pets-neuro">Seizures and nerve pain</a><a href="/medications/#pets-behav">Behavior, mood and sleep</a><a href="/medications/#pets-pain">Pain and inflammation</a><a href="/medications/#pets-skin">Skin and hair</a><a href="/medications/#pets-allergy">Allergy and breathing</a><a href="/medications/#pets-nutr">Vitamins and nutrients</a><a href="/medications/#pets-eent">Eye, ear and nose</a></div></div></div></div>
       <div class="item"><a class="nl" href="#prescribers">For Prescribers</a></div>
       <div class="item"><a class="nl" href="#about">About Us</a><div class="sub"><div><a href="#about">Our team</a><a href="#quality">Quality and sourcing</a></div></div></div>
       <div class="item"><a class="nl" href="#contact">Contact</a></div>
@@ -1958,7 +1964,10 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
     chips.addEventListener('click',function(e){ var b=e.target.closest('button'); if(!b) return; selC.value = selC.value===b.dataset.cat ? '' : b.dataset.cat; run(); });
     document.querySelectorAll('.seg button').forEach(function(b){ b.addEventListener('click',function(){ aud=b.dataset.aud; document.querySelectorAll('.seg button').forEach(function(o){ o.setAttribute('aria-pressed', o===b?'true':'false'); }); run(); }); });
     reset.addEventListener('click',function(){ q.value=''; selC.value=selF.value=selL.value=''; aud='all'; document.querySelectorAll('.seg button').forEach(function(o){ o.setAttribute('aria-pressed', o.dataset.aud==='all'?'true':'false'); }); run(); });
-    try{ var h=(location.hash||'').slice(1); if(h==='pets'||h==='people'){ var bb=document.querySelector('.seg button[data-aud="'+h+'"]'); if(bb) bb.click(); } }catch(e){}
+    // #people, #pets, or #people-skin / #pets-heart (from the menu) preset the audience and category filters.
+    function fromHash(){ var m=(location.hash||'').slice(1).match(/^(people|pets)(?:-([a-z]+))?$/); if(!m) return false; var bb=document.querySelector('.seg button[data-aud="'+m[1]+'"]'); if(bb) bb.click(); selC.value=m[2]?m[2].toUpperCase():''; run(); return true; }
+    try{ fromHash(); }catch(e){}
+    window.addEventListener('hashchange', function(){ if(fromHash()) window.scrollTo(0,0); });
     run();
   })();
 
