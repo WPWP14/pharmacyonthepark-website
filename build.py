@@ -153,7 +153,7 @@ for x in LIB:
   faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in [(f"What is {base}?",x['how']),("What is it used for?",x['uses']),("What are the common side effects?",x['side']),("Who should use caution?",x['avoid']),("Are compounded medications FDA-approved?","No. Compounded medications are prepared for an individual patient from a prescription and are not FDA-approved."),("Do I need a prescription?",f"Yes. Your {who2} sends the prescription to Pharmacy on the Park.")]]}
   page=page.replace('</head>','<script type="application/ld+json">'+json.dumps(faq,ensure_ascii=False)+'</script>\n</head>',1)
   os.makedirs('_site'+u,exist_ok=True); open('_site'+u+'index.html','w').write(page); MEDURLS.append(u)
-shutil.copytree('src/logos','_site/logos'); shutil.copytree('src/forms','_site/forms')
+shutil.copytree('src/logos','_site/logos'); shutil.copytree('src/forms','_site/forms'); shutil.copytree('src/photos','_site/photos')
 os.makedirs('_site/media',exist_ok=True); open('_site/media/README.txt','w').write('Retail page background video: save a short, silent, looping clip of your nonsterile compounding lab here as compounding-nonsterile.mp4 (MP4/H.264, 10-30 seconds, under 10 MB, 1920x1080). It plays softly behind the Retail Pharmacy banner. Until the file is here, the banner shows without video.\n')
 os.makedirs('_site/downloads',exist_ok=True); shutil.copy('src/downloads/hrt-order-form.pdf','_site/downloads/hrt-order-form.pdf')
 open('_site/robots.txt','w').write(f"User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n")
