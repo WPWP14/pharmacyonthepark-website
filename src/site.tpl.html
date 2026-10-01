@@ -232,7 +232,10 @@ footer a:hover{text-decoration:underline}
 footer .faq details{background:transparent;border-color:rgba(255,255,255,.14)}
 footer .faq summary{color:var(--on-deep)}
 footer .faq details p{color:var(--on-deep-muted)}
-footer .fine{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.85rem;color:var(--on-deep-muted)}
+footer .fine{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;font-size:.85rem;color:var(--on-deep-muted)}
+.fine .vendor{display:inline-flex;align-items:center;gap:8px;color:var(--on-deep-muted);text-decoration:none}
+.fine .vendor img{display:block;height:36px;width:auto}
+.fine .vendor:hover{color:var(--on-deep)}
 .foot-logo{background:#fff;border-radius:14px;padding:8px 12px;display:inline-block;margin-bottom:14px}
 .foot-logo img{height:54px;width:auto;display:block}
 
@@ -1931,7 +1934,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         </div>
       </div>
     </div>
-    <div class="fine"><span>© 2026 Pharmacy on the Park · Last updated 10/1/26</span><span>Family owned in Oviedo, Florida</span></div>
+    <div class="fine"><span>© 2026 Pharmacy on the Park · Last updated 10/1/26</span><a class="vendor" href="https://datascanpharmacy.com/" target="_blank" rel="noopener">Pharmacy software by <img src="{{LG:datascan}}" alt="Datascan" width="94" height="36" loading="lazy"></a><span>Family owned in Oviedo, Florida</span></div>
   </div>
 </footer>
 
