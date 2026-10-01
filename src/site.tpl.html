@@ -262,7 +262,11 @@ h2{letter-spacing:-.015em}
 .utility svg{width:14px;height:14px;color:var(--park-green)}
 .utility a{color:var(--hero-ink);text-decoration:none;font-weight:700}
 .utility .u-right{display:flex;gap:18px;flex-wrap:wrap}
-@media (max-width:700px){.utility .u-hide{display:none}}
+.utility .u-app{gap:6px;flex-wrap:wrap}
+.utility .app-btn{display:inline-flex;align-items:center;padding:3px 11px;border:1px solid var(--park-green);border-radius:999px;font-size:.78rem;line-height:1.4;white-space:nowrap}
+.utility .app-btn:hover{background:var(--park-green);color:#fff}
+.utility .u-short{display:none}
+@media (max-width:700px){.utility .u-hide,.utility .u-long{display:none}.utility .u-short{display:inline}}
 header.top{box-shadow:0 1px 0 var(--line),0 8px 24px rgba(11,34,48,.04);border-bottom:0}
 
 /* hero (all pages) */
@@ -743,7 +747,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
 <div class="utility">
   <div class="wrap">
     <span><svg><use href="#i-pin"/></svg>784 S. Central Ave, Oviedo, FL 32765</span>
-    <div class="u-right"><span class="u-hide"><svg><use href="#i-clock"/></svg><span id="utilHours">Mon–Fri 9–6 · Sat 9–noon</span></span><span><svg><use href="#i-phone"/></svg><a href="tel:+14079779779"><span class="nw">407-977-9779</span></a></span><span class="u-hide">Fax 407-977-0079</span></div>
+    <div class="u-right"><span class="u-app"><span class="u-long">Refill with our MobileScripts app</span><span class="u-short">Get our app</span><a class="app-btn" href="https://apps.apple.com/us/app/mobilescripts/id771076704" target="_blank" rel="noopener" aria-label="Download MobileScripts on the App Store">App Store</a><a class="app-btn" href="https://play.google.com/store/apps/details?id=com.datascan.mobilescripts" target="_blank" rel="noopener" aria-label="Get MobileScripts on Google Play">Google Play</a></span><span class="u-hide"><svg><use href="#i-clock"/></svg><span id="utilHours">Mon–Fri 9–6 · Sat 9–noon</span></span><span><svg><use href="#i-phone"/></svg><a href="tel:+14079779779"><span class="nw">407-977-9779</span></a></span><span class="u-hide">Fax 407-977-0079</span></div>
   </div>
 </div>
 <header class="top">
@@ -1230,7 +1234,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <div class="panel green">
           <span class="badge">Quality</span>
           <h3 style="font-size:1.35rem">Accredited and USP &lt;800&gt; compliant.</h3>
-          <p>We are accredited by The Compliance Team and USP &lt;800&gt; compliant. Our nonsterile preparations meet USP &lt;795&gt;. Our sterile products meet USP &lt;797&gt;, and Pharmetric Labs tests every batch for sterility, endotoxins and potency. We exceed Florida's compounding standards and adjust every formula to the potency of the ingredient lot we use.</p>
+          <p>We are accredited by The Compliance Team and USP &lt;800&gt; compliant. Our nonsterile preparations meet USP &lt;795&gt;. Our sterile products meet USP &lt;797&gt;, and Pharmetric Labs tests every batch for sterility, endotoxins and potency. We exceed Florida's compounding standards.</p>
           <a class="textlink" href="#quality">Quality and sourcing <svg><use href="#i-arrow"/></svg></a>
           <a class="textlink" href="#choose">How to choose a compounding pharmacy <svg><use href="#i-arrow"/></svg></a>
         </div>
@@ -1306,7 +1310,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <h1>Low-dose naltrexone tablets, <span class="g">$60 for 90</span>.</h1>
         <p class="lede">Pharmacy on the Park compounds low-dose naltrexone (LDN) tablets in our Oviedo pharmacy. 1.5 mg, 3 mg and 4.5 mg tablets are $60 for 90. Pick up near Orlando or have it shipped anywhere in Florida.</p>
         <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Transfer your LDN: <span class="nw">407-977-9779</span></a><a class="btn ghost" href="#send"><svg><use href="#i-send"/></svg>Send a Prescription</a></div>
-        <div class="trust"><span><svg><use href="#i-check"/></svg>Accredited pharmacy</span><span><svg><use href="#i-check"/></svg>Potency-adjusted formulas</span><span><svg><use href="#i-person"/></svg>A pharmacist answers</span></div>
+        <div class="trust"><span><svg><use href="#i-check"/></svg>Accredited pharmacy</span><span><svg><use href="#i-person"/></svg>A pharmacist answers</span></div>
       </div>
       <div class="card" style="gap:14px">
         <img class="medhero-img" src="{{FORM:tablet}}" alt="Compounded low-dose naltrexone tablets" width="480" height="360">
@@ -1335,7 +1339,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <h3>How to get LDN from Pharmacy on the Park</h3>
         <ol class="dsteps" style="margin-top:6px">
           <li><b>Have your prescriber send it</b><p>E-prescribe to Pharmacy on the Park (NCPDP 5747239), fax <span class="nw">407-977-0079</span> or call <span class="nw">407-977-9779</span>. Already on LDN elsewhere? Call us and we'll transfer it.</p></li>
-          <li><b>We compound and check it</b><p>Your tablets are made to your strength with a potency-adjusted formula, and a pharmacist verifies every batch.</p></li>
+          <li><b>We compound and check it</b><p>Your tablets are made to your strength, and a pharmacist verifies every batch.</p></li>
           <li><b>Pick up or ship</b><p>Pick up at 784 S. Central Ave in Oviedo, or we ship within Florida. We'll call you when it's ready.</p></li>
         </ol>
       </article>
@@ -1636,7 +1640,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <p class="crumb"><a href="#about">About Us</a> / Quality and sourcing</p>
         <span class="eyebrow">Quality and sourcing</span>
         <h1>Quality you can ask us about.</h1>
-        <p class="lede">We exceed the compounding standards required in the state of Florida. Every compounded medication starts with a verified ingredient and a formula adjusted to that exact lot, and every batch of sterile product is tested by Pharmetric Labs, an independent laboratory, before it reaches you.</p>
+        <p class="lede">We exceed the compounding standards required in the state of Florida. Every compounded medication starts with a verified ingredient, and every batch of sterile product is tested by Pharmetric Labs, an independent laboratory, before it reaches you.</p>
         <div class="trust">
           <span><svg><use href="#i-shield"/></svg>Accredited</span>
           <span><svg><use href="#i-check"/></svg>USP &lt;800&gt; compliant</span>
@@ -1648,7 +1652,6 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <span class="eyebrow">At a glance</span>
         <ul class="ticks">
           <li><svg><use href="#i-check"/></svg><div><b>Established suppliers</b><span>Ingredients from Medisca, Fagron, PCCA and Specialized Rx.</span></div></li>
-          <li><svg><use href="#i-check"/></svg><div><b>Potency-adjusted formulas</b><span>We calculate each batch from the lot's certificate of analysis.</span></div></li>
           <li><svg><use href="#i-check"/></svg><div><b>Every sterile batch tested</b><span>Pharmetric Labs tests each batch for sterility, endotoxins and potency.</span></div></li>
           <li><svg><use href="#i-check"/></svg><div><b>Beyond Florida's requirements</b><span>We exceed the compounding standards required in the state of Florida.</span></div></li>
         </ul>
@@ -1665,25 +1668,6 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
 
   <section class="band surface">
     <div class="wrap stack" style="gap:28px">
-      <div class="head" style="margin:0"><span class="eyebrow">Potency adjustments</span><h2>We adjust every formula to the lot we're using.</h2><p class="lede">No two lots of an ingredient are exactly alike. Instead of assuming 100% potency, we use each lot's certificate of analysis to calculate how much to weigh, so your dose is what your prescriber ordered.</p></div>
-      <div class="calc" aria-label="Example potency adjustment">
-        <div class="box"><small>Prescribed dose</small><b>100 mg</b><span>Active ingredient per capsule</span></div>
-        <div class="op"><svg><use href="#i-arrow"/></svg></div>
-        <div class="box"><small>This lot's potency</small><b>98.0%</b><span>From the certificate of analysis</span></div>
-        <div class="op"><svg><use href="#i-arrow"/></svg></div>
-        <div class="box res"><small>We weigh</small><b>102.0 mg</b><span>100 mg ÷ 0.980 per capsule</span></div>
-      </div>
-      <div class="grid g3">
-        <div class="card"><h3>Batch variability</h3><p>When a new lot comes in, we update the calculation for that lot before we compound with it.</p></div>
-        <div class="card"><h3>Salt and base conversions</h3><p>When an ingredient comes as a salt or hydrate, we convert so the amount of active drug matches the prescription.</p></div>
-        <div class="card"><h3>Weight thresholds</h3><p>We set minimum weights for our balances, so even small quantities are measured accurately.</p></div>
-      </div>
-      <p class="note">Example for illustration. Actual adjustments depend on each lot's certificate of analysis and the formulation.</p>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap stack" style="gap:28px">
       <div class="head" style="margin:0"><span class="eyebrow">Our labs</span><h2>Two kinds of compounding, two sets of standards.</h2></div>
       <div class="labs">
         <div class="lab ns">
@@ -1693,7 +1677,6 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
           <ul class="ticks">
             <li><svg><use href="#i-check"/></svg><div><b>Meets USP &lt;795&gt;</b><span>Nonsterile compounding standards.</span></div></li>
             <li><svg><use href="#i-check"/></svg><div><b>USP &lt;800&gt; compliant</b><span>Hazardous drug handling and containment.</span></div></li>
-            <li><svg><use href="#i-check"/></svg><div><b>Potency-adjusted formulas</b><span>Every batch calculated from its lot's certificate of analysis.</span></div></li>
             <li><svg><use href="#i-check"/></svg><div><b>Tested hoods, calibrated equipment</b><span>Hoods are tested and balances and equipment are calibrated.</span></div></li>
           <li><svg><use href="#i-check"/></svg><div><b>Pharmacist verification</b><span>A pharmacist checks every preparation before it's dispensed.</span></div></li>
           </ul>
@@ -1718,12 +1701,11 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
     </div>
   </section>
 
-  <section class="band surface">
+  <section class="band">
     <div class="wrap stack" style="gap:24px">
       <div class="head" style="margin:0"><span class="eyebrow">Quality assurance</span><h2>From ingredient to your hands.</h2></div>
-      <ol class="steps s5">
+      <ol class="steps s4">
         <li><b>Verify the ingredient</b><span>Each lot is received with its certificate of analysis from our supplier.</span></li>
-        <li><b>Calculate for the lot</b><span>The formula is adjusted for that lot's potency and form.</span></li>
         <li><b>Compound</b><span>Prepared under hoods we test, in a lab that meets USP standards.</span></li>
         <li><b>Test and check</b><span>Pharmetric Labs tests every sterile batch for sterility, endotoxins and potency. A pharmacist verifies every preparation.</span></li>
         <li><b>Dispense and counsel</b><span>We explain how to use it and stay available for questions.</span></li>
@@ -1737,7 +1719,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
     </div>
   </section>
 
-  <section class="band">
+  <section class="band surface">
     <div class="wrap split">
       <div class="stack" style="gap:14px">
         <span class="eyebrow">For patients</span>
@@ -1754,7 +1736,6 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
           <tr><th scope="row">Who tests your sterile products?</th><td><b>Pharmetric Labs</b>, an independent lab, tests every batch for sterility, endotoxins and potency.</td></tr>
           <tr><th scope="row">Is your clean room certified and monitored?</th><td><b>Yes.</b> We certify our clean room, monitor the environment and calibrate our equipment.</td></tr>
           <tr><th scope="row">Are you accredited?</th><td><b>Yes</b>, by The Compliance Team.</td></tr>
-          <tr><th scope="row">Do you adjust formulas for ingredient potency?</th><td><b>Yes.</b> Every batch is calculated from its lot's certificate of analysis.</td></tr>
           <tr><th scope="row">Do you just meet the state minimum?</th><td><b>No.</b> We exceed the compounding standards required in Florida.</td></tr>
         </table>
       </div>
@@ -1792,11 +1773,11 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
     <div class="wrap stack" style="gap:28px">
       <div class="head" style="margin:0"><span class="eyebrow">What to look for</span><h2>Eight things a careful compounding pharmacy should be able to show you.</h2><p class="lede">Any pharmacy you trust with a compounded prescription should be glad to answer these. Here's why each one matters and what we do.</p></div>
       <div class="grid g2">
-        <div class="card"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3>1. Accreditation</h3><p>Accreditation means an outside organization has reviewed how the pharmacy compounds and holds it to a published set of standards. It's voluntary, so not every pharmacy has it.</p><p style="color:var(--ink)"><b>What we do:</b> We're accredited by The Compliance Team, and we exceed the compounding standards required in the state of Florida.</p></div>
+        <div class="card"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3>1. Accreditation</h3><p>Accreditation means an outside organization has reviewed how the pharmacy compounds and holds it to a published set of standards. It's voluntary, so not every pharmacy has it.</p><p style="color:var(--ink)"><b>What we do:</b> We're accredited by The Compliance Team.</p></div>
         <div class="card"><span class="ic g"><svg><use href="#i-check"/></svg></span><h3>2. USP standards</h3><p>The United States Pharmacopeia (USP) sets the national standards for compounding: USP &lt;795&gt; for nonsterile preparations, USP &lt;797&gt; for sterile preparations and USP &lt;800&gt; for handling hazardous drugs safely.</p><p style="color:var(--ink)"><b>What we do:</b> Our nonsterile lab meets USP &lt;795&gt;, our sterile products meet USP &lt;797&gt;, and we're USP &lt;800&gt; compliant.</p></div>
         <div class="card"><span class="ic"><svg><use href="#i-flask"/></svg></span><h3>3. Laboratory standards</h3><p>The room and equipment a medication is made with affect its quality. Look for a certified clean room for sterile work, monitoring of the air and surfaces, tested hoods and calibrated balances.</p><p style="color:var(--ink)"><b>What we do:</b> Our clean room is certified on a regular schedule, we monitor the environment where sterile products are made, our hoods are tested, and our balances and equipment are calibrated.</p></div>
         <div class="card"><span class="ic g"><svg><use href="#i-leaf"/></svg></span><h3>4. Product sourcing</h3><p>A compounded medication is only as good as its ingredients. Ask where they come from and whether each lot arrives with a certificate of analysis documenting its identity and potency.</p><p style="color:var(--ink)"><b>What we do:</b> We buy from established compounding suppliers: Medisca, Fagron, PCCA and Specialized Rx. Active ingredients come from FDA-registered and inspected facilities, and every lot arrives with a certificate of analysis.</p></div>
-        <div class="card"><span class="ic"><svg><use href="#i-mortar"/></svg></span><h3>5. Potency-adjusted formulas</h3><p>No two lots of an ingredient are exactly alike. A careful pharmacy calculates each batch from the actual potency of the lot it's using, instead of assuming 100%.</p><p style="color:var(--ink)"><b>What we do:</b> We calculate every batch from its lot's certificate of analysis and convert salts and hydrates, so your dose is what your prescriber ordered.</p></div>
+        <div class="card"><span class="ic"><svg><use href="#i-mortar"/></svg></span><h3>5. State standards</h3><p>Every state sets minimum requirements for compounding. Ask whether a pharmacy simply meets the minimum or holds itself to more.</p><p style="color:var(--ink)"><b>What we do:</b> We exceed the compounding standards required in the state of Florida.</p></div>
         <div class="card"><span class="ic g"><svg><use href="#i-flask"/></svg></span><h3>6. Independent testing</h3><p>Sterile preparations should be tested by an independent laboratory before they're released, not just checked in-house.</p><p style="color:var(--ink)"><b>What we do:</b> Pharmetric Labs, an independent laboratory, tests every sterile batch for sterility, endotoxins and potency.</p></div>
         <div class="card"><span class="ic"><svg><use href="#i-badge"/></svg></span><h3>7. Policies and procedures</h3><p>Written procedures make every preparation consistent, no matter who makes it. Ask whether the pharmacy follows documented procedures and whether a pharmacist checks every preparation before it goes out.</p><p style="color:var(--ink)"><b>What we do:</b> We follow written procedures for how we compound, clean, label and check our work. A pharmacist verifies every preparation before it's dispensed, and every label shows a beyond-use date.</p></div>
         <div class="card"><span class="ic g"><svg><use href="#i-chat"/></svg></span><h3>8. A pharmacist you can reach</h3><p>You and your prescriber should be able to talk to a pharmacist about the formulation, how to use it and what to expect.</p><p style="color:var(--ink)"><b>What we do:</b> A real person answers the phone, and our pharmacists talk directly with patients, prescribers and veterinary teams. Our pharmacists also hold Veterinary Compounding Specialty certification from Pharmacon.</p></div>
@@ -1817,7 +1798,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
           <li><svg><use href="#i-check"/></svg><div><b>Are you accredited, and by whom?</b></div></li>
           <li><svg><use href="#i-check"/></svg><div><b>Do you meet USP &lt;795&gt;, &lt;797&gt; and &lt;800&gt;?</b></div></li>
           <li><svg><use href="#i-check"/></svg><div><b>Where do your ingredients come from, and does each lot have a certificate of analysis?</b></div></li>
-          <li><svg><use href="#i-check"/></svg><div><b>Do you adjust formulas for each lot's potency?</b></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Do you meet or exceed your state's compounding standards?</b></div></li>
           <li><svg><use href="#i-check"/></svg><div><b>Who tests your sterile preparations, and for what?</b></div></li>
           <li><svg><use href="#i-check"/></svg><div><b>Is your clean room certified and monitored?</b></div></li>
           <li><svg><use href="#i-check"/></svg><div><b>Does a pharmacist check every preparation?</b></div></li>
@@ -1837,7 +1818,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <div class="card"><h3>Sterile products without outside testing</h3><p>For sterile preparations, ask whether batches are tested by an independent laboratory before release.</p></div>
       </div>
       <div class="panel green" style="flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
-        <div class="stack" style="gap:6px;flex:1 1 320px;min-width:0"><span class="badge">Quality and sourcing</span><h3 style="font-size:1.35rem">See exactly how we make and test your medication.</h3><p>Our quality page covers sourcing, potency adjustments, our two labs and how sterile batches are tested.</p></div>
+        <div class="stack" style="gap:6px;flex:1 1 320px;min-width:0"><span class="badge">Quality and sourcing</span><h3 style="font-size:1.35rem">See exactly how we make and test your medication.</h3><p>Our quality page covers sourcing, our two labs and how sterile batches are tested.</p></div>
         <a class="btn primary" href="#quality">Our quality standards <svg><use href="#i-arrow"/></svg></a>
       </div>
       <p class="note">Compounded medications are not FDA-approved. They are prepared for an individual patient based on a prescription. The FDA does not review compounded drugs for safety, effectiveness or quality before they are dispensed. <a href="https://www.fda.gov/drugs/human-drug-compounding/consumer-and-health-care-professional-information" target="_blank" rel="noopener">Learn more from the FDA</a>.</p>
@@ -2193,7 +2174,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         '</article><aside class="dside"><img src="'+img+'" alt="" width="480" height="360"><nav class="dtoc" aria-label="On this page"><span>On this page</span>'+toc.map(function(t){ return '<a href="#'+t[0]+'" data-toc="'+t[0]+'">'+esc(t[1])+'</a>'; }).join('')+'</nav></aside></div></section>';
       // pharmacist quote + quality
       h+='<section class="band surface"><div class="wrap stack" style="gap:20px"><div class="dquote"><div><h2>Personalized compounding from a pharmacy that <span class="g">knows your name</span>.</h2><blockquote>“The pharmacy world needs people who are fair, and I want to be as fair to as many people as possible.”</blockquote><p class="dby"><b>Ian Tasman, PharmD</b><br>Owner and pharmacist, Pharmacy on the Park</p></div><div class="avatar dq-av">IT</div></div>'+
-        '<div class="dquality"><span class="eyebrow">Quality and testing</span><h2>Held to a higher standard</h2><ul class="ticks two"><li><svg><use href="#i-check"/></svg><div><b>Accredited</b><span>By The Compliance Team.</span></div></li><li><svg><use href="#i-check"/></svg><div><b>USP &lt;800&gt; compliant</b><span>Safe handling of hazardous drugs.</span></div></li><li><svg><use href="#i-check"/></svg><div><b>Meets USP &lt;795&gt;</b><span>Nonsterile compounding standards.</span></div></li><li><svg><use href="#i-check"/></svg><div><b>Meets USP &lt;797&gt;</b><span>Every sterile batch tested by Pharmetric Labs.</span></div></li><li><svg><use href="#i-check"/></svg><div><b>Potency-adjusted formulas</b><span>Calculated from each lot’s certificate of analysis.</span></div></li></ul><a class="btn light" href="'+(STATIC?'/about/quality/':'#quality')+'">Our quality standards</a></div></div></section>';
+        '<div class="dquality"><span class="eyebrow">Quality and testing</span><h2>Held to a higher standard</h2><ul class="ticks two"><li><svg><use href="#i-check"/></svg><div><b>Accredited</b><span>By The Compliance Team.</span></div></li><li><svg><use href="#i-check"/></svg><div><b>USP &lt;800&gt; compliant</b><span>Safe handling of hazardous drugs.</span></div></li><li><svg><use href="#i-check"/></svg><div><b>Meets USP &lt;795&gt;</b><span>Nonsterile compounding standards.</span></div></li><li><svg><use href="#i-check"/></svg><div><b>Meets USP &lt;797&gt;</b><span>Every sterile batch tested by Pharmetric Labs.</span></div></li></ul><a class="btn light" href="'+(STATIC?'/about/quality/':'#quality')+'">Our quality standards</a></div></div></section>';
       // formulations table
       h+='<section class="band"><div class="wrap stack" style="gap:18px;max-width:900px"><div class="head" style="margin:0"><h2>Our formulations</h2><p class="lede">'+b+' is compounded to the strength your '+who+' orders. These are the forms we have prepared.</p></div>'+
         '<div class="qa-wrap"><table class="qa dtable"><thead><tr><th>Form</th><th>Flavors</th><th>Notes</th></tr></thead><tbody>'+
