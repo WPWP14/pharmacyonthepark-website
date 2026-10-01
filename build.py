@@ -5,8 +5,10 @@ import re, json, os, base64, glob, shutil
 from PIL import Image
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 s=open('src/site.tpl.html').read()
-for k,f in [('CSS_BASE','css_base.txt'),('ICONS','icons.txt'),('MAP','map.txt'),('LOGO','logo.b64'),('LIB','library.json')]:
+for k,f in [('CSS_BASE','css_base.txt'),('ICONS','icons.txt'),('MAP','map.txt'),('LIB','library.json')]:
   s=s.replace('{{'+k+'}}',open('src/'+f).read())
+LOGO_B64=base64.b64encode(open('src/logo.svg','rb').read()).decode()
+s=s.replace('{{LOGO}}',LOGO_B64)
 LIBJSON=open('src/library.json').read()
 FORMS=sorted(f[:-4] for f in os.listdir('src/forms') if f.endswith('.svg'))
 FDATA={k:'data:image/svg+xml;base64,'+base64.b64encode(open('src/forms/'+k+'.svg','rb').read()).decode() for k in FORMS}
@@ -23,9 +25,8 @@ os.makedirs('_preview',exist_ok=True); open('_preview/pharmacy-on-the-park.html'
 s=re.sub(r'\{\{LG:([a-z0-9-]+)\}\}',lambda m:'/logos/'+LOGOF[m.group(1)],s)
 DOMAIN='https://pharmacyonthepark.com'
 shutil.rmtree('_site',ignore_errors=True); os.makedirs('_site')
-logo_b64=open('src/logo.b64').read()
-open('_site/logo.webp','wb').write(base64.b64decode(logo_b64))
-s=s.replace('data:image/webp;base64,'+logo_b64,'/logo.webp')
+shutil.copy('src/logo.svg','_site/logo.svg')
+s=s.replace('data:image/svg+xml;base64,'+LOGO_B64,'/logo.svg')
 lg=Image.open('src/logo.png').convert('RGB'); og=Image.new('RGB',(1200,630),'white')
 lg.thumbnail((980,420)); og.paste(lg,((1200-lg.width)//2,(630-lg.height)//2)); og.save('_site/og-image.png',optimize=True)
 open('_site/favicon.svg','w').write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect x="4" y="18" width="30" height="28" rx="14" fill="#5FBA51"/><rect x="18" y="18" width="16" height="28" fill="#5FBA51"/><rect x="30" y="18" width="30" height="28" rx="14" fill="#005687"/><rect x="30" y="18" width="16" height="28" fill="#005687"/></svg>')
@@ -55,7 +56,7 @@ META={
 'contact':("Contact & Directions | Pharmacy on the Park, Oviedo FL","784 S. Central Ave, Oviedo, FL 32765. Phone 407-977-9779, fax 407-977-0079. Hours, directions, reviews and how to send a prescription."),
 }
 NAMES={'ldn':'Low-Dose Naltrexone (LDN)','medications':'Medication Library','supplements':'Supplements','retail':'Retail Pharmacy','compounding':'Human Compounding','hormone-therapy':'Hormone Therapy','veterinary':'Veterinary Pharmacy','fip':'FIP Medication','prescribers':'For Prescribers','about':'About Us','quality':'Quality and Sourcing','choose':'How to Choose a Compounding Pharmacy','contact':'Contact'}
-business={"@context":"https://schema.org","@type":"Pharmacy","@id":DOMAIN+"/#pharmacy","name":"Pharmacy on the Park","url":DOMAIN+"/","logo":DOMAIN+"/logo.webp","image":DOMAIN+"/og-image.png",
+business={"@context":"https://schema.org","@type":"Pharmacy","@id":DOMAIN+"/#pharmacy","name":"Pharmacy on the Park","url":DOMAIN+"/","logo":DOMAIN+"/logo.svg","image":DOMAIN+"/og-image.png",
  "description":"Family-owned retail and compounding pharmacy in Oviedo, Florida serving patients, pet owners and prescriber offices.",
  "telephone":"+1-407-977-9779","faxNumber":"+1-407-977-0079","email":"info@pharmacyonthepark.com",
  "address":{"@type":"PostalAddress","streetAddress":"784 S Central Ave","addressLocality":"Oviedo","addressRegion":"FL","postalCode":"32765","addressCountry":"US"},
@@ -109,7 +110,7 @@ for key,html in pages.items():
   top=TOP.get(key,key)
   page=page.replace(f'<a class="nl" href="{URL[top]}">',f'<a class="nl" href="{URL[top]}" aria-current="page">',1)
   if key in TOP: page=page.replace(f'<a href="{URL[key]}">',f'<a href="{URL[key]}" aria-current="page">',1)
-  for a,b in [("window.addEventListener('hashchange', show); show();",""),("  form.addEventListener('submit', function(e){","  if(form) form.addEventListener('submit', function(e){"),('alt="Pharmacy on the Park"','alt="Pharmacy on the Park logo" width="260" height="104"')]:
+  for a,b in [("window.addEventListener('hashchange', show); show();",""),("  form.addEventListener('submit', function(e){","  if(form) form.addEventListener('submit', function(e){"),('alt="Pharmacy on the Park"','alt="Pharmacy on the Park logo" width="254" height="104"')]:
     assert a in page, a; page=page.replace(a,b)
   if key!='medications': page=page.replace(LIBJSON,'null')
   d='_site'+URL[key]; os.makedirs(d,exist_ok=True); open(d+'index.html','w').write(page)
