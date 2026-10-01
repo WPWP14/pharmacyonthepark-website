@@ -35,9 +35,9 @@ pages={}
 for b in re.split(r'(?=<!-- ================= [A-Z ]+ ================= -->)',body):
   m=re.search(r'<div class="page" id="p-([a-z-]+)">',b)
   if m: pages[m.group(1)]=b.replace(m.group(0),'<div class="page on" id="p-'+m.group(1)+'">')
-URL={'home':'/','retail':'/retail-pharmacy/','supplements':'/retail-pharmacy/supplements/','compounding':'/compounding/','hormone-therapy':'/compounding/hormone-therapy/','veterinary':'/veterinary/','fip':'/veterinary/fip-medication/','prescribers':'/prescribers/','about':'/about/','quality':'/about/quality/','contact':'/contact/','medications':'/medications/','ldn':'/low-dose-naltrexone/'}
+URL={'home':'/','retail':'/retail-pharmacy/','supplements':'/retail-pharmacy/supplements/','compounding':'/compounding/','hormone-therapy':'/compounding/hormone-therapy/','veterinary':'/veterinary/','fip':'/veterinary/fip-medication/','prescribers':'/prescribers/','about':'/about/','quality':'/about/quality/','choose':'/how-to-choose-a-compounding-pharmacy/','contact':'/contact/','medications':'/medications/','ldn':'/low-dose-naltrexone/'}
 EXTRA={'send':'/contact/#send-sec','about-quality':'/about/#about-quality-sec'}
-TOP={'ldn':'compounding','supplements':'retail','hormone-therapy':'compounding','fip':'veterinary','quality':'about'}
+TOP={'ldn':'compounding','supplements':'retail','hormone-therapy':'compounding','fip':'veterinary','quality':'about','choose':'about'}
 META={
 'ldn':("Low-Dose Naltrexone (LDN) Tablets $60 for 90 | Florida Pharmacy","Low-dose naltrexone (LDN) 1.5 mg, 3 mg and 4.5 mg tablets: $60 for 90 tablets. Compounded in Oviedo near Orlando. Transfers welcome; shipping across Florida. Call 407-977-9779."),
 'medications':("Compounded Medication Library | Pharmacy on the Park","Search 230+ medications we compound for people and pets in Oviedo, FL: dosage forms, flavors, common uses, side effects and research links."),
@@ -51,9 +51,10 @@ META={
 'prescribers':("For Prescribers | Compounding Partner in Central Florida","Human and veterinary prescribers: talk formulations with a pharmacist. Fax 407-977-0079, phone 407-977-9779. Accredited, USP <800> compliant compounding pharmacy."),
 'about':("About Pharmacy on the Park | Family-Owned in Oviedo, FL","Family-owned pharmacy in Oviedo, FL, opened in 2022 and led by Ian Tasman, PharmD. Accredited and USP <800> compliant, and active with Orlando Science Center, Girl Scouts and local teams."),
 'quality':("Quality & Sourcing | USP <795>, <797> & <800> | Pharmacy on the Park","Pharmacy on the Park exceeds Florida compounding standards: USP <800> compliant, meets USP <795> and <797>, every sterile batch tested by Pharmetric Labs, certified clean room and potency-adjusted formulas."),
+'choose':("How to Choose a Compounding Pharmacy | Pharmacy on the Park","What to look for in a compounding pharmacy: accreditation, USP <795>, <797> and <800>, lab standards, ingredient sourcing, independent testing and written procedures, plus questions to ask."),
 'contact':("Contact & Directions | Pharmacy on the Park, Oviedo FL","784 S. Central Ave, Oviedo, FL 32765. Phone 407-977-9779, fax 407-977-0079. Hours, directions, reviews and how to send a prescription."),
 }
-NAMES={'ldn':'Low-Dose Naltrexone (LDN)','medications':'Medication Library','supplements':'Supplements','retail':'Retail Pharmacy','compounding':'Human Compounding','hormone-therapy':'Hormone Therapy','veterinary':'Veterinary Pharmacy','fip':'FIP Medication','prescribers':'For Prescribers','about':'About Us','quality':'Quality and Sourcing','contact':'Contact'}
+NAMES={'ldn':'Low-Dose Naltrexone (LDN)','medications':'Medication Library','supplements':'Supplements','retail':'Retail Pharmacy','compounding':'Human Compounding','hormone-therapy':'Hormone Therapy','veterinary':'Veterinary Pharmacy','fip':'FIP Medication','prescribers':'For Prescribers','about':'About Us','quality':'Quality and Sourcing','choose':'How to Choose a Compounding Pharmacy','contact':'Contact'}
 business={"@context":"https://schema.org","@type":"Pharmacy","@id":DOMAIN+"/#pharmacy","name":"Pharmacy on the Park","url":DOMAIN+"/","logo":DOMAIN+"/logo.webp","image":DOMAIN+"/og-image.png",
  "description":"Family-owned retail and compounding pharmacy in Oviedo, Florida serving patients, pet owners and prescriber offices.",
  "telephone":"+1-407-977-9779","faxNumber":"+1-407-977-0079","email":"info@pharmacyonthepark.com",
