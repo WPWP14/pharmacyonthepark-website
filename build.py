@@ -50,7 +50,7 @@ META={
 'fip':("GS-441524 for Cats with FIP | Florida Pharmacy","Pharmacy on the Park fills veterinary prescriptions for GS-441524 to treat FIP in cats. Pickup in Oviedo or shipping within Florida. Call 407-977-9779."),
 'prescribers':("For Prescribers | Compounding Partner in Central Florida","Human and veterinary prescribers: talk formulations with a pharmacist. Fax 407-977-0079, phone 407-977-9779. Accredited, USP <800> compliant compounding pharmacy."),
 'about':("About Pharmacy on the Park | Family-Owned in Oviedo, FL","Family-owned pharmacy in Oviedo, FL, opened in 2022 and led by Ian Tasman, PharmD. Accredited and USP <800> compliant, and active with Orlando Science Center, Girl Scouts and local teams."),
-'quality':("Quality & Sourcing | USP <795>, <797> & <800> | Pharmacy on the Park","Pharmacy on the Park exceeds Florida compounding standards: USP <800> compliant, meets USP <795> and <797>, every sterile batch tested by Pharmetric Labs, certified clean room and potency-adjusted formulas."),
+'quality':("Quality & Sourcing | USP <795>, <797> & <800> | Pharmacy on the Park","Pharmacy on the Park exceeds Florida compounding standards: USP <800> compliant, meets USP <795> and <797>, every sterile batch tested by Pharmetric Labs and a certified clean room."),
 'choose':("How to Choose a Compounding Pharmacy | Pharmacy on the Park","What to look for in a compounding pharmacy: accreditation, USP <795>, <797> and <800>, lab standards, ingredient sourcing, independent testing and written procedures, plus questions to ask."),
 'contact':("Contact & Directions | Pharmacy on the Park, Oviedo FL","784 S. Central Ave, Oviedo, FL 32765. Phone 407-977-9779, fax 407-977-0079. Hours, directions, reviews and how to send a prescription."),
 }
