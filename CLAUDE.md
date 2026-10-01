@@ -23,7 +23,8 @@ Hours: Mon–Fri 9 a.m.–6 p.m., Sat 9 a.m.–noon, Sun closed. Domain: pharmac
 - Compounded medications are not FDA-approved; keep that disclaimer. Uses are general and may be off-label; the prescriber/veterinarian decides.
 - Do not list GLP-1s (tirzepatide/semaglutide), phentermine, ketamine, opioids or benzodiazepines publicly.
 - No free delivery (removed). Compound turnaround: same day to 24 hours. FIP cases are prioritized.
-- Quality claims allowed: accredited by The Compliance Team; USP <800> compliant; meets USP <795> (nonsterile) and USP <797> (sterile); every sterile batch tested by Pharmetric Labs (sterility, endotoxin, potency); certified clean room, environmental monitoring, equipment calibration, tested hoods (do not publish certificates); exceeds Florida compounding standards; potency-adjusted formulas from each lot's certificate of analysis; Pharmacon veterinary compounding certification.
+- Quality claims allowed: accredited by The Compliance Team; USP <800> compliant; meets USP <795> (nonsterile) and USP <797> (sterile); every sterile batch tested by Pharmetric Labs (sterility, endotoxin, potency); certified clean room, environmental monitoring, equipment calibration, tested hoods (do not publish certificates); exceeds Florida compounding standards; written procedures for compounding, cleaning, labeling and quality checks; Pharmacon veterinary compounding certification.
+- Do not mention batch or potency adjustments (formulas adjusted to each lot's potency); the owner removed them from the site. Ingredient certificates of analysis and potency testing of sterile batches are still fine.
 - Suppliers shown: Medisca, Fagron, PCCA, Specialized Rx (Darmerica removed).
 - LDN: 1.5 mg, 3 mg and 4.5 mg tablets are $60 for 90 tablets; other strengths/forms "call for pricing". This is a key SEO page (/low-dose-naltrexone/).
 - Patients never need to call us after a prescriber sends one; we call them.
