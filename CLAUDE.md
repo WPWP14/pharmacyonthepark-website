@@ -28,11 +28,15 @@ Hours: Mon–Fri 9 a.m.–6 p.m., Sat 9 a.m.–noon, Sun closed. Domain: pharmac
 - Suppliers shown: Medisca, Fagron, PCCA, Specialized Rx (Darmerica removed).
 - LDN: 1.5 mg, 3 mg and 4.5 mg tablets are $60 for 90 tablets; other strengths/forms "call for pricing". This is a key SEO page (/low-dose-naltrexone/).
 - Patients never need to call us after a prescriber sends one; we call them.
+- Retail claims (owner confirmed 10/2/26): hundreds of medications are $9 for a 90-day supply, no insurance needed, no discount card or sign-up; competitive cash prices; price matching; most insurance plans accepted (don't name plans); same-day filling, short wait times, text notifications and texting with the team. OTC categories carried: cold and flu, pain and fever, allergy, first aid, baby care (NOT braces/compression or diabetic supplies). Don't claim we find hard-to-get products or specific manufacturers (owner removed for now).
+- Weight loss: only "call us to discuss our weight loss options"; never name the medications.
+- MCAS page (/compounding/mast-cell-activation-syndrome/) lists only MCAS-related medications already in library.json (ketotifen, H1 antihistamines, famotidine, montelukast, LDN). Don't add cromolyn unless the owner confirms they make it. Resource links: TMS, Cleveland Clinic, Mast Cell Action, AAAAI 2019 work group report.
 - Keep phone numbers from wrapping (`<span class="nw">`).
 - "Last updated" date appears in the library, drug pages and footer; update it when content changes.
 - Never commit internal data: fill counts, prices paid, the compound export, or the pharmacist review spreadsheet.
 
 ## Open items
+- $9-for-90-days medication list: owner will send it (asked to be reminded). Add 10-20 common names to /retail-pharmacy/discount-program/; also ask whether it can be used alongside insurance.
 - Pharmacist review of all medication text (review spreadsheet kept outside the repo). Show "Reviewed by" only after approval (`reviewedBy` field).
 - Real photos (team, storefront, lab) to replace initials and illustrations.
 - Background video for the Retail banner: `media/compounding-nonsterile.mp4` (add a copy step in build.py when provided).
