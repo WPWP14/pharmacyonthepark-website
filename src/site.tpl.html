@@ -45,6 +45,11 @@ nav.main a.nl[aria-current="page"]{background:var(--park-blue);color:var(--on-bl
 }
 @media (max-width:600px){.head-phone{display:none}.brand img{height:42px}}
 
+/* ---------- privacy notice ---------- */
+.cookie{position:fixed;left:16px;right:16px;bottom:16px;z-index:45;max-width:760px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;background:var(--deep);color:var(--on-deep);border-radius:14px;padding:14px 18px;box-shadow:0 10px 30px rgba(11,34,48,.25);font-size:.92rem}
+.cookie p{margin:0;flex:1 1 300px}
+.cookie[hidden]{display:none}
+@media (max-width:860px){.cookie{bottom:88px}}
 /* ---------- mobile call bar ---------- */
 .callbar{display:none}
 @media (max-width:860px){
@@ -758,8 +763,8 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
     <a class="brand" href="#home" aria-label="Pharmacy on the Park home"><img src="data:image/svg+xml;base64,{{LOGO}}" alt="Pharmacy on the Park"></a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
     <nav class="main" id="mainNav" aria-label="Main">
-      <div class="item"><a class="nl" href="#retail">Retail Pharmacy</a><div class="sub"><div><a href="#retail">Transfers and refills</a><a href="#supplements">Supplements</a></div></div></div>
-      <div class="item"><a class="nl" href="#compounding">Human Compounding</a><div class="sub"><div><a href="#hormone-therapy">Hormone therapy</a><a href="#ldn">Low-dose naltrexone (LDN)</a><a href="#medications">Medication library</a><span class="subhead">Browse by condition</span><div class="cond"><a href="/medications/#people-skin">Skin and hair</a><a href="/medications/#people-men">Men's and sexual health</a><a href="/medications/#people-pain">Pain and inflammation</a><a href="/medications/#people-thy">Thyroid</a><a href="/medications/#people-endo">Endocrine and metabolic</a><a href="/medications/#people-heart">Heart and blood pressure</a><a href="/medications/#people-gi">Stomach and digestion</a><a href="/medications/#people-behav">Behavior, mood and sleep</a><a href="/medications/#people-neuro">Seizures and nerve pain</a><a href="/medications/#people-allergy">Allergy and breathing</a><a href="/medications/#people-abx">Infections and parasites</a><a href="/medications/#people-immune">Immune and cancer care</a><a href="/medications/#people-uro">Kidney and urinary</a><a href="/medications/#people-liver">Liver support</a><a href="/medications/#people-nutr">Vitamins and nutrients</a><a href="/medications/#people-numb">Numbing and anesthetics</a><a href="/medications/#people-eent">Eye, ear and nose</a><a href="/medications/#people-oral">Mouth and throat</a></div></div></div></div>
+      <div class="item"><a class="nl" href="#retail">Retail Pharmacy</a><div class="sub"><div><a href="#retail">Transfers and refills</a><a href="#discount">$9 for 90 days</a><a href="#insurance">Insurance</a><a href="#service">Fast, reliable service</a><a href="#otc">Over-the-counter products</a><a href="#supplements">Supplements</a></div></div></div>
+      <div class="item"><a class="nl" href="#compounding">Human Compounding</a><div class="sub"><div><a href="#hormone-therapy">Hormone therapy</a><a href="#ldn">Low-dose naltrexone (LDN)</a><a href="#mcas">Mast cell activation (MCAS)</a><a href="#medications">Medication library</a><span class="subhead">Browse by condition</span><div class="cond"><a href="/medications/#people-skin">Skin and hair</a><a href="/medications/#people-men">Men's and sexual health</a><a href="/medications/#people-pain">Pain and inflammation</a><a href="/medications/#people-thy">Thyroid</a><a href="/medications/#people-endo">Endocrine and metabolic</a><a href="/medications/#people-heart">Heart and blood pressure</a><a href="/medications/#people-gi">Stomach and digestion</a><a href="/medications/#people-behav">Behavior, mood and sleep</a><a href="/medications/#people-neuro">Seizures and nerve pain</a><a href="/medications/#people-allergy">Allergy and breathing</a><a href="/medications/#people-abx">Infections and parasites</a><a href="/medications/#people-immune">Immune and cancer care</a><a href="/medications/#people-uro">Kidney and urinary</a><a href="/medications/#people-liver">Liver support</a><a href="/medications/#people-nutr">Vitamins and nutrients</a><a href="/medications/#people-numb">Numbing and anesthetics</a><a href="/medications/#people-eent">Eye, ear and nose</a><a href="/medications/#people-oral">Mouth and throat</a></div></div></div></div>
       <div class="item"><a class="nl" href="#veterinary">Veterinary Pharmacy</a><div class="sub"><div><a href="#fip">FIP medication</a><a href="#medications">Medication library</a><span class="subhead">Browse by condition</span><div class="cond"><a href="/medications/#pets-heart">Heart and blood pressure</a><a href="/medications/#pets-uro">Kidney and urinary</a><a href="/medications/#pets-endo">Endocrine and metabolic</a><a href="/medications/#pets-gi">Stomach and digestion</a><a href="/medications/#pets-liver">Liver support</a><a href="/medications/#pets-abx">Infections and parasites</a><a href="/medications/#pets-immune">Immune and cancer care</a><a href="/medications/#pets-neuro">Seizures and nerve pain</a><a href="/medications/#pets-behav">Behavior, mood and sleep</a><a href="/medications/#pets-pain">Pain and inflammation</a><a href="/medications/#pets-skin">Skin and hair</a><a href="/medications/#pets-allergy">Allergy and breathing</a><a href="/medications/#pets-nutr">Vitamins and nutrients</a><a href="/medications/#pets-eent">Eye, ear and nose</a></div></div></div></div>
       <div class="item"><a class="nl" href="#prescribers">For Prescribers</a></div>
       <div class="item"><a class="nl" href="#about">About Us</a><div class="sub"><div><a href="#about">Our team</a><a href="#quality">Quality and sourcing</a><a href="#choose">How to choose a compounding pharmacy</a></div></div></div>
@@ -1039,6 +1044,18 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
     </div>
   </section>
 
+  <section class="band surface">
+    <div class="wrap stack" style="gap:24px">
+      <div class="head" style="margin:0"><span class="eyebrow">Why patients switch to us</span><h2>Low prices, fast service, real people.</h2></div>
+      <div class="grid g4">
+        <a class="card" href="#discount" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-tag"/></svg></span><h3>$9 for 90 days</h3><p>Hundreds of medications for $9 for a 90-day supply. No insurance or discount card needed.</p><span class="textlink">Learn more <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#insurance" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3>Insurance accepted</h3><p>We accept most prescription insurance plans and handle the insurance work for you.</p><span class="textlink">Learn more <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#service" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-clock"/></svg></span><h3>Fast, reliable service</h3><p>Same-day fills, short waits and a text when your prescription is ready.</p><span class="textlink">Learn more <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#otc" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-check"/></svg></span><h3>Over-the-counter products</h3><p>Cold and flu, pain relief, allergy, first aid and baby care, with a pharmacist to ask.</p><span class="textlink">Learn more <svg><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
   <section class="band">
     <div class="wrap stack" style="gap:28px">
       <div class="head" style="margin:0"><span class="eyebrow">Will I have to do all the work to switch?</span><h2>No. Here's how a transfer works.</h2></div>
@@ -1069,6 +1086,151 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
       <div class="panel green" style="flex-direction:row;flex-wrap:wrap;gap:16px;align-items:center">
         <svg width="28" height="28" style="color:var(--green-text);flex:none"><use href="#i-leaf"/></svg>
         <p style="flex:1 1 300px;color:var(--ink)"><b>Greener by default.</b> Our prescription vials are biodegradable and meet the storage and stability conditions medications need. Our bags are biodegradable too.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= DISCOUNT ================= -->
+<div class="page" id="p-discount">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#retail">Retail Pharmacy</a> / $9 for 90 days</p>
+        <span class="eyebrow">No insurance needed</span>
+        <h1>Hundreds of medications for $9 for a 90-day supply.</h1>
+        <p class="lede">No insurance, no discount card, no membership and nothing to sign up for. Just a fair cash price on hundreds of everyday medications, from a pharmacy where a person answers the phone.</p>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Is my medication included?</a><a class="btn ghost" href="#retail">Transfer to us</a></div>
+      </div>
+      <div class="panel deep">
+        <span class="eyebrow">At a glance</span>
+        <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><b style="font-size:3.4rem;line-height:1;color:var(--park-green)">$9</b><span style="font-size:1.1rem">for a 90-day supply</span></div>
+        <ul class="ticks">
+          <li><svg><use href="#i-check"/></svg><div><b>Hundreds of medications</b><span>Call to check whether yours is included.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>No insurance needed</b><span>A simple cash price.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>No card, no sign-up</b><span>We don't make you do extra work to save.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:28px">
+      <div class="head" style="margin:0"><span class="eyebrow">How it works</span><h2>Three steps, no paperwork.</h2></div>
+      <ol class="steps s3">
+        <li><b>Ask if it's included</b><span>Call <span class="nw">407-977-9779</span> and we'll check your medication and strength.</span></li>
+        <li><b>Send or transfer your prescription</b><span>Your prescriber sends it to us, or we transfer it from your current pharmacy for you.</span></li>
+        <li><b>Pick up a 90-day supply</b><span>Pay $9 for 90 days. If your prescription is written for 30 days, ask us about a 90-day supply.</span></li>
+      </ol>
+      <div class="grid g3">
+        <div class="card"><span class="ic"><svg><use href="#i-tag"/></svg></span><h3>Competitive cash prices</h3><p>Not on the $9 list? We keep our cash prices competitive. Call for a price before you fill.</p></div>
+        <div class="card"><span class="ic g"><svg><use href="#i-check"/></svg></span><h3>Price matching</h3><p>Found a lower cash price somewhere else? We'll match it.</p></div>
+        <div class="card"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3>Have insurance too?</h3><p>We accept most prescription insurance plans. <a class="textlink" href="#insurance">Insurance we accept <svg><use href="#i-arrow"/></svg></a></p></div>
+      </div>
+      <p class="note">Prices and the medications included may change. Call <span class="nw">407-977-9779</span> to confirm the price of your prescription.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= INSURANCE ================= -->
+<div class="page" id="p-insurance">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#retail">Retail Pharmacy</a> / Insurance</p>
+        <span class="eyebrow">Insurance</span>
+        <h1>We accept most prescription insurance plans.</h1>
+        <p class="lede">With insurance, your copay is the same wherever you fill, so you can get personal service without paying more for it. Call with your insurance card and we'll check your plan.</p>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Check my plan: 407-977-9779</a></div>
+      </div>
+      <div class="panel blue">
+        <span class="badge b">No insurance?</span>
+        <h3 style="font-size:1.4rem">Hundreds of medications for $9 for a 90-day supply.</h3>
+        <p>No insurance and no discount card needed.</p>
+        <div><a class="btn primary" href="#discount">$9 for 90 days <svg><use href="#i-arrow"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:28px">
+      <div class="head" style="margin:0"><span class="eyebrow">Using your insurance with us</span><h2>We handle the insurance work.</h2></div>
+      <div class="grid g3">
+        <div class="card"><span class="ic"><svg><use href="#i-check"/></svg></span><h3>Checking your coverage</h3><p>Give us your insurance card and we'll run your plan and confirm your cost before you pick up.</p></div>
+        <div class="card"><span class="ic g"><svg><use href="#i-shield"/></svg></span><h3>When a claim is rejected</h3><p>If your plan rejects a claim or needs approval from your prescriber, we work on it and call you with the next step.</p></div>
+        <div class="card"><span class="ic"><svg><use href="#i-person"/></svg></span><h3>Switching is easy</h3><p>We transfer your prescriptions from your current pharmacy for you. <a class="textlink" href="#retail">How transfers work <svg><use href="#i-arrow"/></svg></a></p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= SERVICE ================= -->
+<div class="page" id="p-service">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#retail">Retail Pharmacy</a> / Fast, reliable service</p>
+        <span class="eyebrow">Fast, reliable service</span>
+        <h1>Same-day fills, short waits and a text when it's ready.</h1>
+        <p class="lede">Your time matters. We fill prescriptions the same day, keep wait times short, and let you know by text when your prescription is ready.</p>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Call 407-977-9779</a><a class="btn ghost" href="https://pharmacyonthepark.mobilescripts.com/index.php?request=" target="_blank" rel="noopener">Refill online</a></div>
+      </div>
+      <div class="panel deep">
+        <span class="eyebrow">What you can count on</span>
+        <ul class="ticks">
+          <li><svg><use href="#i-check"/></svg><div><b>Same-day filling</b><span>Prescriptions filled the same day.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Short wait times</b><span>In and out, without the long line.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Text notifications</b><span>A text when your prescription is ready.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Text with us</b><span>Prefer texting? You can reach our team by text.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:28px">
+      <div class="head" style="margin:0"><span class="eyebrow">Easy refills</span><h2>Refill however works for you.</h2></div>
+      <div class="grid g3">
+        <div class="card"><span class="ic"><svg><use href="#i-phone"/></svg></span><h3>Call or text</h3><p>A real person answers at <span class="nw">407-977-9779</span>, or reach our team by text.</p></div>
+        <div class="card"><span class="ic g"><svg><use href="#i-send"/></svg></span><h3>Online or in the app</h3><p>Refill <a href="https://pharmacyonthepark.mobilescripts.com/index.php?request=" target="_blank" rel="noopener">online</a>, or with our MobileScripts app on the <a href="https://apps.apple.com/us/app/mobilescripts/id771076704" target="_blank" rel="noopener">App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.datascan.mobilescripts" target="_blank" rel="noopener">Google Play</a>.</p></div>
+        <div class="card"><span class="ic"><svg><use href="#i-pack"/></svg></span><h3>All your refills on one day</h3><p>Ask about med sync, so all your refills are ready together, plus bubble packs and pill organizer help.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= OTC ================= -->
+<div class="page" id="p-otc">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#retail">Retail Pharmacy</a> / Over-the-counter products</p>
+        <span class="eyebrow">Over-the-counter products</span>
+        <h1>Everyday health products, with a pharmacist to ask.</h1>
+        <p class="lede">Pick up what you need while you're here, and ask a pharmacist which product fits you best, especially if you take other medications.</p>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Ask a pharmacist</a></div>
+      </div>
+      <div class="panel deep">
+        <span class="eyebrow">On our shelves</span>
+        <ul class="ticks">
+          <li><svg><use href="#i-check"/></svg><div><b>Cold and flu</b></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Pain and fever relief</b></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Allergy relief</b></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>First aid</b></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Baby care</b></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Vitamins and supplements</b></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:28px">
+      <div class="head" style="margin:0"><span class="eyebrow">Free advice</span><h2>Not sure which one to choose? Ask us.</h2></div>
+      <div class="grid g3">
+        <div class="card"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3>Checked against your prescriptions</h3><p>A pharmacist can check an over-the-counter product against the medications you already take.</p></div>
+        <div class="card"><span class="ic g"><svg><use href="#i-chat"/></svg></span><h3>The right product and dose</h3><p>We'll help you compare options and explain how to take what you choose.</p></div>
+        <div class="card"><span class="ic"><svg><use href="#i-leaf"/></svg></span><h3>Professional-grade supplements</h3><p>Pure Encapsulations, Ortho Molecular Products, Genestra and more. <a class="textlink" href="#supplements">Supplement brands <svg><use href="#i-arrow"/></svg></a></p></div>
       </div>
     </div>
   </section>
@@ -1194,6 +1356,11 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
 
       <div class="combonote"><svg><use href="#i-mortar"/></svg><div><b>We make combination preparations</b><p>Many ingredients can be combined into one preparation when your prescriber orders it. Hormones including estriol, estradiol, estrone, progesterone, testosterone, DHEA and pregnenolone can be combined in a single cream, troche or capsule. Other combinations include T4/T3 thyroid capsules, BEG nasal spray, BLT numbing cream and Scream Cream. <a class="textlink" href="#medications">Browse the medication library <svg><use href="#i-arrow"/></svg></a></p></div></div>
 
+      <div class="panel green" id="weight-loss" style="flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+        <div class="stack" style="gap:6px;flex:1 1 320px;min-width:0"><span class="badge">Weight loss</span><h3 style="font-size:1.35rem">Ask us about our weight loss options.</h3><p>Call to talk with a pharmacist about the weight loss options we offer and whether one may be right for you.</p></div>
+        <a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Call 407-977-9779</a>
+      </div>
+
       <div class="stack" style="gap:14px">
         <div class="head" style="margin:0"><span class="eyebrow">Specialties</span><h2>Some of the specialties we serve.</h2><p class="lede">These are a few of the areas we work in most often. We compound for many other conditions too, so if you don't see yours, call and ask.</p></div>
         <div class="chips"><span>Women's health and hormone therapy</span><span>Men's health</span><span>Functional and integrative medicine</span><span>Cardiology</span><span>Dermatology and aesthetics</span><span>Pain management</span><span>Neurology</span><span>Endocrinology and thyroid</span><span>Gastroenterology</span><span>Pediatrics</span><span>Dentistry and oral care</span><span>Eye, ear, nose and throat</span><span>Infectious disease</span><span>Oncology support</span><span>Urology</span><span>Psychiatry and sleep</span></div>
@@ -1299,6 +1466,57 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         </div>
       </div>
       <p class="note">Compounded hormone preparations are not FDA-approved. Your prescriber determines whether therapy is appropriate and monitors your treatment. This page is general information, not medical advice.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= MCAS ================= -->
+<div class="page" id="p-mcas">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#compounding">Human Compounding</a> / Mast cell activation syndrome</p>
+        <span class="eyebrow">Mast cell activation syndrome (MCAS)</span>
+        <h1>Compounded medications for MCAS, made to fit you.</h1>
+        <p class="lede">Many people with MCAS react to the dyes, fillers and preservatives in commercial medications, or need doses that aren't sold. We prepare the medications your prescriber orders in the strength and form that works for you, and we're glad to talk it through with you and your prescriber.</p>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Talk to a pharmacist</a><a class="btn ghost" href="#prescribers">For prescribers</a></div>
+      </div>
+      <div class="panel deep">
+        <span class="eyebrow">Why compounding helps</span>
+        <ul class="ticks">
+          <li><svg><use href="#i-check"/></svg><div><b>Dye-free and allergen-free options</b><span>Made without the ingredients you react to, when your prescriber orders it.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Custom strengths</b><span>Doses no manufacturer makes, including small steps up or down.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Forms you can take</b><span>Capsules, flavored liquids and more.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>A pharmacist to ask</b><span>Tell us your sensitivities and we'll talk through ingredients with you and your prescriber.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:28px">
+      <div class="head" style="margin:0"><span class="eyebrow">What we prepare</span><h2>Medications commonly used in MCAS.</h2><p class="lede">Your prescriber chooses which medications are right for you and how much of each. Tap a medication to see its forms, uses and side effects in our library.</p></div>
+      <div class="grid g3">
+        <a class="card" href="/medications/ketotifen/" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3>Ketotifen</h3><p><b style="color:var(--ink)">Mast cell stabilizer.</b> Oral ketotifen isn't sold as a commercial product in the US, so it's prepared by compounding pharmacies. Capsules.</p><span class="textlink">Details <svg><use href="#i-arrow"/></svg></span></a>
+        <div class="card"><span class="ic g"><svg><use href="#i-check"/></svg></span><h3>H1 antihistamines</h3><p>Dye-free capsules and flavored liquids in custom strengths:</p><p><a href="/medications/cetirizine/">Cetirizine</a> · <a href="/medications/levocetirizine/">Levocetirizine</a> · <a href="/medications/loratadine/">Loratadine</a> · <a href="/medications/diphenhydramine/">Diphenhydramine</a> · <a href="/medications/hydroxyzine/">Hydroxyzine</a> · <a href="/medications/cyproheptadine/">Cyproheptadine</a> · <a href="/medications/chlorpheniramine/">Chlorpheniramine</a></p></div>
+        <a class="card" href="/medications/famotidine/" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-check"/></svg></span><h3>Famotidine</h3><p><b style="color:var(--ink)">H2 blocker.</b> Capsules and flavored oral suspension.</p><span class="textlink">Details <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="/medications/montelukast/" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-check"/></svg></span><h3>Montelukast</h3><p><b style="color:var(--ink)">Leukotriene blocker.</b> Capsules.</p><span class="textlink">Details <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#ldn" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-check"/></svg></span><h3>Low-dose naltrexone (LDN)</h3><p>Prescribed off-label for some inflammatory and immune conditions. 1.5, 3 and 4.5 mg tablets are $60 for 90.</p><span class="textlink">About LDN <svg><use href="#i-arrow"/></svg></span></a>
+        <div class="card"><span class="ic g"><svg><use href="#i-mortar"/></svg></span><h3>Something else?</h3><p>Not listed here? Call us. We may be able to prepare it, or we'll talk through options with your prescriber.</p><p><a class="textlink" href="#medications">Browse the medication library <svg><use href="#i-arrow"/></svg></a></p></div>
+      </div>
+      <p class="note">MCAS treatment is individual, and your prescriber decides what's right for you. Many uses are off-label. Compounded medications are not FDA-approved. They are prepared for an individual patient based on a prescription.</p>
+    </div>
+  </section>
+
+  <section class="band surface">
+    <div class="wrap stack" style="gap:24px">
+      <div class="head" style="margin:0"><span class="eyebrow">Resources</span><h2>Learn more about MCAS.</h2><p class="lede">Trusted information from independent organizations. We're not affiliated with them.</p></div>
+      <div class="grid g2">
+        <a class="card" href="https://tmsforacure.org/overview/mast-cell-activation-syndromes/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><h3>The Mast Cell Disease Society</h3><p>An overview of mast cell activation syndromes, plus patient guides and support from a nonprofit focused on mast cell diseases.</p><span class="textlink">tmsforacure.org <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="https://my.clevelandclinic.org/health/diseases/mast-cell-activation-syndrome" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><h3>Cleveland Clinic</h3><p>A plain-language guide to MCAS symptoms, triggers, diagnosis and treatment.</p><span class="textlink">clevelandclinic.org <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="https://www.mastcellaction.org/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><h3>Mast Cell Action</h3><p>A patient charity with information, guides and support for people living with mast cell conditions.</p><span class="textlink">mastcellaction.org <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="https://www.jacionline.org/article/S0091-6749(19)31116-9/fulltext" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><h3>For prescribers: AAAAI work group report</h3><p>Mast cell activation syndrome diagnosis and management, from the American Academy of Allergy, Asthma &amp; Immunology (J Allergy Clin Immunol, 2019).</p><span class="textlink">jacionline.org <svg><use href="#i-arrow"/></svg></span></a>
+      </div>
     </div>
   </section>
 </div>
@@ -1924,7 +2142,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
           <a href="https://www.instagram.com/pharmacyonthepark/" target="_blank" rel="noopener"><svg><use href="#i-camera"/></svg>Instagram</a>
           <a href="https://www.google.com/maps/search/?api=1&amp;query=Pharmacy%20on%20the%20Park%20784%20S%20Central%20Ave%20Oviedo%20FL" target="_blank" rel="noopener"><svg><use href="#i-star"/></svg>Google reviews</a>
         </div></div>
-      <div><h4>Services</h4><ul><li><a href="#retail">Retail pharmacy</a></li><li><a href="#supplements">Supplements</a></li><li><a href="#compounding">Human compounding</a></li><li><a href="#hormone-therapy">Hormone therapy</a></li><li><a href="#ldn">Low-dose naltrexone (LDN)</a></li><li><a href="#veterinary">Veterinary pharmacy</a></li><li><a href="#fip">FIP medication</a></li><li><a href="#medications">Medication library</a></li><li><a href="#prescribers">For prescribers</a></li><li><a href="#about">About us</a></li><li><a href="#quality">Quality and sourcing</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="#retail">Retail pharmacy</a></li><li><a href="#discount">$9 for 90 days</a></li><li><a href="#supplements">Supplements</a></li><li><a href="#compounding">Human compounding</a></li><li><a href="#hormone-therapy">Hormone therapy</a></li><li><a href="#ldn">Low-dose naltrexone (LDN)</a></li><li><a href="#mcas">Mast cell activation (MCAS)</a></li><li><a href="#veterinary">Veterinary pharmacy</a></li><li><a href="#fip">FIP medication</a></li><li><a href="#medications">Medication library</a></li><li><a href="#prescribers">For prescribers</a></li><li><a href="#about">About us</a></li><li><a href="#quality">Quality and sourcing</a></li><li><a href="#contact">Contact</a></li></ul></div>
       <div><h4>FAQ</h4>
         <div class="faq">
           <details><summary>Do you take my insurance?</summary><p>We accept most prescription insurance plans. Call us to check your plan.</p></details>
@@ -1934,9 +2152,21 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         </div>
       </div>
     </div>
-    <div class="fine"><span>© 2026 Pharmacy on the Park · Last updated 10/1/26</span><a class="vendor" href="https://datascanpharmacy.com/" target="_blank" rel="noopener">Pharmacy software by <img src="{{LG:datascan}}" alt="Datascan" width="94" height="36" loading="lazy"></a><span>Family owned in Oviedo, Florida</span></div>
+    <div class="fine"><span>© 2026 Pharmacy on the Park. All rights reserved. · Last updated 10/1/26</span><a class="vendor" href="https://datascanpharmacy.com/" target="_blank" rel="noopener">Pharmacy software by <img src="{{LG:datascan}}" alt="Datascan" width="94" height="36" loading="lazy"></a><span>Family owned in Oviedo, Florida</span></div>
   </div>
 </footer>
+<div class="cookie" id="cookieNote" role="region" aria-label="Privacy notice" hidden>
+  <p><b>Your privacy matters.</b> This website doesn't use tracking or advertising cookies. We only remember that you closed this message.</p>
+  <button type="button" class="btn primary sm" id="cookieOk">Got it</button>
+</div>
+<script>
+(function(){
+  var n=document.getElementById('cookieNote'); if(!n) return;
+  try{ if(localStorage.getItem('potp-privacy-ok')) return; }catch(e){}
+  n.hidden=false;
+  document.getElementById('cookieOk').addEventListener('click',function(){ n.hidden=true; try{ localStorage.setItem('potp-privacy-ok','1'); }catch(e){} });
+})();
+</script>
 
 {{MAP}}
 
@@ -1954,9 +2184,9 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
 
   document.querySelectorAll('[data-map]').forEach(function(el){ el.appendChild(document.getElementById('mapTpl').content.cloneNode(true)); });
 
-  var routes = {home:'home',retail:'retail',supplements:'supplements',compounding:'compounding','hormone-therapy':'hormone-therapy',veterinary:'veterinary',fip:'fip',medications:'medications',ldn:'ldn',prescribers:'prescribers',about:'about',quality:'quality',choose:'choose',contact:'contact',send:'contact','about-quality':'about'};
+  var routes = {home:'home',retail:'retail',supplements:'supplements',discount:'discount',insurance:'insurance',service:'service',otc:'otc',mcas:'mcas',compounding:'compounding','hormone-therapy':'hormone-therapy',veterinary:'veterinary',fip:'fip',medications:'medications',ldn:'ldn',prescribers:'prescribers',about:'about',quality:'quality',choose:'choose',contact:'contact',send:'contact','about-quality':'about'};
   var anchors = {send:'send-sec','about-quality':'about-quality-sec'};
-  var parent = {med:'medications',ldn:'compounding',supplements:'retail','hormone-therapy':'compounding',fip:'veterinary',quality:'about',choose:'about'};
+  var parent = {med:'medications',ldn:'compounding',supplements:'retail',discount:'retail',insurance:'retail',service:'retail',otc:'retail',mcas:'compounding','hormone-therapy':'compounding',fip:'veterinary',quality:'about',choose:'about'};
   var nav = document.getElementById('mainNav'), btn = document.getElementById('menuBtn');
   function show(){
     var h = (location.hash||'#home').slice(1); var pg = routes[h] || 'home';
