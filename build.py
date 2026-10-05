@@ -26,6 +26,8 @@ def lg_data(m):
 os.makedirs('_preview',exist_ok=True); open('_preview/pharmacy-on-the-park.html','w').write(re.sub(r'\{\{LG:([a-z0-9-]+)\}\}',lg_data,ART))   # artifact version
 s=re.sub(r'\{\{LG:([a-z0-9-]+)\}\}',lambda m:'/logos/'+LOGOF[m.group(1)],s)
 DOMAIN='https://pharmacyonthepark.com'
+GA_ID='G-HS4GHY046F'   # Google Analytics 4 measurement ID (G-XXXXXXXXXX); leave empty to publish without tracking
+GA=(f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>\n<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());gtag("config","{GA_ID}",{{allow_google_signals:false,allow_ad_personalization_signals:false}});</script>\n' if GA_ID else '')
 shutil.rmtree('_site',ignore_errors=True); os.makedirs('_site')
 shutil.copy('src/logo.svg','_site/logo.svg'); shutil.copy('src/logo-dark.svg','_site/logo-dark.svg')
 s=s.replace('data:image/svg+xml;base64,'+LOGO_B64,'/logo.svg').replace('data:image/svg+xml;base64,'+LOGO_DARK_B64,'/logo-dark.svg')
@@ -112,7 +114,7 @@ for key,html in pages.items():
 <meta property="og:image" content="{DOMAIN}/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="geo.region" content="US-FL"><meta name="geo.placename" content="Oviedo">
-'''+''.join('<script type="application/ld+json">'+json.dumps(x,ensure_ascii=False)+'</script>\n' for x in ld)
+'''+GA+''.join('<script type="application/ld+json">'+json.dumps(x,ensure_ascii=False)+'</script>\n' for x in ld)
   p=prefix.replace('<title>Pharmacy on the Park</title>\n',''); i=p.index('</style>')+8
   page=fix_links(head+p[:i]+'\n</head>\n<body>\n'+p[i:]+html+suffix+'\n</body>\n</html>\n')
   top=TOP.get(key,key)
