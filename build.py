@@ -26,7 +26,7 @@ def lg_data(m):
 os.makedirs('_preview',exist_ok=True); open('_preview/pharmacy-on-the-park.html','w').write(re.sub(r'\{\{LG:([a-z0-9-]+)\}\}',lg_data,ART))   # artifact version
 s=re.sub(r'\{\{LG:([a-z0-9-]+)\}\}',lambda m:'/logos/'+LOGOF[m.group(1)],s)
 DOMAIN='https://pharmacyonthepark.com'
-GA_ID=''   # Google Analytics 4 measurement ID (G-XXXXXXXXXX); leave empty to publish without tracking
+GA_ID='G-HS4GHY046F'   # Google Analytics 4 measurement ID (G-XXXXXXXXXX); leave empty to publish without tracking
 GA=(f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>\n<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());gtag("config","{GA_ID}",{{allow_google_signals:false,allow_ad_personalization_signals:false}});</script>\n' if GA_ID else '')
 shutil.rmtree('_site',ignore_errors=True); os.makedirs('_site')
 shutil.copy('src/logo.svg','_site/logo.svg'); shutil.copy('src/logo-dark.svg','_site/logo-dark.svg')
