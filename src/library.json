@@ -3234,7 +3234,7 @@
   "aud": [
    "pets"
   ],
-  "uses": "Antiviral used to treat feline infectious peritonitis (FIP) in cats, by veterinary prescription.",
+  "uses": "Antiviral used to treat feline infectious peritonitis (FIP) in cats. Not FDA-approved; compounded only from a veterinarian's prescription for a specific cat, following FDA's policy.",
   "side": "Mild stomach upset and changes in liver values; dosing is weight-based and set by your veterinarian.",
   "forms": [
    "Flavored oral suspension"
@@ -5250,7 +5250,7 @@
   "aud": [
    "people"
   ],
-  "uses": "A naturally occurring hormone prescribed off-label as rapid-dissolve tablets, most often for sexual health and bonding.",
+  "uses": "A naturally occurring hormone that some prescribers order off-label as rapid-dissolve tablets or troches. Your prescriber decides whether it is right for you.",
   "side": "Headache, nausea, flushing.",
   "forms": [
    "Rapid-dissolve tablet",
@@ -5259,7 +5259,7 @@
   "flavors": [],
   "combos": [],
   "n": 35,
-  "how": "Mimics the hormone oxytocin, which is involved in bonding, social behavior and sexual response.",
+  "how": "Acts like the body's own oxytocin, a hormone made in the brain.",
   "avoid": "Pregnancy.",
   "flavorMore": []
  },
@@ -6242,16 +6242,16 @@
   ]
  },
  {
-  "id": "scream-cream",
-  "name": "Scream Cream",
+  "id": "topical-sildenafil-cream-for-women",
+  "name": "Topical sildenafil combination cream for women",
   "cat": "MEN",
   "aud": [
    "people"
   ],
   "img": "topiclick",
-  "uses": "A topical cream for women, applied before intimacy, that combines theophylline, ergoloid mesylates, pentoxifylline and sildenafil (sometimes with L-arginine) to increase blood flow and sensitivity.",
+  "uses": "A prescription cream for women with sexual arousal concerns, combining theophylline, ergoloid mesylates, pentoxifylline and sildenafil (sometimes with L-arginine), as prescribed.",
   "side": "Warmth, tingling or redness where applied, and occasional headache.",
-  "how": "Each ingredient increases local blood flow in a different way, which may improve arousal and sensitivity.",
+  "how": "Each ingredient increases local blood flow in a different way.",
   "avoid": "Anyone taking nitrates for chest pain, and people with low blood pressure or an allergy to any ingredient. Not for use during pregnancy.",
   "combos": [
    "Theophylline",
