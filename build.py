@@ -130,6 +130,7 @@ LIB=json.loads(LIBJSON)
 tmpl=open('_site/medications/index.html').read()
 hs=tmpl.index('<div class="page on" id="p-medications">'); he=tmpl.index('<section class="cta-band">')
 MEDURLS=[]
+def slug(n): return re.sub(r'^-|-$','',re.sub(r'[^a-z0-9]+','-',n.lower().replace('&','and').replace("'",'')))   # same as catSlug() in site.tpl.html
 from urllib.parse import quote
 from playwright.sync_api import sync_playwright
 with sync_playwright() as _p:
@@ -160,12 +161,77 @@ for x in LIB:
   page=re.sub(r'<meta property="og:title" content=".*?">','<meta property="og:title" content="'+esc(title)+'">',page,1)
   page=re.sub(r'<meta property="og:description" content=".*?">','<meta property="og:description" content="'+esc(desc)+'">',page,1)
   page=page.replace('<link rel="canonical" href="'+DOMAIN+'/medications/">','<link rel="canonical" href="'+url+'">').replace('<meta property="og:url" content="'+DOMAIN+'/medications/">','<meta property="og:url" content="'+url+'">')
-  crumbs={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":DOMAIN+"/"},{"@type":"ListItem","position":2,"name":"Medication Library","item":DOMAIN+"/medications/"},{"@type":"ListItem","position":3,"name":nm,"item":url}]}
+  crumbs={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":DOMAIN+"/"},{"@type":"ListItem","position":2,"name":"Medication Library","item":DOMAIN+"/medications/"},{"@type":"ListItem","position":3,"name":x['catName'],"item":DOMAIN+'/medications/category/'+slug(x['catName'])+'/'},{"@type":"ListItem","position":4,"name":nm,"item":url}]}
   page=re.sub(r'<script type="application/ld\+json">\{"@context": "https://schema.org", "@type": "BreadcrumbList".*?</script>','<script type="application/ld+json">'+json.dumps(crumbs,ensure_ascii=False)+'</script>',page,1,flags=re.S)
   who2='veterinarian' if pets_only else 'prescriber'
-  faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in [(f"What is {base}?",x['how']),("What is it used for?",x['uses']),("What are the common side effects?",x['side']),("Who should use caution?",x['avoid']),("Are compounded medications FDA-approved?","No. Compounded medications are prepared for an individual patient from a prescription and are not FDA-approved."),("Do I need a prescription?",f"Yes. Your {who2} sends the prescription to Pharmacy on the Park.")]]}
+  faq={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in [tuple(f) for f in x.get('faqs',[])]+[(f"What is {base}?",x['how']),("What is it used for?",x['uses']),("What are the common side effects?",x['side']),("Who should use caution?",x['avoid']),("Are compounded medications FDA-approved?","No. Compounded medications are prepared for an individual patient from a prescription and are not FDA-approved."),("Do I need a prescription?",f"Yes. Your {who2} sends the prescription to Pharmacy on the Park.")]]}
   page=page.replace('</head>','<script type="application/ld+json">'+json.dumps(faq,ensure_ascii=False)+'</script>\n</head>',1)
   os.makedirs('_site'+u,exist_ok=True); open('_site'+u+'index.html','w').write(page); MEDURLS.append(u)
+# ---- browse pages: by category, dosage form and audience (plain HTML links so search engines find every medication) ----
+BR=json.load(open('src/browse.json'))
+FM2={'Cream':'cream','Ointment':'cream','Gel':'cream','Serum':'cream','Lotion':'cream','Foam':'cream','Paste':'cream','Capsule':'capsule','Slow-release capsule':'capsule','Powder':'capsule','Tablet':'tablet','Rapid-dissolve tablet':'rdt','Troche':'troche','Oral liquid':'suspension','Solution':'suspension','Transdermal gel (PLO)':'plo','Ear pack':'earpack','Chewable treat':'treat','Suppository':'suppository','Vaginal preparation':'pearl','Nasal spray':'nasal','Lollipop':'lollipop','Mouthwash':'mouthwash'}
+def thumb(x,f=None):
+  if x.get('img') and not f: return '/forms/'+x['img']+'.svg'
+  f=f or (x['forms'] or ['Capsule'])[0]
+  return '/forms/'+(('suspension-pet' if x['aud']==['pets'] else 'suspension') if f=='Flavored oral suspension' else FM2.get(f,'capsule'))+'.svg'
+def card(x,f=None):
+  aud=('<span class="c">Combination</span>' if x.get('isCombo') else '')+''.join(f'<span class="{"p" if a=="pets" else ""}">{"Pets" if a=="pets" else "People"}</span>' for a in x['aud'])
+  return (f'<article class="med"><img class="thumb" alt="" loading="lazy" width="480" height="360" src="{thumb(x,f)}"><div class="mb"><div class="top"><div><div class="cat">{esc(x["catName"])}</div>'
+          f'<h3><a href="/medications/{x["id"]}/">{esc(x["name"])}</a></h3></div><div class="aud">{aud}</div></div><p>{esc(x["uses"])}</p>'
+          '<div class="minichips">'+''.join(f'<span>{esc(v)}</span>' for v in x['forms'][:4])+(f'<span>+{len(x["forms"])-4} more</span>' if len(x['forms'])>4 else '')+'</div></div></article>')
+def linkrow(items,cur=None):
+  return '<div class="catchips browse">'+''.join(f'<a href="{u}"{" aria-current=\"page\"" if u==cur else ""}>{esc(n)}<small>{c}</small></a>' for n,u,c in items)+'</div>'
+CATS=[]
+for code,info in BR['cats'].items():
+  L=[x for x in LIB if x.get('isCombo')] if code=='__combo' else [x for x in LIB if x['cat']==code]
+  name=info.get('name') or L[0]['catName']; CATS.append((code,name,'/medications/category/'+(info.get('slug') or slug(name))+'/',L,info))
+FORMP=[]
+for f,info in BR['forms'].items():
+  L=[x for x in LIB if f in x['forms']]
+  if len(L)>=3: FORMP.append((f,f,'/medications/form/'+slug(f.replace('(PLO)','')) +'/',L,info))
+AUDP=[(a,info['title'],'/medications/for-'+a+'/',[x for x in LIB if a in x['aud']],info) for a,info in BR['aud'].items()]
+CATROW=[(n,u,len(L)) for c,n,u,L,_ in sorted(CATS,key=lambda c:c[1]) if c!='__combo']
+FORMROW=[(n,u,len(L)) for _,n,u,L,_ in sorted(FORMP,key=lambda c:c[1])]
+AUDROW=[('For '+a,u,len(L)) for a,_,u,L,_ in sorted(AUDP)]
+def browse_block(cur=None):
+  return ('<section class="band surface"><div class="wrap stack" style="gap:16px"><h2>Browse the medication library</h2>'
+          '<h3 style="font-size:1.05rem">By what it\'s used for</h3>'+linkrow(CATROW+[(n,u,len(L)) for c,n,u,L,_ in CATS if c=='__combo'],cur)+
+          '<h3 style="font-size:1.05rem">By dosage form</h3>'+linkrow(FORMROW,cur)+
+          '<h3 style="font-size:1.05rem">By who it\'s for</h3>'+linkrow(AUDROW,cur)+'</div></section>')
+def write_hub(u,title,h1,intro,L,crumb_name,eyebrow,extra=''):
+  L=sorted(L,key=lambda x:-x['n'])
+  ppl=sum('people' in x['aud'] for x in L); pts=sum('pets' in x['aud'] for x in L)
+  stat=f'{len(L)} medications'+(f' · {ppl} for people · {pts} for pets' if ppl and pts else '')
+  body=('<div class="page on" id="p-hub"><section class="hero" style="padding-block:clamp(40px,6vw,64px)"><div class="wrap" style="grid-template-columns:1fr"><div class="lead" style="max-width:820px">'
+        f'<p class="crumb"><a href="/medications/">Medication library</a> / {esc(crumb_name)}</p><span class="eyebrow">{esc(eyebrow)}</span><h1>{esc(h1)}</h1><p class="lede">{esc(intro)}</p>'
+        '<div class="btns"><a class="btn primary" href="/contact/#send-sec"><svg><use href="#i-send"/></svg>Start with a prescription</a><a class="btn ghost" href="tel:+14079779779"><svg><use href="#i-phone"/></svg><span class="nw">407-977-9779</span></a></div></div></div></section>'
+        f'<section class="band" style="padding-block:28px 72px"><div class="wrap stack" style="gap:20px"><div class="libmeta"><span>{stat} · Last updated 10/6/26</span></div>{extra}'
+        '<div class="libgrid">'+''.join(card(x) for x in L)+'</div>'
+        '<p class="note">General information about each active ingredient, not a description of any specific preparation. Compounded medications are not FDA-approved and are prepared from a prescription. Uses listed may be off-label. Your prescriber or veterinarian decides whether a medication is right, the dose and the monitoring. Don\'t see a medication? Call us at <span class="nw">407-977-9779</span>.</p></div></section>'
+        +browse_block(u)+'</div>\n\n')
+  page=tmpl[:hs]+body+tmpl[he:]
+  page=page.replace(LIBJSON,'null'); url=DOMAIN+u
+  desc=(intro if len(intro)<=155 else intro[:152].rsplit(' ',1)[0]+'...')
+  t=title+' | Oviedo, FL'
+  page=re.sub(r'<title>.*?</title>','<title>'+esc(t)+'</title>',page,count=1)
+  for a,v in [('name="description"',desc),('property="og:title"',t),('property="og:description"',desc)]:
+    page=re.sub(r'<meta '+a+r' content=".*?">',lambda m:'<meta '+a+' content="'+esc(v)+'">',page,count=1)
+  page=page.replace('<link rel="canonical" href="'+DOMAIN+'/medications/">','<link rel="canonical" href="'+url+'">').replace('<meta property="og:url" content="'+DOMAIN+'/medications/">','<meta property="og:url" content="'+url+'">')
+  crumbs={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":DOMAIN+"/"},{"@type":"ListItem","position":2,"name":"Medication Library","item":DOMAIN+"/medications/"},{"@type":"ListItem","position":3,"name":crumb_name,"item":url}]}
+  page=re.sub(r'<script type="application/ld\+json">\{"@context": "https://schema.org", "@type": "BreadcrumbList".*?</script>',lambda m:'<script type="application/ld+json">'+json.dumps(crumbs,ensure_ascii=False)+'</script>',page,count=1,flags=re.S)
+  il={"@context":"https://schema.org","@type":"ItemList","name":h1,"numberOfItems":len(L),"itemListElement":[{"@type":"ListItem","position":i+1,"url":DOMAIN+'/medications/'+x['id']+'/',"name":x['name']} for i,x in enumerate(L)]}
+  page=page.replace('</head>','<script type="application/ld+json">'+json.dumps(il,ensure_ascii=False)+'</script>\n</head>',1)
+  os.makedirs('_site'+u,exist_ok=True); open('_site'+u+'index.html','w').write(page); MEDURLS.append(u)
+for code,name,u,L,info in CATS: write_hub(u,info['title'],info['title'],info['intro'],L,name,'Medication library')
+for f,name,u,L,info in FORMP: write_hub(u,info['title'],info['title'],info['intro'],L,name,'Dosage form')
+for a,name,u,L,info in AUDP:
+  sub='<h2 style="font-size:1.3rem">By category</h2>'+linkrow(sorted({(c[1],c[2],sum(a in x['aud'] for x in c[3])) for c in CATS if c[0]!='__combo' and any(a in x['aud'] for x in c[3])}))
+  write_hub(u,info['title'],info['title'],info['intro'],L,name,'Medication library',sub)
+# add the same browse links to the main library page
+# the library page only needs the card and search fields; the full text lives on each medication's own page
+SLIM=json.dumps([{k:v for k,v in x.items() if k in ('id','name','cat','catName','aud','uses','side','forms','flavors','flavorMore','combos','isCombo','img','n')} for x in LIB],ensure_ascii=False)
+lib=open('_site/medications/index.html').read(); assert LIBJSON in lib; lib=lib.replace(LIBJSON,SLIM); k=lib.rindex('</div>',0,lib.index('<div class="page" id="p-med">'))
+open('_site/medications/index.html','w').write(lib[:k]+browse_block('/medications/')+lib[k:])
 # Old medication URLs that were renamed: send visitors (and search engines) to the new page
 for old_id,new_id in {'scream-cream':'topical-sildenafil-cream-for-women'}.items():
   os.makedirs('_site/medications/'+old_id,exist_ok=True)
@@ -175,5 +241,5 @@ shutil.copytree('src/logos','_site/logos'); shutil.copytree('src/forms','_site/f
 os.makedirs('_site/media',exist_ok=True); open('_site/media/README.txt','w').write('Retail page background video: save a short, silent, looping clip of your nonsterile compounding lab here as compounding-nonsterile.mp4 (MP4/H.264, 10-30 seconds, under 10 MB, 1920x1080). It plays softly behind the Retail Pharmacy banner. Until the file is here, the banner shows without video.\n')
 os.makedirs('_site/downloads',exist_ok=True); shutil.copy('src/downloads/hrt-order-form.pdf','_site/downloads/hrt-order-form.pdf')
 open('_site/robots.txt','w').write(f"User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n")
-open('_site/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{DOMAIN}{u}</loc><lastmod>2026-10-05</lastmod><priority>{"1.0" if u in ("/","/low-dose-naltrexone/") else ("0.6" if u.count("/")>2 and u.startswith("/medications/") else "0.8")}</priority></url>\n' for u in list(URL.values())+MEDURLS)+'</urlset>\n')
+open('_site/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{DOMAIN}{u}</loc><lastmod>2026-10-06</lastmod><priority>{"1.0" if u in ("/","/low-dose-naltrexone/") else ("0.6" if u.count("/")>2 and u.startswith("/medications/") else "0.8")}</priority></url>\n' for u in list(URL.values())+MEDURLS)+'</urlset>\n')
 print('built')
