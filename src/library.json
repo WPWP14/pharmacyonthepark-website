@@ -55,6 +55,13 @@
     "Can I give acetaminophen to my dog or cat?",
     "No, not unless your veterinarian specifically tells you to. Acetaminophen is toxic to cats even in small amounts and can seriously harm dogs."
    ]
+  ],
+  "pron": "a SEET a MIN oh fen",
+  "sideList": [
+   "Nausea",
+   "Stomach upset",
+   "Headache",
+   "Skin rash"
   ]
  },
  {
@@ -123,6 +130,15 @@
     "Can I take acetazolamide if I am allergic to sulfa drugs?",
     "Acetazolamide is a sulfonamide, so people with a sulfa allergy may react to it. Tell your prescriber about any sulfa allergy before starting."
    ]
+  ],
+  "pron": "a SEET a ZOLE a mide",
+  "sideList": [
+   "Tingling",
+   "Taste changes",
+   "Frequent urination",
+   "Tiredness",
+   "Loss of appetite",
+   "Nausea"
   ]
  },
  {
@@ -178,6 +194,14 @@
     "Is adapalene the same as tretinoin?",
     "Both are topical retinoids used for acne, but they are different molecules. Your prescriber decides which one fits you."
    ]
+  ],
+  "pron": "a DAP a leen",
+  "sideList": [
+   "Dryness",
+   "Peeling",
+   "Redness",
+   "Stinging or burning",
+   "Itching"
   ]
  },
  {
@@ -246,6 +270,14 @@
     "Should I see a dentist while on alendronate?",
     "It is a good idea to tell your dentist you take it, especially before dental surgery or extractions. Rarely, bisphosphonates are linked to jaw bone problems."
    ]
+  ],
+  "pron": "a LEN droe nate",
+  "sideList": [
+   "Heartburn",
+   "Stomach upset",
+   "Esophageal irritation",
+   "Constipation or diarrhea",
+   "Mild bone or muscle aches"
   ]
  },
  {
@@ -297,6 +329,12 @@
     "Can alpha lipoic acid lower my blood sugar?",
     "It may lower blood sugar somewhat, which matters if you take diabetes medicines. Your prescriber may adjust your plan or ask you to monitor more often."
    ]
+  ],
+  "pron": "AL fa lip OH ik AS id",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Mild skin rash"
   ]
  },
  {
@@ -360,6 +398,12 @@
     "Can I give it at a different time than meals?",
     "It binds phosphorus from food, so it is given mixed into or right with meals. Ask your veterinarian before changing the timing."
    ]
+  ],
+  "pron": "a LOO mi num hye DROX ide",
+  "sideList": [
+   "Constipation",
+   "Decreased appetite",
+   "Mild stomach upset"
   ]
  },
  {
@@ -436,6 +480,15 @@
     "Is amantadine still used for the flu?",
     "It is no longer recommended for influenza in the US because most flu viruses have become resistant to it. Today it is used mainly for Parkinson's in people and chronic pain in pets."
    ]
+  ],
+  "pron": "a MAN ta deen",
+  "sideList": [
+   "Stomach upset",
+   "Restlessness",
+   "Diarrhea",
+   "Dizziness",
+   "Dry mouth",
+   "Trouble sleeping"
   ]
  },
  {
@@ -507,6 +560,12 @@
     "Is amikacin used in cats?",
     "Veterinarians do use it in cats, but cats can be more sensitive to hearing, balance and kidney effects. Your veterinarian decides if it is right for your cat."
    ]
+  ],
+  "pron": "am i KAY sin",
+  "sideList": [
+   "Local irritation",
+   "Redness where applied",
+   "Mild itching"
   ]
  },
  {
@@ -584,6 +643,15 @@
     "Will amitriptyline make my cat sleepy?",
     "Drowsiness is a common effect in cats, especially at the start. Tell your veterinarian if your cat seems very sleepy, wobbly or stops eating."
    ]
+  ],
+  "pron": "a mee TRIP ti leen",
+  "sideList": [
+   "Drowsiness",
+   "Dry mouth",
+   "Constipation",
+   "Dizziness",
+   "Weight gain",
+   "Blurred vision"
   ]
  },
  {
@@ -658,6 +726,15 @@
     "Can I eat grapefruit while taking amlodipine?",
     "Grapefruit has only a small effect on amlodipine for most people, but check with your prescriber if you eat a lot of it."
    ]
+  ],
+  "pron": "am LOE di peen",
+  "sideList": [
+   "Ankle swelling",
+   "Flushing",
+   "Low blood pressure",
+   "Gum overgrowth in dogs",
+   "Tiredness",
+   "Headache"
   ]
  },
  {
@@ -704,6 +781,12 @@
     "Can my pet stay on ammonium chloride long term?",
     "Some pets use it for a set time while others use it longer. Your veterinarian decides and will monitor urine and blood tests."
    ]
+  ],
+  "pron": "a MOE nee um KLOR ide",
+  "sideList": [
+   "Stomach upset",
+   "Vomiting",
+   "Decreased appetite"
   ]
  },
  {
@@ -787,6 +870,14 @@
     "Can I drink alcohol while taking amoxicillin?",
     "Alcohol does not directly interact with amoxicillin, but it can worsen stomach upset and may slow recovery from illness."
    ]
+  ],
+  "pron": "a MOX i SIL in",
+  "sideList": [
+   "Diarrhea",
+   "Stomach upset",
+   "Nausea",
+   "Skin rash",
+   "Vomiting"
   ]
  },
  {
@@ -858,6 +949,13 @@
     "Why does amoxicillin/clavulanate cause diarrhea?",
     "It can upset the normal gut bacteria. Taking it with food may help, but call your prescriber or veterinarian if diarrhea is severe or bloody."
    ]
+  ],
+  "sideList": [
+   "Diarrhea",
+   "Stomach upset",
+   "Nausea",
+   "Vomiting",
+   "Skin rash"
   ]
  },
  {
@@ -918,6 +1016,12 @@
     "How long will I use an amphotericin B sinus rinse?",
     "Length of treatment varies, and your ear, nose and throat specialist decides based on follow-up exams."
    ]
+  ],
+  "pron": "am foe TER i sin bee",
+  "sideList": [
+   "Nasal irritation",
+   "Nasal stinging",
+   "Mild nosebleeds"
   ]
  },
  {
@@ -971,6 +1075,15 @@
     "Can anastrozole cause joint pain?",
     "Yes, joint and muscle aches are common. Tell your prescriber, since there may be ways to manage them."
    ]
+  ],
+  "pron": "an AS troe zole",
+  "sideList": [
+   "Joint aches",
+   "Hot flashes",
+   "Fatigue",
+   "Headache",
+   "Nausea",
+   "Mood changes"
   ]
  },
  {
@@ -1025,6 +1138,13 @@
     "Why is apomorphine placed in the eye?",
     "The tissue under the eyelid absorbs it quickly, and the veterinarian can rinse it out once the dog vomits to limit lingering side effects."
    ]
+  ],
+  "pron": "a poe MOR feen",
+  "sideList": [
+   "Vomiting (intended)",
+   "Drowsiness",
+   "Drooling",
+   "Red or irritated eyes"
   ]
  },
  {
@@ -1081,6 +1201,15 @@
     "What is low-dose aripiprazole?",
     "Some prescribers use much smaller amounts than usual for certain conditions, which can be off-label. Compounded capsules can make these small strengths possible."
    ]
+  ],
+  "pron": "AIR i PIP ra zole",
+  "sideList": [
+   "Restlessness",
+   "Nausea",
+   "Headache",
+   "Dizziness",
+   "Drowsiness",
+   "Trouble sleeping"
   ]
  },
  {
@@ -1156,6 +1285,14 @@
     "Can I take atenolol if I have asthma?",
     "Beta-blockers can tighten the airways, so people with asthma need extra care. Your prescriber decides whether it is appropriate."
    ]
+  ],
+  "pron": "a TEN oh lol",
+  "sideList": [
+   "Tiredness",
+   "Slow heart rate",
+   "Low blood pressure",
+   "Dizziness",
+   "Cold hands or feet"
   ]
  },
  {
@@ -1220,6 +1357,13 @@
     "Why can't cats take azathioprine?",
     "Cats break it down poorly and can develop severe, sometimes life-threatening bone marrow suppression even at small amounts."
    ]
+  ],
+  "pron": "AY za THYE oh preen",
+  "sideList": [
+   "Vomiting",
+   "Diarrhea",
+   "Decreased appetite",
+   "Nausea"
   ]
  },
  {
@@ -1280,6 +1424,14 @@
     "Can I use azelaic acid with retinoids?",
     "Many people use them together, often at different times of day, but this may add to dryness. Ask your prescriber how to fit them into your routine."
    ]
+  ],
+  "pron": "AZ e LAY ik AS id",
+  "sideList": [
+   "Mild burning",
+   "Itching",
+   "Stinging",
+   "Dryness",
+   "Redness"
   ]
  },
  {
@@ -1338,6 +1490,12 @@
     "Will melasma come back after I stop?",
     "Melasma often returns, especially with sun, heat or hormone changes, so many people need ongoing sun protection and a maintenance plan from their prescriber."
    ]
+  ],
+  "sideList": [
+   "Stinging",
+   "Itching",
+   "Redness",
+   "Dryness"
   ]
  },
  {
@@ -1392,6 +1550,12 @@
     "How long does it take to see results?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "sideList": [
+   "Stinging",
+   "Itching",
+   "Redness",
+   "Dryness"
   ]
  },
  {
@@ -1463,6 +1627,14 @@
     "Is azithromycin used in cats?",
     "Veterinarians commonly use it off-label in cats for some respiratory and other infections. Your veterinarian decides the amount and length of treatment."
    ]
+  ],
+  "pron": "az ITH roe MYE sin",
+  "sideList": [
+   "Stomach upset",
+   "Diarrhea",
+   "Nausea",
+   "Belly pain",
+   "Vomiting"
   ]
  },
  {
@@ -1529,6 +1701,15 @@
     "What should I do if my dog licks baclofen cream?",
     "Call your veterinarian or a pet poison helpline right away. Dogs are very sensitive to baclofen, and even a small amount can cause serious problems."
    ]
+  ],
+  "pron": "BAK loe fen",
+  "sideList": [
+   "Drowsiness",
+   "Weakness",
+   "Dizziness",
+   "Nausea",
+   "Tiredness",
+   "Headache"
   ]
  },
  {
@@ -1583,6 +1764,12 @@
     "Why is EDTA in BEG spray?",
     "EDTA is included because it acts on biofilms, slimy layers bacteria build to protect themselves. This use is off-label."
    ]
+  ],
+  "sideList": [
+   "Nasal stinging",
+   "Nasal burning",
+   "Nasal irritation",
+   "Occasional nosebleeds"
   ]
  },
  {
@@ -1656,6 +1843,14 @@
     "Can benazepril cause a cough?",
     "A dry cough is a known side effect of ACE inhibitors in people. Tell your prescriber if it is bothersome."
    ]
+  ],
+  "pron": "ben AY ze pril",
+  "sideList": [
+   "Low blood pressure",
+   "Decreased appetite",
+   "Dizziness",
+   "Dry cough",
+   "Tiredness"
   ]
  },
  {
@@ -1710,6 +1905,13 @@
     "How long does benzocaine numbing last?",
     "How long numbing lasts varies. Your prescriber or provider will tell you what to expect and how long to leave it on."
    ]
+  ],
+  "pron": "BEN zoe kane",
+  "sideList": [
+   "Local irritation",
+   "Stinging",
+   "Redness",
+   "Itching"
   ]
  },
  {
@@ -1760,6 +1962,13 @@
     "Can I take betahistine with allergy medicines?",
     "Antihistamines may work against betahistine. Ask your prescriber before using allergy medicines."
    ]
+  ],
+  "pron": "BAY ta HIS teen",
+  "sideList": [
+   "Headache",
+   "Stomach upset",
+   "Nausea",
+   "Bloating"
   ]
  },
  {
@@ -1820,6 +2029,14 @@
     "Can betamethasone cream be used on nipples while breastfeeding?",
     "Prescribers sometimes use it in nipple creams. Follow your prescriber's directions about the amount and whether to wipe it off before feeding."
    ]
+  ],
+  "pron": "BAY ta METH a sone",
+  "sideList": [
+   "Skin thinning",
+   "Burning or stinging",
+   "Itching",
+   "Dryness",
+   "Skin discoloration"
   ]
  },
  {
@@ -1888,6 +2105,15 @@
     "Is bethanechol used in cats?",
     "Veterinarians use it in cats that cannot empty their bladder fully. It is not used when there is a blockage, so your veterinarian checks for that first."
    ]
+  ],
+  "pron": "be THAN e kol",
+  "sideList": [
+   "Drooling",
+   "Diarrhea",
+   "Cramping",
+   "Frequent urination",
+   "Sweating",
+   "Flushing"
   ]
  },
  {
@@ -1961,6 +2187,15 @@
     "Can my partner or pet be exposed to Biest cream?",
     "Yes, hormone creams can transfer through skin contact. Wash your hands, cover the area once dry and keep children and pets from touching it."
    ]
+  ],
+  "pron": "BYE est",
+  "sideList": [
+   "Breast tenderness",
+   "Bloating",
+   "Headache",
+   "Spotting",
+   "Nausea",
+   "Mood changes"
   ]
  },
  {
@@ -2020,6 +2255,12 @@
     "Why does biotin affect lab tests?",
     "Some lab tests use biotin as part of how they measure results, so extra biotin in the blood can make results falsely high or low, including some thyroid and heart tests."
    ]
+  ],
+  "pron": "BYE oh tin",
+  "sideList": [
+   "Mild stomach upset",
+   "Lab test interference",
+   "Skin rash"
   ]
  },
  {
@@ -2081,6 +2322,12 @@
     "Can I use BLT cream at home on a large area?",
     "No. Using it on large areas, broken skin or under a wrap can lead to dangerous reactions. Use it only as your prescriber or provider directs."
    ]
+  ],
+  "sideList": [
+   "Redness",
+   "Swelling",
+   "Skin paleness",
+   "Temporary numbness"
   ]
  },
  {
@@ -2137,6 +2384,13 @@
     "Why is boric acid used for yeast infections?",
     "Prescribers may use it off-label when yeast keeps coming back or is a type that doesn't respond to usual antifungal medicines."
    ]
+  ],
+  "pron": "BOR ik AS id",
+  "sideList": [
+   "Local irritation",
+   "Burning",
+   "Watery discharge",
+   "Itching"
   ]
  },
  {
@@ -2191,6 +2445,14 @@
     "What is rebound redness?",
     "Some people notice redness returning stronger than before as the medicine wears off. Use it only as directed, and tell your prescriber if it happens."
    ]
+  ],
+  "pron": "bri MOE ni deen",
+  "sideList": [
+   "Irritation",
+   "Rebound redness",
+   "Flushing",
+   "Burning",
+   "Itching"
   ]
  },
  {
@@ -2258,6 +2520,14 @@
     "Can budesonide be used for my dog's IBD?",
     "Veterinarians use it off-label in dogs and cats with inflammatory bowel disease. Your veterinarian decides if it fits your pet."
    ]
+  ],
+  "pron": "byoo DES oh nide",
+  "sideList": [
+   "Increased thirst",
+   "Increased appetite",
+   "Mild steroid effects",
+   "Headache",
+   "Nausea"
   ]
  },
  {
@@ -2317,6 +2587,15 @@
     "Can bupropion cause sexual side effects?",
     "Sexual side effects are possible with antidepressants, and everyone responds differently. Tell your prescriber about any side effects."
    ]
+  ],
+  "pron": "byoo PROE pee on",
+  "sideList": [
+   "Dry mouth",
+   "Trouble sleeping",
+   "Headache",
+   "Anxiety",
+   "Nausea",
+   "Weight loss"
   ]
  },
  {
@@ -2388,6 +2667,14 @@
     "Is buspirone used for spraying in cats?",
     "Veterinarians sometimes use it off-label for urine marking in cats, along with checking for medical causes and changes at home."
    ]
+  ],
+  "pron": "byoo SPYE rone",
+  "sideList": [
+   "Dizziness",
+   "Nausea",
+   "Headache",
+   "Drowsiness",
+   "Nervousness"
   ]
  },
  {
@@ -2452,6 +2739,15 @@
     "How is cabergoline used for false pregnancy in dogs?",
     "Veterinarians may use it off-label for false pregnancy in dogs because it lowers prolactin. Your veterinarian decides the plan."
    ]
+  ],
+  "pron": "ca BER goe leen",
+  "sideList": [
+   "Nausea",
+   "Dizziness",
+   "Vomiting",
+   "Headache",
+   "Tiredness",
+   "Constipation"
   ]
  },
  {
@@ -2505,6 +2801,13 @@
     "How long until I see results from a caffeine hair serum?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "ka FEEN",
+  "sideList": [
+   "Scalp irritation",
+   "Itching",
+   "Redness",
+   "Dryness"
   ]
  },
  {
@@ -2559,6 +2862,15 @@
     "Why is calcipotriene dangerous for pets?",
     "Dogs and cats who chew or lick the tube can get dangerously high calcium, which can damage the kidneys and heart. Call your veterinarian or a pet poison helpline right away if this happens."
    ]
+  ],
+  "pron": "kal si POE try een",
+  "sideList": [
+   "Irritation",
+   "Burning",
+   "Itching",
+   "Redness",
+   "Dry skin",
+   "Peeling"
   ]
  },
  {
@@ -2624,6 +2936,14 @@
     "Why does my pet need blood tests on calcitriol?",
     "Too much can raise calcium to dangerous levels, so regular checks let your veterinarian follow calcium and adjust the plan."
    ]
+  ],
+  "pron": "kal si TRYE ol",
+  "sideList": [
+   "High calcium",
+   "Increased thirst",
+   "Nausea",
+   "Constipation",
+   "Decreased appetite"
   ]
  },
  {
@@ -2693,6 +3013,13 @@
     "Can I give my pet calcium carbonate antacid tablets?",
     "Only if your veterinarian recommends it and approves the product. Some flavored or sugar-free human products contain ingredients, such as xylitol, that are dangerous for dogs."
    ]
+  ],
+  "pron": "KAL see um KAR bo nate",
+  "sideList": [
+   "Constipation",
+   "Gas",
+   "Bloating",
+   "Stomach upset"
   ]
  },
  {
@@ -2752,6 +3079,12 @@
     "Why is vitamin B5 in hair formulas?",
     "Vitamin B5 plays a role in skin and hair cell metabolism, which is why it is often included in hair formulas. Your prescriber decides whether it is right for you."
    ]
+  ],
+  "pron": "KAL see um pan toe THEN ate",
+  "sideList": [
+   "Rare stomach upset",
+   "Diarrhea",
+   "Mild nausea"
   ]
  },
  {
@@ -2812,6 +3145,14 @@
     "What should I do if capsaicin gets in my eyes?",
     "Rinse with plenty of cool water. Using a little vegetable oil on the skin before washing with soap can help remove it, and get medical care if pain continues."
    ]
+  ],
+  "pron": "kap SAY sin",
+  "sideList": [
+   "Burning where applied",
+   "Warmth where applied",
+   "Redness",
+   "Stinging",
+   "Coughing or sneezing"
   ]
  },
  {
@@ -2873,6 +3214,14 @@
     "How long does carprofen take to work?",
     "It varies from pet to pet. Your veterinarian will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "kar PROE fen",
+  "sideList": [
+   "Stomach upset",
+   "Vomiting",
+   "Diarrhea",
+   "Decreased appetite",
+   "Tiredness"
   ]
  },
  {
@@ -2937,6 +3286,13 @@
     "Can my dog take cefpodoxime if allergic to penicillin?",
     "Cefpodoxime is related to penicillin, and some pets allergic to one react to the other. Tell your veterinarian about any past drug reactions."
    ]
+  ],
+  "pron": "SEF poe DOX eem",
+  "sideList": [
+   "Stomach upset",
+   "Diarrhea",
+   "Vomiting",
+   "Decreased appetite"
   ]
  },
  {
@@ -2998,6 +3354,13 @@
     "How long does an ear pack stay in?",
     "Ear packs are designed to stay in the ear and release medicine over several days. Your veterinarian will tell you when to return for a recheck."
    ]
+  ],
+  "pron": "sef TAY zi deem",
+  "sideList": [
+   "Local irritation",
+   "Redness",
+   "Itching",
+   "Mild stinging"
   ]
  },
  {
@@ -3070,6 +3433,14 @@
     "How long does cephalexin take to work?",
     "It varies from person to person, or pet to pet. Your prescriber or veterinarian will tell you what to expect and when to follow up. Keep taking it for the full time prescribed."
    ]
+  ],
+  "pron": "SEF a LEX in",
+  "sideList": [
+   "Stomach upset",
+   "Diarrhea",
+   "Nausea",
+   "Vomiting",
+   "Decreased appetite"
   ]
  },
  {
@@ -3141,6 +3512,13 @@
     "How fast does cetirizine work?",
     "It varies from person to person, or pet to pet. Your prescriber or veterinarian will tell you what to expect and how often to use it."
    ]
+  ],
+  "pron": "se TIR i zeen",
+  "sideList": [
+   "Drowsiness",
+   "Dry mouth",
+   "Tiredness",
+   "Headache"
   ]
  },
  {
@@ -3193,6 +3571,13 @@
     "What should I watch for while my cat takes chlorambucil?",
     "Your veterinarian will check blood counts regularly and watch for side effects. Call right away for fever, lethargy, pale gums, unusual bruising or bleeding, severe vomiting or diarrhea, or not eating."
    ]
+  ],
+  "pron": "klor AM byoo sil",
+  "sideList": [
+   "Vomiting",
+   "Decreased appetite",
+   "Diarrhea",
+   "Tiredness"
   ]
  },
  {
@@ -3246,6 +3631,13 @@
     "Why is chloramphenicol used if it has risks?",
     "It is active against some bacteria that resist other antibiotics. Your prescriber or veterinarian weighs the risks when other options are not suitable."
    ]
+  ],
+  "pron": "KLOR am FEN i kol",
+  "sideList": [
+   "Vomiting",
+   "Diarrhea",
+   "Decreased appetite",
+   "Nausea"
   ]
  },
  {
@@ -3316,6 +3708,14 @@
     "Does chlorpheniramine make you sleepy?",
     "Yes, drowsiness is common because it is an older antihistamine. Some people and pets become sleepy while a few become restless."
    ]
+  ],
+  "pron": "KLOR fen IR a meen",
+  "sideList": [
+   "Drowsiness",
+   "Dry mouth",
+   "Dizziness",
+   "Constipation",
+   "Blurred vision"
   ]
  },
  {
@@ -3385,6 +3785,12 @@
     "How long does it take to raise vitamin D levels?",
     "It varies from person to person. Your prescriber will tell you what to expect and may recheck a blood level to guide the dose."
    ]
+  ],
+  "pron": "KOE le kal SIF er ol",
+  "sideList": [
+   "Constipation",
+   "Nausea",
+   "Stomach upset"
   ]
  },
  {
@@ -3441,6 +3847,14 @@
     "Is this the same as cholestyramine powder taken by mouth?",
     "It is the same ingredient, but here it is mixed into an ointment for the skin and is not meant to be swallowed."
    ]
+  ],
+  "pron": "koe LES tir a meen",
+  "sideList": [
+   "Local irritation",
+   "Constipation",
+   "Bloating",
+   "Gas",
+   "Stomach upset"
   ]
  },
  {
@@ -3505,6 +3919,15 @@
     "What are signs of low calcium on cinacalcet?",
     "Watch for tingling around the mouth, muscle cramps or twitching. Contact your prescriber or veterinarian if these occur."
    ]
+  ],
+  "pron": "sin a KAL set",
+  "sideList": [
+   "Nausea",
+   "Vomiting",
+   "Low calcium",
+   "Diarrhea",
+   "Decreased appetite",
+   "Dizziness"
   ]
  },
  {
@@ -3581,6 +4004,15 @@
     "Can dogs take ciprofloxacin?",
     "Veterinarians sometimes use it off-label in adult dogs, and it is generally avoided in growing puppies. Your veterinarian decides whether it is appropriate for your dog."
    ]
+  ],
+  "pron": "SIP roe FLOX a sin",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Diarrhea",
+   "Dizziness",
+   "Headache",
+   "Sun sensitivity"
   ]
  },
  {
@@ -3649,6 +4081,13 @@
     "How long does cisapride take to work in cats?",
     "It varies from pet to pet. Your veterinarian will tell you what to expect and may adjust the plan based on how your cat does."
    ]
+  ],
+  "pron": "SIS a pride",
+  "sideList": [
+   "Diarrhea",
+   "Cramping",
+   "Belly pain",
+   "Vomiting"
   ]
  },
  {
@@ -3725,6 +4164,14 @@
     "Can cats take clindamycin?",
     "Veterinarians commonly prescribe it for cats for dental infections and toxoplasmosis, and your veterinarian decides whether it is appropriate for your cat. Follow each dose with food or a little water, since capsules can irritate the esophagus."
    ]
+  ],
+  "pron": "KLIN da MYE sin",
+  "sideList": [
+   "Stomach upset",
+   "Diarrhea",
+   "Nausea",
+   "Vomiting",
+   "Metallic taste"
   ]
  },
  {
@@ -3792,6 +4239,14 @@
     "Why is clobetasol used for lichen sclerosus?",
     "Lichen sclerosus involves inflammation and itching, and prescribers often choose a strong steroid for it. Your prescriber sets a schedule and follows you over time."
    ]
+  ],
+  "pron": "kloe BAY ta sol",
+  "sideList": [
+   "Skin thinning",
+   "Burning or stinging",
+   "Itching",
+   "Dryness",
+   "Stretch marks"
   ]
  },
  {
@@ -3849,6 +4304,15 @@
     "Why do men take clomiphene?",
     "It is used off-label in some men with low testosterone. Your prescriber decides if it fits your situation."
    ]
+  ],
+  "pron": "KLOE mi feen",
+  "sideList": [
+   "Hot flashes",
+   "Mood changes",
+   "Visual disturbances",
+   "Headache",
+   "Bloating",
+   "Breast tenderness"
   ]
  },
  {
@@ -3915,6 +4379,15 @@
     "Can clomipramine be given with flea and tick products?",
     "Avoid products containing amitraz, which can interact. Check with your veterinarian before using any flea or tick product."
    ]
+  ],
+  "pron": "kloe MI pra meen",
+  "sideList": [
+   "Drowsiness",
+   "Dry mouth",
+   "Constipation",
+   "Dizziness",
+   "Nausea",
+   "Vomiting"
   ]
  },
  {
@@ -3974,6 +4447,15 @@
     "Does clonidine make you sleepy?",
     "Drowsiness is common, especially at first. Avoid driving until you know how it affects you."
    ]
+  ],
+  "pron": "KLON i deen",
+  "sideList": [
+   "Drowsiness",
+   "Dry mouth",
+   "Low blood pressure",
+   "Dizziness",
+   "Tiredness",
+   "Constipation"
   ]
  },
  {
@@ -4046,6 +4528,13 @@
     "Should I stop clopidogrel before surgery?",
     "Only your prescriber can decide. Tell your surgeon or dentist you take it so they can plan with your prescriber."
    ]
+  ],
+  "pron": "kloh PID oh grel",
+  "sideList": [
+   "Bleeding",
+   "Bruising",
+   "Stomach upset",
+   "Diarrhea"
   ]
  },
  {
@@ -4100,6 +4589,13 @@
     "What is the difference between ubiquinone and ubiquinol?",
     "They are two forms of coenzyme Q10, and the body converts one into the other. Your prescriber can tell you which form was ordered."
    ]
+  ],
+  "pron": "koe EN zime kyoo ten",
+  "sideList": [
+   "Mild stomach upset",
+   "Nausea",
+   "Diarrhea",
+   "Decreased appetite"
   ]
  },
  {
@@ -4156,6 +4652,12 @@
     "How long does collagen take to work for hair or skin?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "KOL a jen",
+  "sideList": [
+   "Mild stomach upset",
+   "Feeling of fullness",
+   "Bloating"
   ]
  },
  {
@@ -4229,6 +4731,14 @@
     "How long before I notice changes?",
     "It varies from person to person. Your prescriber will tell you what to expect and may adjust the formula based on symptoms and lab results."
    ]
+  ],
+  "sideList": [
+   "Breast tenderness",
+   "Spotting",
+   "Bloating",
+   "Acne",
+   "Hair growth",
+   "Irritation where applied"
   ]
  },
  {
@@ -4294,6 +4804,13 @@
     "Why do cats with bowel disease need B12?",
     "B12 is absorbed in the lower small intestine, so bowel or pancreas disease can lead to low levels. Your veterinarian checks B12 levels and decides whether a supplement is needed."
    ]
+  ],
+  "pron": "sye AN oh koe BAL a min",
+  "sideList": [
+   "Rare stomach upset",
+   "Mild diarrhea",
+   "Itching",
+   "Headache"
   ]
  },
  {
@@ -4372,6 +4889,14 @@
     "Can I eat grapefruit while taking cyclosporine?",
     "No. Grapefruit can raise cyclosporine levels in the blood and increase side effects."
    ]
+  ],
+  "pron": "SYE kloe SPOR een",
+  "sideList": [
+   "Vomiting",
+   "Diarrhea",
+   "Gum overgrowth",
+   "Decreased appetite",
+   "Excess hair growth"
   ]
  },
  {
@@ -4436,6 +4961,14 @@
     "Why is my cat hyper on cyproheptadine?",
     "Some cats become restless or vocal instead of sleepy. Let your veterinarian know if this happens."
    ]
+  ],
+  "pron": "si proe HEP ta deen",
+  "sideList": [
+   "Drowsiness",
+   "Dry mouth",
+   "Excitability in cats",
+   "Increased appetite",
+   "Weight gain"
   ]
  },
  {
@@ -4491,6 +5024,13 @@
     "How long do dogs take penicillamine for copper liver disease?",
     "Treatment often lasts months, and your veterinarian uses liver tests to decide when to change or stop it."
    ]
+  ],
+  "pron": "dee pen i SIL a meen",
+  "sideList": [
+   "Nausea",
+   "Vomiting",
+   "Decreased appetite",
+   "Taste changes"
   ]
  },
  {
@@ -4573,6 +5113,15 @@
     "Why does my dog drink so much water on dexamethasone?",
     "Steroids commonly increase thirst and urination. Keep fresh water available and tell your veterinarian if it is extreme."
    ]
+  ],
+  "pron": "DEX a METH a sone",
+  "sideList": [
+   "Increased thirst",
+   "Increased appetite",
+   "Mood changes",
+   "Frequent urination",
+   "Trouble sleeping",
+   "Panting in dogs"
   ]
  },
  {
@@ -4637,6 +5186,14 @@
     "How long does vaginal DHEA take to work?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "dee aitch ee AY",
+  "sideList": [
+   "Acne",
+   "Oily skin",
+   "Hair growth",
+   "Mood changes",
+   "Hair loss"
   ]
  },
  {
@@ -4698,6 +5255,13 @@
     "What should I do if my dog has a low blood sugar episode?",
     "Rub a little corn syrup or honey on the gums if your dog can swallow safely, then call your veterinarian right away."
    ]
+  ],
+  "pron": "dye az OX ide",
+  "sideList": [
+   "Vomiting",
+   "Decreased appetite",
+   "Diarrhea",
+   "Fluid retention"
   ]
  },
  {
@@ -4765,6 +5329,14 @@
     "How long does diclofenac cream take to work?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "dye KLOE fen ak",
+  "sideList": [
+   "Skin irritation",
+   "Dryness",
+   "Itching",
+   "Redness",
+   "Stomach upset"
   ]
  },
  {
@@ -4826,6 +5398,13 @@
     "How long does DES take to work for incontinence?",
     "It varies from pet to pet. Your veterinarian will tell you what to expect and will adjust the schedule based on how your dog does."
    ]
+  ],
+  "pron": "dye ETH il stil BES trol",
+  "sideList": [
+   "Swollen vulva",
+   "Attraction of male dogs",
+   "Decreased appetite",
+   "Vomiting"
   ]
  },
  {
@@ -4890,6 +5469,15 @@
     "Why is diltiazem used for fissures?",
     "It relaxes the anal sphincter muscle and increases blood flow to the area. Your prescriber decides whether it is right for you."
    ]
+  ],
+  "pron": "dil TYE a zem",
+  "sideList": [
+   "Low blood pressure",
+   "Slow heart rate",
+   "Headache",
+   "Dizziness",
+   "Ankle swelling",
+   "Decreased appetite"
   ]
  },
  {
@@ -4963,6 +5551,14 @@
     "Why is diphenhydramine in magic mouthwash?",
     "It has a mild numbing effect, which is why prescribers include it in some mouthwashes for mouth sores."
    ]
+  ],
+  "pron": "dye fen HYE dra meen",
+  "sideList": [
+   "Drowsiness",
+   "Dry mouth",
+   "Dizziness",
+   "Constipation",
+   "Excitability in some pets"
   ]
  },
  {
@@ -5026,6 +5622,13 @@
     "Can dogs take Lomotil?",
     "Veterinarians sometimes use it off-label in dogs. Use only as directed by your veterinarian."
    ]
+  ],
+  "sideList": [
+   "Drowsiness",
+   "Constipation",
+   "Dry mouth",
+   "Dizziness",
+   "Bloating"
   ]
  },
  {
@@ -5079,6 +5682,15 @@
     "Does DMSA remove other metals?",
     "It is mainly used for lead, though it may bind some other heavy metals. Your prescriber decides when it is appropriate."
    ]
+  ],
+  "pron": "SUK si mer",
+  "sideList": [
+   "Nausea",
+   "Diarrhea",
+   "Rash",
+   "Changes in liver values",
+   "Decreased appetite",
+   "Metallic taste"
   ]
  },
  {
@@ -5140,6 +5752,14 @@
     "Why is DMSO in my cream?",
     "It is a carrier that moves the other ingredients in the cream through the skin."
    ]
+  ],
+  "pron": "dee em ess OH",
+  "sideList": [
+   "Garlic-like breath or taste",
+   "Skin irritation",
+   "Itching",
+   "Redness",
+   "Dry skin"
   ]
  },
  {
@@ -5224,6 +5844,14 @@
     "How long does doxycycline take to work for acne?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "DOX i SYE kleen",
+  "sideList": [
+   "Stomach upset",
+   "Sun sensitivity",
+   "Nausea",
+   "Vomiting",
+   "Diarrhea"
   ]
  },
  {
@@ -5277,6 +5905,14 @@
     "Is drospirenone the same as progesterone?",
     "No. It is a synthetic progestin that acts like progesterone but also has mild anti-androgen and water-balancing effects."
    ]
+  ],
+  "pron": "droe SPYE re none",
+  "sideList": [
+   "Headache",
+   "Breast tenderness",
+   "Nausea",
+   "Irregular bleeding",
+   "Mood changes"
   ]
  },
  {
@@ -5334,6 +5970,15 @@
     "What happens if I stop duloxetine suddenly?",
     "Stopping suddenly may cause dizziness, nausea, irritability or other withdrawal symptoms. Your prescriber will reduce it slowly."
    ]
+  ],
+  "pron": "doo LOX e teen",
+  "sideList": [
+   "Nausea",
+   "Dry mouth",
+   "Drowsiness",
+   "Sweating",
+   "Constipation",
+   "Dizziness"
   ]
  },
  {
@@ -5391,6 +6036,14 @@
     "Can I donate blood while taking dutasteride?",
     "No. Men taking dutasteride should wait at least 6 months after the last dose before donating blood."
    ]
+  ],
+  "pron": "doo TAS teer ide",
+  "sideList": [
+   "Decreased libido",
+   "Erectile problems",
+   "Ejaculation changes",
+   "Breast tenderness",
+   "Breast enlargement"
   ]
  },
  {
@@ -5451,6 +6104,12 @@
     "Should I clean my dog's ears after an ear pack is placed?",
     "Usually not. Cleaning can remove the medicine early, so follow your veterinarian's instructions."
    ]
+  ],
+  "sideList": [
+   "Temporary head shaking",
+   "Ear irritation",
+   "Ear scratching",
+   "Mild ear discharge"
   ]
  },
  {
@@ -5511,6 +6170,11 @@
     "Why is EDTA added to a sinus spray?",
     "Chronic sinus infections often involve biofilms, a protective slime that shields bacteria. EDTA is added because it acts on biofilms, and your prescriber decides whether it fits your treatment."
    ]
+  ],
+  "sideList": [
+   "Local irritation",
+   "Mild stinging",
+   "Redness"
   ]
  },
  {
@@ -5588,6 +6252,15 @@
     "How long does enalapril take to work?",
     "It varies from person to person, and pet to pet. Your prescriber or veterinarian will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "e NAL a pril",
+  "sideList": [
+   "Low blood pressure",
+   "Dry cough in people",
+   "Dizziness",
+   "Tiredness",
+   "Changes in kidney values",
+   "Decreased appetite in pets"
   ]
  },
  {
@@ -5642,6 +6315,15 @@
     "How long does enclomiphene take to work?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up. Your prescriber will recheck blood work to decide next steps."
    ]
+  ],
+  "pron": "en KLOM i feen",
+  "sideList": [
+   "Headache",
+   "Hot flashes",
+   "Mood changes",
+   "Visual disturbances",
+   "Nausea",
+   "Acne"
   ]
  },
  {
@@ -5722,6 +6404,13 @@
     "Can puppies take enrofloxacin?",
     "It is usually avoided in young, growing dogs because it can harm developing joints. Your veterinarian will choose a different antibiotic when possible."
    ]
+  ],
+  "pron": "en roe FLOX a sin",
+  "sideList": [
+   "Vomiting",
+   "Diarrhea",
+   "Decreased appetite",
+   "Stomach upset"
   ]
  },
  {
@@ -5777,6 +6466,13 @@
     "How long does it take to raise vitamin D levels?",
     "It varies from person to person, and pet to pet. Your prescriber or veterinarian will recheck levels and tell you when to follow up."
    ]
+  ],
+  "pron": "er goe kal SIF er ol",
+  "sideList": [
+   "Usually well tolerated",
+   "Nausea with excess doses",
+   "Constipation with excess doses",
+   "High calcium with excess doses"
   ]
  },
  {
@@ -5833,6 +6529,14 @@
     "Can both men and women use a cream with ergoloid?",
     "Compounded sexual-health creams are prescribed for both men and women, and the ingredients are chosen by the prescriber for each person."
    ]
+  ],
+  "pron": "ER goe loid MES i lates",
+  "sideList": [
+   "Local irritation",
+   "Nausea",
+   "Flushing",
+   "Stomach upset",
+   "Nasal congestion"
   ]
  },
  {
@@ -5891,6 +6595,14 @@
     "Why does erythromycin upset my stomach?",
     "The same gut-stimulating effect can cause cramps, nausea or diarrhea. Ask your prescriber whether taking it with a small amount of food is OK."
    ]
+  ],
+  "pron": "e rith roe MYE sin",
+  "sideList": [
+   "Nausea",
+   "Vomiting",
+   "Stomach cramps",
+   "Diarrhea",
+   "Decreased appetite"
   ]
  },
  {
@@ -5969,6 +6681,15 @@
     "How long does estradiol take to work?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "es tra DYE ol",
+  "sideList": [
+   "Breast tenderness",
+   "Bloating",
+   "Nausea",
+   "Headache",
+   "Spotting",
+   "Mood changes"
   ]
  },
  {
@@ -6038,6 +6759,13 @@
     "How is estriol different from other estrogens?",
     "Estriol is a weaker estrogen, but it is still an estrogen. Its long-term effects have not been studied as much, so the same precautions generally apply."
    ]
+  ],
+  "pron": "ES tree ol",
+  "sideList": [
+   "Vaginal irritation",
+   "Vaginal discharge",
+   "Breast tenderness",
+   "Spotting"
   ]
  },
  {
@@ -6096,6 +6824,13 @@
     "Can I use this cream with my other skin care?",
     "Gentle cleansers, moisturizers and sunscreen are usually fine. Ask your prescriber before using acids, scrubs or other retinoids at the same time."
    ]
+  ],
+  "sideList": [
+   "Dryness",
+   "Peeling",
+   "Redness",
+   "Sun sensitivity",
+   "Mild stinging"
   ]
  },
  {
@@ -6167,6 +6902,13 @@
     "How soon should famciclovir be started for shingles?",
     "It is usually started as early as possible, ideally within 3 days of the rash appearing. Contact your prescriber as soon as you notice symptoms."
    ]
+  ],
+  "pron": "fam SYE kloe veer",
+  "sideList": [
+   "Headache",
+   "Nausea",
+   "Diarrhea",
+   "Stomach upset"
   ]
  },
  {
@@ -6241,6 +6983,13 @@
     "What is the difference between famotidine and omeprazole?",
     "Famotidine blocks one signal that triggers acid, while omeprazole blocks the acid pumps themselves. Your prescriber or veterinarian decides which fits."
    ]
+  ],
+  "pron": "fa MOE ti deen",
+  "sideList": [
+   "Headache",
+   "Constipation",
+   "Diarrhea",
+   "Dizziness"
   ]
  },
  {
@@ -6300,6 +7049,13 @@
     "Can women use finasteride?",
     "It must not be used by anyone who is or could become pregnant. Prescribers occasionally use it off-label for women after menopause, and only your prescriber can decide."
    ]
+  ],
+  "pron": "fi NAS teer ide",
+  "sideList": [
+   "Decreased libido",
+   "Erectile problems",
+   "Ejaculation changes",
+   "Breast tenderness"
   ]
  },
  {
@@ -6365,6 +7121,14 @@
     "Can cats take fluconazole?",
     "Veterinarians commonly prescribe it off-label for cats with fungal infections. Your veterinarian decides whether it is appropriate for your cat and sets the dose and monitoring."
    ]
+  ],
+  "pron": "floo KON a zole",
+  "sideList": [
+   "Nausea",
+   "Stomach upset",
+   "Headache",
+   "Diarrhea",
+   "Changes in liver values"
   ]
  },
  {
@@ -6426,6 +7190,15 @@
     "How long does redness last after treatment?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up. Some pinkness can last for a while after stopping."
    ]
+  ],
+  "pron": "flure oh YOOR a sil",
+  "sideList": [
+   "Redness",
+   "Crusting",
+   "Burning",
+   "Itching",
+   "Peeling",
+   "Sun sensitivity"
   ]
  },
  {
@@ -6506,6 +7279,16 @@
     "Can cats take fluoxetine?",
     "Veterinarians prescribe it off-label for cats with urine marking, anxiety or compulsive behaviors. Cats are often given a flavored liquid or small capsule at a cat-specific dose."
    ]
+  ],
+  "pron": "floo OX e teen",
+  "sideList": [
+   "Nausea",
+   "Decreased appetite",
+   "Trouble sleeping",
+   "Drowsiness",
+   "Restlessness",
+   "Headache",
+   "Sexual side effects"
   ]
  },
  {
@@ -6586,6 +7369,14 @@
     "How quickly does furosemide work?",
     "It varies from person to person, and pet to pet. Your prescriber or veterinarian will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "fyoor OH se mide",
+  "sideList": [
+   "Increased urination",
+   "Increased thirst",
+   "Dehydration",
+   "Low potassium",
+   "Dizziness"
   ]
  },
  {
@@ -6672,6 +7463,14 @@
     "Can gabapentin be stopped suddenly?",
     "Stopping suddenly can cause withdrawal symptoms or seizures in some people and pets, so dose changes should be guided by your prescriber or veterinarian."
    ]
+  ],
+  "pron": "GA ba PEN tin",
+  "sideList": [
+   "Drowsiness",
+   "Dizziness",
+   "Wobbliness in pets",
+   "Tiredness",
+   "Swelling in hands or feet"
   ]
  },
  {
@@ -6724,6 +7523,14 @@
     "Is diet still important while taking gemfibrozil?",
     "Yes. A low-fat diet and other lifestyle steps remain a key part of the plan for high triglycerides in people and dogs."
    ]
+  ],
+  "pron": "jem FYE broe zil",
+  "sideList": [
+   "Stomach upset",
+   "Indigestion",
+   "Stomach pain",
+   "Diarrhea",
+   "Nausea"
   ]
  },
  {
@@ -6789,6 +7596,13 @@
     "Why use gentamicin in a nasal spray?",
     "Applying it in the nose puts the antibiotic directly where a sinus infection is while keeping very little in the bloodstream. Your prescriber decides whether this approach fits."
    ]
+  ],
+  "pron": "jen ta MYE sin",
+  "sideList": [
+   "Local irritation",
+   "Redness",
+   "Itching",
+   "Mild stinging"
   ]
  },
  {
@@ -6845,6 +7659,14 @@
     "Is tingling normal with glycolic acid?",
     "Mild tingling for a minute or two is common. Rinse it off and call your prescriber if you have strong burning, blistering or lasting redness."
    ]
+  ],
+  "pron": "glye KOL ik AS id",
+  "sideList": [
+   "Skin irritation",
+   "Stinging",
+   "Redness",
+   "Peeling",
+   "Sun sensitivity"
   ]
  },
  {
@@ -6898,6 +7720,14 @@
     "What is the difference between gonadorelin and hCG?",
     "Gonadorelin acts on the pituitary gland, prompting it to release LH and FSH. hCG acts directly on the testicles, mimicking LH."
    ]
+  ],
+  "pron": "goe NAD oh REL in",
+  "sideList": [
+   "Headache",
+   "Flushing",
+   "Nausea",
+   "Mouth irritation with troches",
+   "Injection site irritation"
   ]
  },
  {
@@ -6964,6 +7794,14 @@
     "How long does ringworm treatment take?",
     "Treatment often lasts weeks for skin ringworm, longer for the scalp, and months for nails. Your prescriber or veterinarian decides when to stop."
    ]
+  ],
+  "pron": "gris ee oh FUL vin",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Vomiting",
+   "Headache",
+   "Sun sensitivity"
   ]
  },
  {
@@ -7027,6 +7865,12 @@
     "Is GS-441524 the same as remdesivir?",
     "No, but they are closely related. Remdesivir is converted in the body into GS-441524, and veterinarians may use either as part of FIP treatment."
    ]
+  ],
+  "sideList": [
+   "Mild stomach upset",
+   "Changes in liver values",
+   "Injection site pain",
+   "Decreased appetite"
   ]
  },
  {
@@ -7092,6 +7936,13 @@
     "Can I give my dog Mucinex?",
     "Do not give human cough products to pets without your veterinarian's approval. Many contain extra ingredients that are dangerous to dogs and cats."
    ]
+  ],
+  "pron": "gwye FEN e sin",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Dizziness",
+   "Headache"
   ]
  },
  {
@@ -7150,6 +8001,15 @@
     "What happens if guanfacine is stopped suddenly?",
     "Stopping suddenly can cause blood pressure to rise sharply, along with headache and nervousness. Always ask your prescriber before stopping."
    ]
+  ],
+  "pron": "GWAHN fa seen",
+  "sideList": [
+   "Drowsiness",
+   "Low blood pressure",
+   "Dry mouth",
+   "Tiredness",
+   "Dizziness",
+   "Headache"
   ]
  },
  {
@@ -7215,6 +8075,12 @@
     "Can hyaluronic acid be used with estrogen cream?",
     "Yes, prescribers often combine them in one product. Use them as your prescriber directs."
    ]
+  ],
+  "pron": "HYE a loo RON ik AS id",
+  "sideList": [
+   "Rarely irritation",
+   "Mild redness",
+   "Mild stinging"
   ]
  },
  {
@@ -7282,6 +8148,14 @@
     "Why is a water pill used for kidney stones?",
     "Hydrochlorothiazide acts on the kidneys so they hold on to more calcium, which lowers the amount of calcium in the urine. Your prescriber or veterinarian decides whether it fits."
    ]
+  ],
+  "pron": "HYE droe KLOR oh THYE a zide",
+  "sideList": [
+   "Increased urination",
+   "Low potassium",
+   "Dizziness",
+   "Sun sensitivity",
+   "Increased thirst"
   ]
  },
  {
@@ -7367,6 +8241,12 @@
     "Can dogs use hydrocortisone?",
     "Veterinarians prescribe hydrocortisone for dogs in both topical and oral forms. Use only the product and amount your veterinarian recommends."
    ]
+  ],
+  "pron": "hye droe KOR ti sone",
+  "sideList": [
+   "Mild burning or itching",
+   "Dryness",
+   "Skin thinning with long-term use"
   ]
  },
  {
@@ -7432,6 +8312,13 @@
     "Why does sunscreen matter so much with hydroquinone?",
     "Sunlight triggers pigment production, so daily sunscreen is an important part of the treatment plan."
    ]
+  ],
+  "pron": "hye droe KWIN own",
+  "sideList": [
+   "Skin irritation",
+   "Redness",
+   "Stinging",
+   "Dryness"
   ]
  },
  {
@@ -7491,6 +8378,13 @@
     "What happens when I stop?",
     "Melasma can come back, especially with sun exposure, so prescribers often plan a switch to a milder cream and daily sunscreen afterward."
    ]
+  ],
+  "sideList": [
+   "Skin irritation",
+   "Redness",
+   "Peeling",
+   "Sun sensitivity",
+   "Dryness"
   ]
  },
  {
@@ -7545,6 +8439,12 @@
     "How is this cream different from the 12% hydroquinone cream?",
     "It uses a lower strength of hydroquinone and has no tretinoin or steroid. Your prescriber decides which strength fits your skin."
    ]
+  ],
+  "sideList": [
+   "Skin irritation",
+   "Redness",
+   "Stinging",
+   "Dryness"
   ]
  },
  {
@@ -7616,6 +8516,13 @@
     "Can dogs take hydroxyzine?",
     "Veterinarians prescribe it off-label for allergic itch in dogs. Do not give a human product without your veterinarian's dose and approval."
    ]
+  ],
+  "pron": "hye DROX i zeen",
+  "sideList": [
+   "Drowsiness",
+   "Dry mouth",
+   "Dizziness",
+   "Headache"
   ]
  },
  {
@@ -7672,6 +8579,14 @@
     "Why does hyoscyamine cause dry mouth?",
     "The same nerve signal it blocks in the gut also controls saliva. Sugar-free gum or sips of water can help."
    ]
+  ],
+  "pron": "hye oh SYE a meen",
+  "sideList": [
+   "Dry mouth",
+   "Constipation",
+   "Blurred vision",
+   "Decreased sweating",
+   "Trouble urinating"
   ]
  },
  {
@@ -7733,6 +8648,14 @@
     "Can I take ibuprofen on an empty stomach?",
     "It is better taken with food or milk, which can lower the chance of stomach upset."
    ]
+  ],
+  "pron": "eye byoo PROE fen",
+  "sideList": [
+   "Stomach upset",
+   "Heartburn",
+   "Nausea",
+   "Dizziness",
+   "Headache"
   ]
  },
  {
@@ -7803,6 +8726,16 @@
     "Can imatinib be given with food?",
     "Yes. Giving it with a meal is recommended to reduce nausea and stomach upset."
    ]
+  ],
+  "pron": "i MAT i nib",
+  "sideList": [
+   "Vomiting",
+   "Diarrhea",
+   "Decreased appetite",
+   "Nausea",
+   "Swelling around the eyes",
+   "Muscle cramps",
+   "Tiredness"
   ]
  },
  {
@@ -7859,6 +8792,12 @@
     "Why does my veterinarian need an ear culture first?",
     "A culture identifies the bacteria and which antibiotics can kill them, so the veterinarian can choose imipenem only when it is truly needed."
    ]
+  ],
+  "pron": "i mi PEN em",
+  "sideList": [
+   "Local irritation",
+   "Redness",
+   "Mild discomfort"
   ]
  },
  {
@@ -7934,6 +8873,14 @@
     "Should itraconazole be taken with food?",
     "Capsules are absorbed better with a full meal, while some liquid forms are meant for an empty stomach. Follow the instructions on your label."
    ]
+  ],
+  "pron": "it ra KON a zole",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Decreased appetite",
+   "Changes in liver values",
+   "Headache"
   ]
  },
  {
@@ -8015,6 +8962,14 @@
     "How long does ivermectin cream take to work for rosacea?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "eye ver MEK tin",
+  "sideList": [
+   "Local irritation",
+   "Skin burning",
+   "Dry skin",
+   "Itching",
+   "Stomach upset"
   ]
  },
  {
@@ -8094,6 +9049,14 @@
     "Are topical ketoconazole products as risky as oral?",
     "Very little ketoconazole is absorbed from creams, serums or ear products, so the liver risks seen with oral use are less likely. Use topical products only as directed and report any side effects."
    ]
+  ],
+  "pron": "kee toe KOE na zole",
+  "sideList": [
+   "Local irritation",
+   "Itching",
+   "Nausea",
+   "Decreased appetite",
+   "Changes in liver values"
   ]
  },
  {
@@ -8158,6 +9121,13 @@
     "Can ketoprofen cream harm pets?",
     "Pets, especially cats, can be poisoned by NSAIDs, so keep the tube put away and do not let pets lick treated skin."
    ]
+  ],
+  "pron": "kee toe PROE fen",
+  "sideList": [
+   "Skin irritation",
+   "Redness",
+   "Itching",
+   "Sun sensitivity"
   ]
  },
  {
@@ -8217,6 +9187,13 @@
     "Is oral ketotifen the same as ketotifen eye drops?",
     "No. The eye drops are a commercial product for itchy eyes, while compounded oral capsules are prescribed off-label for body-wide allergy and mast cell symptoms."
    ]
+  ],
+  "pron": "kee toe TYE fen",
+  "sideList": [
+   "Drowsiness",
+   "Weight gain",
+   "Increased appetite",
+   "Dry mouth"
   ]
  },
  {
@@ -8272,6 +9249,13 @@
     "Can kojic acid be used with tretinoin or vitamin C?",
     "It is often combined with other brightening ingredients, but layering several active products can irritate skin, so follow your prescriber's plan."
    ]
+  ],
+  "pron": "KOH jik AS id",
+  "sideList": [
+   "Skin irritation",
+   "Redness",
+   "Stinging",
+   "Dryness"
   ]
  },
  {
@@ -8327,6 +9311,12 @@
     "Is topical L-arginine the same as an arginine supplement?",
     "Both contain the same amino acid, but the cream is meant for local effects on the skin and tissues rather than body-wide use."
    ]
+  ],
+  "pron": "el AR ji neen",
+  "sideList": [
+   "Skin irritation",
+   "Redness",
+   "Warmth or tingling"
   ]
  },
  {
@@ -8379,6 +9369,12 @@
     "Can L-methionine be given to cats?",
     "Veterinarians may prescribe it for adult cats, but cats are more sensitive to side effects, so never give it without your veterinarian's direction."
    ]
+  ],
+  "pron": "el me THYE oh neen",
+  "sideList": [
+   "Stomach upset",
+   "Vomiting",
+   "Decreased appetite"
   ]
  },
  {
@@ -8448,6 +9444,14 @@
     "What should I know about taking lansoprazole long-term?",
     "Long-term use can affect magnesium, vitamin B12 and bone health in some people, so your prescriber will review whether you still need it."
    ]
+  ],
+  "pron": "lan SOE pra zole",
+  "sideList": [
+   "Headache",
+   "Diarrhea",
+   "Nausea",
+   "Stomach pain",
+   "Constipation"
   ]
  },
  {
@@ -8515,6 +9519,13 @@
     "Why is leucovorin given with methotrexate?",
     "Methotrexate blocks folate, and leucovorin supplies an active form of folate. The timing is chosen carefully by your prescriber."
    ]
+  ],
+  "pron": "loo koe VOR in",
+  "sideList": [
+   "Usually well tolerated",
+   "Nausea",
+   "Rash",
+   "Rarely allergic reaction"
   ]
  },
  {
@@ -8591,6 +9602,15 @@
     "Can I drink alcohol while taking levetiracetam?",
     "Alcohol can increase drowsiness and dizziness and may affect seizure control, so ask your prescriber before drinking."
    ]
+  ],
+  "pron": "lee ve tye RA se tam",
+  "sideList": [
+   "Drowsiness",
+   "Wobbliness",
+   "Mood changes",
+   "Tiredness",
+   "Dizziness",
+   "Irritability"
   ]
  },
  {
@@ -8643,6 +9663,13 @@
     "Can stopping levocetirizine cause itching?",
     "Some people who stop after long-term daily use report intense itching, so talk with your prescriber about how to stop."
    ]
+  ],
+  "pron": "lee voe se TIR i zeen",
+  "sideList": [
+   "Drowsiness",
+   "Tiredness",
+   "Dry mouth",
+   "Sore throat"
   ]
  },
  {
@@ -8710,6 +9737,15 @@
     "Is levothyroxine used in dogs?",
     "Yes, veterinarians prescribe it for hypothyroidism in dogs and adjust the dose based on blood tests."
    ]
+  ],
+  "pron": "lee voe thye ROX een",
+  "sideList": [
+   "Fast heartbeat",
+   "Restlessness",
+   "Weight loss",
+   "Trouble sleeping",
+   "Heat intolerance",
+   "Increased thirst in pets"
   ]
  },
  {
@@ -8797,6 +9833,13 @@
     "Can lidocaine be used on cats and dogs?",
     "Veterinarians use lidocaine in pets, but cats are especially sensitive, so only use products and amounts your veterinarian prescribes."
    ]
+  ],
+  "pron": "LYE doe kane",
+  "sideList": [
+   "Temporary numbness",
+   "Local irritation",
+   "Redness",
+   "Mild stinging"
   ]
  },
  {
@@ -8851,6 +9894,14 @@
     "Can I take antidepressants with linezolid?",
     "Combining linezolid with serotonin-affecting antidepressants can cause serotonin syndrome, so your prescriber must review these first."
    ]
+  ],
+  "pron": "li NEZ oh lid",
+  "sideList": [
+   "Nausea",
+   "Diarrhea",
+   "Headache",
+   "Altered taste",
+   "Stomach upset"
   ]
  },
  {
@@ -8907,6 +9958,15 @@
     "Why would my prescriber choose slow-release T3?",
     "Regular T3 is absorbed quickly, so some prescribers choose a slow-release capsule, which is made to release the medicine over a longer time."
    ]
+  ],
+  "pron": "lye oh THYE roe neen",
+  "sideList": [
+   "Fast heartbeat",
+   "Anxiety",
+   "Trouble sleeping",
+   "Sweating",
+   "Heat intolerance",
+   "Headache"
   ]
  },
  {
@@ -8973,6 +10033,13 @@
     "Does loratadine cause drowsiness?",
     "It can cause drowsiness in some people and pets, so use caution until you know how it affects you or your pet."
    ]
+  ],
+  "pron": "lor AT a deen",
+  "sideList": [
+   "Headache",
+   "Dry mouth",
+   "Tiredness",
+   "Drowsiness (uncommon)"
   ]
  },
  {
@@ -9023,6 +10090,12 @@
     "How long will I use lovastatin cream?",
     "It varies from person to person. Your dermatologist will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "LOE va stat in",
+  "sideList": [
+   "Mild irritation",
+   "Redness",
+   "Dryness"
   ]
  },
  {
@@ -9089,6 +10162,12 @@
     "Can children use magic mouthwash?",
     "Some blends are used in children, but young children may swallow too much numbing medicine, so only use a product prescribed for the child."
    ]
+  ],
+  "sideList": [
+   "Temporary numbness",
+   "Altered taste",
+   "Mild stinging",
+   "Drowsiness"
   ]
  },
  {
@@ -9145,6 +10224,13 @@
     "Can I take magnesium at bedtime?",
     "Many people take it in the evening, but the best timing depends on your other medicines, which may need to be spaced apart."
    ]
+  ],
+  "pron": "mag NEE zee um",
+  "sideList": [
+   "Diarrhea",
+   "Loose stools",
+   "Stomach upset",
+   "Nausea"
   ]
  },
  {
@@ -9219,6 +10305,13 @@
     "Can puppies take marbofloxacin?",
     "It is usually avoided in young, growing dogs because it may affect developing joints; your veterinarian decides if it is needed."
    ]
+  ],
+  "pron": "mar boe FLOX a sin",
+  "sideList": [
+   "Vomiting",
+   "Diarrhea",
+   "Decreased appetite",
+   "Stomach upset"
   ]
  },
  {
@@ -9291,6 +10384,14 @@
     "Is maropitant an appetite stimulant?",
     "No. It is an anti-nausea medicine, not an appetite stimulant; tell your veterinarian if your pet is not eating."
    ]
+  ],
+  "pron": "ma ROE pi tant",
+  "sideList": [
+   "Drooling",
+   "Decreased appetite",
+   "Diarrhea",
+   "Tiredness",
+   "Injection site pain"
   ]
  },
  {
@@ -9344,6 +10445,12 @@
     "Is mastic gum the same as pistachio?",
     "Mastic comes from a close relative of the pistachio tree, so people allergic to pistachios may react to it."
    ]
+  ],
+  "pron": "MAS tik gum",
+  "sideList": [
+   "Mild stomach upset",
+   "Nausea",
+   "Headache"
   ]
  },
  {
@@ -9398,6 +10505,14 @@
     "Can dogs take mebendazole?",
     "It is sometimes prescribed off-label for dogs, but other dewormers are more common; only give it under your veterinarian's direction."
    ]
+  ],
+  "pron": "me BEN da zole",
+  "sideList": [
+   "Stomach pain",
+   "Diarrhea",
+   "Nausea",
+   "Gas",
+   "Vomiting"
   ]
  },
  {
@@ -9464,6 +10579,13 @@
     "Does meclizine make you sleepy?",
     "It can cause drowsiness, so avoid driving until you know how it affects you."
    ]
+  ],
+  "pron": "MEK li zeen",
+  "sideList": [
+   "Drowsiness",
+   "Dry mouth",
+   "Tiredness",
+   "Blurred vision"
   ]
  },
  {
@@ -9534,6 +10656,14 @@
     "How long does melatonin take to work?",
     "It varies from person to person (or pet to pet). Your prescriber or veterinarian will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "mel a TOE nin",
+  "sideList": [
+   "Drowsiness",
+   "Headache",
+   "Dizziness",
+   "Nausea",
+   "Vivid dreams"
   ]
  },
  {
@@ -9607,6 +10737,14 @@
     "Can cats take meloxicam?",
     "Cats are especially sensitive to NSAIDs; veterinarians may use it carefully in some cats with close kidney monitoring."
    ]
+  ],
+  "pron": "mel OX i kam",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Diarrhea",
+   "Decreased appetite",
+   "Changes in kidney values"
   ]
  },
  {
@@ -9665,6 +10803,14 @@
     "Does topical metformin lower blood sugar?",
     "Much less reaches the bloodstream from a cream than from a tablet, but tell your prescriber if you have diabetes or take other diabetes medicines."
    ]
+  ],
+  "pron": "met FOR min",
+  "sideList": [
+   "Nausea",
+   "Diarrhea",
+   "Stomach upset",
+   "Gas",
+   "Metallic taste"
   ]
  },
  {
@@ -9717,6 +10863,13 @@
     "Is methenamine used for an active infection?",
     "No. It acts only while it is in acidic urine and is taken regularly as directed, not for an active infection."
    ]
+  ],
+  "pron": "meth EN a meen HIP yoo rate",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Rash",
+   "Itching"
   ]
  },
  {
@@ -9789,6 +10942,13 @@
     "Why does my cat's kidney value change after starting methimazole?",
     "An overactive thyroid can hide kidney disease, so kidney values may rise once thyroid levels drop; your veterinarian monitors this closely."
    ]
+  ],
+  "pron": "meth IM a zole",
+  "sideList": [
+   "Vomiting",
+   "Decreased appetite",
+   "Facial itching",
+   "Tiredness"
   ]
  },
  {
@@ -9859,6 +11019,14 @@
     "Can dogs and cats take methocarbamol?",
     "Yes, it is approved for use in dogs and cats, and your veterinarian sets the dose."
    ]
+  ],
+  "pron": "meth oh KAR ba mol",
+  "sideList": [
+   "Drowsiness",
+   "Weakness",
+   "Dizziness",
+   "Drooling in pets",
+   "Nausea"
   ]
  },
  {
@@ -9928,6 +11096,14 @@
     "Can my dog take metoclopramide for vomiting?",
     "Veterinarians often use it in dogs, but only after ruling out a blockage, so call your veterinarian before giving it."
    ]
+  ],
+  "pron": "met oh KLOE pra mide",
+  "sideList": [
+   "Restlessness",
+   "Drowsiness",
+   "Tiredness",
+   "Diarrhea",
+   "Constipation in pets"
   ]
  },
  {
@@ -10011,6 +11187,15 @@
     "How long does metronidazole take to work for diarrhea in dogs?",
     "It varies from pet to pet. Your veterinarian will tell you what to expect and when to follow up. Your veterinarian may look for the underlying cause if diarrhea continues."
    ]
+  ],
+  "pron": "me troe NYE da zole",
+  "sideList": [
+   "Nausea",
+   "Metallic taste",
+   "Decreased appetite",
+   "Bitter taste in pets",
+   "Drooling in pets",
+   "Diarrhea"
   ]
  },
  {
@@ -10078,6 +11263,14 @@
     "What should I do if my dog vomits after mexiletine?",
     "Ask your veterinarian about giving it with a meal, and call if vomiting continues or your dog stops eating."
    ]
+  ],
+  "pron": "MEX i le teen",
+  "sideList": [
+   "Nausea",
+   "Tremor",
+   "Dizziness",
+   "Heartburn",
+   "Vomiting"
   ]
  },
  {
@@ -10151,6 +11344,11 @@
     "What is the difference between milk thistle and silymarin?",
     "Silymarin is the main group of active compounds extracted from milk thistle seeds; products vary in how much they contain."
    ]
+  ],
+  "sideList": [
+   "Mild stomach upset",
+   "Loose stools",
+   "Bloating"
   ]
  },
  {
@@ -10223,6 +11421,14 @@
     "Can minocycline cause skin discoloration?",
     "Long-term use can cause blue-gray discoloration of the skin, nails or teeth in some people, so tell your prescriber if you notice it."
    ]
+  ],
+  "pron": "min oh SYE kleen",
+  "sideList": [
+   "Stomach upset",
+   "Dizziness",
+   "Nausea",
+   "Sun sensitivity",
+   "Skin discoloration with long-term use"
   ]
  },
  {
@@ -10291,6 +11497,14 @@
     "What is the difference between oral and topical minoxidil?",
     "Topical minoxidil is applied to the scalp, while low-dose oral minoxidil is prescribed off-label and acts through the whole body, so it needs more monitoring."
    ]
+  ],
+  "pron": "mi NOX i dil",
+  "sideList": [
+   "Scalp irritation",
+   "Unwanted hair growth",
+   "Temporary hair shedding",
+   "Fluid retention with oral use",
+   "Fast heartbeat with oral use"
   ]
  },
  {
@@ -10363,6 +11577,15 @@
     "Why is my cat meowing more on mirtazapine?",
     "Vocalizing and restlessness are known side effects in cats; tell your veterinarian, who may adjust the dose."
    ]
+  ],
+  "pron": "mir TAZ a peen",
+  "sideList": [
+   "Drowsiness",
+   "Increased appetite",
+   "Weight gain",
+   "Vocalization in cats",
+   "Dry mouth",
+   "Restlessness in cats"
   ]
  },
  {
@@ -10414,6 +11637,14 @@
     "Why is montelukast taken at night?",
     "For asthma it is often taken in the evening, but your prescriber may choose a different time for allergies or exercise symptoms."
    ]
+  ],
+  "pron": "mon te LOO kast",
+  "sideList": [
+   "Headache",
+   "Mood changes",
+   "Stomach pain",
+   "Trouble sleeping",
+   "Vivid dreams"
   ]
  },
  {
@@ -10479,6 +11710,13 @@
     "How long should I use mupirocin?",
     "It is usually used for a short course, often up to about 10 days; follow your prescriber's directions."
    ]
+  ],
+  "pron": "myoo PIR oh sin",
+  "sideList": [
+   "Local irritation",
+   "Burning",
+   "Stinging",
+   "Itching"
   ]
  },
  {
@@ -10548,6 +11786,14 @@
     "Is mycophenolate used in dogs?",
     "Veterinarians prescribe it off-label for some immune-mediated diseases in dogs, often with other immune-suppressing medicines."
    ]
+  ],
+  "pron": "mye koe FEN oh late",
+  "sideList": [
+   "Diarrhea",
+   "Vomiting",
+   "Lowered immunity",
+   "Nausea",
+   "Decreased appetite"
   ]
  },
  {
@@ -10618,6 +11864,13 @@
     "Can I give my cat NAC if it ate Tylenol?",
     "Acetaminophen poisoning in cats is an emergency; go to a veterinarian immediately rather than treating at home."
    ]
+  ],
+  "pron": "en a SEE til SIS teen",
+  "sideList": [
+   "Nausea",
+   "Unpleasant smell",
+   "Vomiting",
+   "Diarrhea"
   ]
  },
  {
@@ -10685,6 +11938,15 @@
     "What is the difference between LDN and regular naltrexone?",
     "They are the same medicine, but LDN uses a much smaller amount and is prescribed off-label."
    ]
+  ],
+  "pron": "nal TREX own",
+  "sideList": [
+   "Vivid dreams",
+   "Trouble sleeping",
+   "Headache",
+   "Nausea",
+   "Tiredness",
+   "Dizziness"
   ]
  },
  {
@@ -10744,6 +12006,13 @@
     "Why do some people react to neomycin?",
     "Neomycin is a common cause of allergic skin reactions, so stop using it and call your prescriber if the area gets redder or itchier."
    ]
+  ],
+  "pron": "nee oh MYE sin",
+  "sideList": [
+   "Local irritation",
+   "Redness",
+   "Itching",
+   "Rash"
   ]
  },
  {
@@ -10808,6 +12077,12 @@
     "Is niacinamide the same as niacin?",
     "Both are forms of vitamin B3, but niacinamide does not usually cause the flushing that niacin can cause."
    ]
+  ],
+  "pron": "nye a SIN a mide",
+  "sideList": [
+   "Mild irritation",
+   "Redness",
+   "Itching"
   ]
  },
  {
@@ -10869,6 +12144,14 @@
     "Will nifedipine ointment lower my blood pressure?",
     "Some of the medicine can be absorbed through the skin. Tell your prescriber if you feel dizzy or lightheaded."
    ]
+  ],
+  "pron": "nye FED i peen",
+  "sideList": [
+   "Headache",
+   "Flushing",
+   "Local irritation",
+   "Dizziness",
+   "Ankle swelling"
   ]
  },
  {
@@ -10925,6 +12208,11 @@
     "Is a lactation consultant helpful along with the cream?",
     "Often, yes. Sore nipples are commonly caused by latch or positioning problems, which a lactation consultant can check."
    ]
+  ],
+  "sideList": [
+   "Local irritation",
+   "Redness",
+   "Mild burning"
   ]
  },
  {
@@ -10996,6 +12284,14 @@
     "Can dogs take nitrofurantoin?",
     "Veterinarians sometimes prescribe it off-label for dogs and cats with bladder infections. Your veterinarian chooses the dose based on your pet's weight and kidney health."
    ]
+  ],
+  "pron": "nye troe fyoor AN toyn",
+  "sideList": [
+   "Nausea",
+   "Stomach upset",
+   "Dark urine",
+   "Headache",
+   "Loss of appetite"
   ]
  },
  {
@@ -11053,6 +12349,13 @@
     "How long do I need to use it?",
     "It is often used for several weeks. Your prescriber decides how long to continue."
    ]
+  ],
+  "pron": "nye troe GLIS er in",
+  "sideList": [
+   "Headache",
+   "Dizziness",
+   "Flushing",
+   "Lightheadedness"
   ]
  },
  {
@@ -11137,6 +12440,13 @@
     "Is nystatin used for ringworm?",
     "No. Nystatin acts on Candida yeast, not on the fungi that cause ringworm or athlete's foot. Prescribers use other antifungals for those."
    ]
+  ],
+  "pron": "nye STAT in",
+  "sideList": [
+   "Stomach upset",
+   "Local irritation",
+   "Diarrhea",
+   "Nausea"
   ]
  },
  {
@@ -11213,6 +12523,14 @@
     "Is it OK to take omeprazole long term?",
     "Some people need it long term, but extended use has been linked to low magnesium, low B12 and other concerns. Your prescriber decides whether to continue."
    ]
+  ],
+  "pron": "oh MEP ra zole",
+  "sideList": [
+   "Headache",
+   "Diarrhea",
+   "Nausea",
+   "Stomach pain",
+   "Gas"
   ]
  },
  {
@@ -11286,6 +12604,13 @@
     "Why does ondansetron cause constipation?",
     "It slows the movement of the gut along with blocking nausea signals. Drinking fluids and eating fiber may help; tell your prescriber if it is severe."
    ]
+  ],
+  "pron": "on DAN se tron",
+  "sideList": [
+   "Constipation",
+   "Headache",
+   "Tiredness",
+   "Dizziness"
   ]
  },
  {
@@ -11346,6 +12671,13 @@
     "Is it the same ingredient as Afrin nasal spray?",
     "Yes, the active ingredient is the same, but the cream is made for skin and should not be used in the nose."
    ]
+  ],
+  "pron": "OX ee met AZ oh leen",
+  "sideList": [
+   "Irritation",
+   "Rebound redness",
+   "Dryness",
+   "Stinging"
   ]
  },
  {
@@ -11387,6 +12719,13 @@
     "Why is it given as a troche or dissolving tablet?",
     "Oxytocin is broken down in the stomach, so it is absorbed through the lining of the mouth instead of being swallowed."
    ]
+  ],
+  "pron": "ox ee TOE sin",
+  "sideList": [
+   "Headache",
+   "Nausea",
+   "Flushing",
+   "Nasal irritation"
   ]
  },
  {
@@ -11451,6 +12790,14 @@
     "What is the difference between pantoprazole and omeprazole?",
     "Both are proton pump inhibitors that reduce stomach acid. They differ in some drug interactions, and your prescriber chooses which one fits you."
    ]
+  ],
+  "pron": "pan TOE pra zole",
+  "sideList": [
+   "Headache",
+   "Diarrhea",
+   "Nausea",
+   "Stomach pain",
+   "Gas"
   ]
  },
  {
@@ -11524,6 +12871,15 @@
     "Is paroxetine used in cats?",
     "Veterinarians sometimes prescribe it off-label for cats with anxiety, aggression or urine marking. Your veterinarian decides the dose and form."
    ]
+  ],
+  "pron": "pa ROX e teen",
+  "sideList": [
+   "Drowsiness",
+   "Nausea",
+   "Sexual side effects",
+   "Dry mouth",
+   "Sweating",
+   "Dizziness"
   ]
  },
  {
@@ -11599,6 +12955,14 @@
     "Why is pentoxifylline in a cream?",
     "In compounded creams it is combined with other ingredients that act on blood vessels where the cream is applied. This is an off-label use."
    ]
+  ],
+  "pron": "pen tox IF i lin",
+  "sideList": [
+   "Nausea",
+   "Stomach upset",
+   "Dizziness",
+   "Vomiting",
+   "Headache"
   ]
  },
  {
@@ -11671,6 +13035,14 @@
     "Can my pet ever stop phenobarbital?",
     "Some pets can be tapered off after a long seizure-free period, but only under your veterinarian's direction."
    ]
+  ],
+  "pron": "fee noe BAR bi tal",
+  "sideList": [
+   "Sedation",
+   "Increased thirst",
+   "Increased appetite",
+   "Increased urination",
+   "Wobbliness"
   ]
  },
  {
@@ -11722,6 +13094,14 @@
     "Is a blocked cat an emergency?",
     "Yes. A cat straining with little or no urine needs to see a veterinarian right away, whether or not it is on this medicine."
    ]
+  ],
+  "pron": "fen OX ee BEN za meen",
+  "sideList": [
+   "Low blood pressure",
+   "Weakness",
+   "Dizziness",
+   "Nasal congestion",
+   "Fast heartbeat"
   ]
  },
  {
@@ -11779,6 +13159,12 @@
     "Can I use phenylephrine ointment if I have high blood pressure?",
     "Some of the medicine may be absorbed, so ask your prescriber first if you have high blood pressure or heart disease."
    ]
+  ],
+  "pron": "fen il EF rin",
+  "sideList": [
+   "Local irritation",
+   "Stinging",
+   "Redness"
   ]
  },
  {
@@ -11847,6 +13233,13 @@
     "Why was PPA removed from human medicines?",
     "It was linked to a higher risk of a type of stroke in people. This did not change its veterinary use in dogs."
    ]
+  ],
+  "pron": "fen il proe pa NOLE a meen",
+  "sideList": [
+   "Restlessness",
+   "High blood pressure",
+   "Decreased appetite",
+   "Irritability"
   ]
  },
  {
@@ -11902,6 +13295,14 @@
     "Why does pilocarpine make me sweat?",
     "It stimulates sweat glands along with salivary glands. Mild sweating is common; tell your prescriber if it is heavy."
    ]
+  ],
+  "pron": "pye loe KAR peen",
+  "sideList": [
+   "Sweating",
+   "Drooling",
+   "Nausea",
+   "Flushing",
+   "Frequent urination"
   ]
  },
  {
@@ -11978,6 +13379,13 @@
     "Can cats take pimobendan?",
     "Veterinarians sometimes prescribe it off-label for cats with heart failure. Your veterinarian decides whether it fits your cat's type of heart disease."
    ]
+  ],
+  "pron": "pim oh BEN dan",
+  "sideList": [
+   "Decreased appetite",
+   "Vomiting",
+   "Diarrhea",
+   "Lethargy"
   ]
  },
  {
@@ -12041,6 +13449,14 @@
     "Can I give my dog piroxicam with prednisone?",
     "No. Combining an NSAID with a steroid greatly raises the risk of stomach ulcers. Your veterinarian will advise how long to wait if switching."
    ]
+  ],
+  "pron": "peer OX i kam",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Vomiting",
+   "Diarrhea",
+   "Decreased appetite"
   ]
  },
  {
@@ -12100,6 +13516,12 @@
     "Why should ear drops not be used with a ruptured eardrum?",
     "Some ingredients can harm the inner ear if they pass through a hole in the eardrum, which may affect hearing or balance."
    ]
+  ],
+  "pron": "pol ee MIX in BEE",
+  "sideList": [
+   "Local irritation",
+   "Redness",
+   "Itching"
   ]
  },
  {
@@ -12163,6 +13585,12 @@
     "Can people catch coccidia from puppies?",
     "The common coccidia of dogs and cats generally do not infect people, but good handwashing after cleaning up is always wise."
    ]
+  ],
+  "pron": "poe NAZ yoor il",
+  "sideList": [
+   "Mild stomach upset",
+   "Loose stool",
+   "Decreased appetite"
   ]
  },
  {
@@ -12217,6 +13645,14 @@
     "Can cats take potassium bromide?",
     "It is generally not used in cats because it can cause serious lung problems."
    ]
+  ],
+  "pron": "poe TAS ee um BROE mide",
+  "sideList": [
+   "Sedation",
+   "Increased thirst",
+   "Increased appetite",
+   "Wobbliness",
+   "Increased urination"
   ]
  },
  {
@@ -12272,6 +13708,13 @@
     "Can I get enough potassium from food instead?",
     "Foods such as bananas, potatoes and beans contain potassium, but they may not be enough to correct a low level. Your prescriber decides whether you need a supplement."
    ]
+  ],
+  "pron": "poe TAS ee um KLOR ide",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Diarrhea",
+   "Gas"
   ]
  },
  {
@@ -12338,6 +13781,13 @@
     "Why is my urine pH being checked?",
     "Urine pH shows whether the medicine is making urine less acidic, which helps your prescriber adjust treatment."
    ]
+  ],
+  "pron": "poe TAS ee um SIT rate",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Diarrhea",
+   "Abdominal discomfort"
   ]
  },
  {
@@ -12399,6 +13849,13 @@
     "Can I give my cat potassium gluconate long term?",
     "Many cats with kidney disease take it for months or years, with blood tests to check potassium levels."
    ]
+  ],
+  "pron": "poe TAS ee um GLOO koe nate",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Diarrhea",
+   "Vomiting"
   ]
  },
  {
@@ -12464,6 +13921,14 @@
     "Will I see worms after giving praziquantel?",
     "Usually not. The worms are often digested after they die, so you may not see them pass."
    ]
+  ],
+  "pron": "pray zi KWON tel",
+  "sideList": [
+   "Stomach upset",
+   "Drooling",
+   "Vomiting",
+   "Drowsiness",
+   "Decreased appetite"
   ]
  },
  {
@@ -12536,6 +14001,14 @@
     "Is prazosin used in blocked cats?",
     "Veterinarians often prescribe it off-label after a urinary blockage. It acts to relax the smooth muscle of the urethra."
    ]
+  ],
+  "pron": "PRAY zoe sin",
+  "sideList": [
+   "Dizziness",
+   "Low blood pressure",
+   "Headache",
+   "Drowsiness",
+   "Weakness"
   ]
  },
  {
@@ -12619,6 +14092,14 @@
     "Can prednisolone be stopped suddenly?",
     "After more than a short course, stopping suddenly can cause serious problems. Your prescriber or veterinarian will taper the dose."
    ]
+  ],
+  "pron": "pred NIS oh lone",
+  "sideList": [
+   "Increased thirst",
+   "Increased urination",
+   "Increased appetite",
+   "Panting",
+   "Mood changes"
   ]
  },
  {
@@ -12693,6 +14174,14 @@
     "Why are cats given prednisolone instead of prednisone?",
     "Cats do not convert prednisone to its active form well, so veterinarians usually choose prednisolone."
    ]
+  ],
+  "pron": "PRED ni sone",
+  "sideList": [
+   "Increased thirst",
+   "Increased urination",
+   "Increased appetite",
+   "Mood changes",
+   "Trouble sleeping"
   ]
  },
  {
@@ -12764,6 +14253,15 @@
     "Can I drink alcohol on pregabalin?",
     "Alcohol adds to dizziness and drowsiness and is usually best avoided. Ask your prescriber."
    ]
+  ],
+  "pron": "pre GAB a lin",
+  "sideList": [
+   "Dizziness",
+   "Drowsiness",
+   "Weight gain",
+   "Swelling",
+   "Dry mouth",
+   "Blurred vision"
   ]
  },
  {
@@ -12813,6 +14311,13 @@
     "Can pregnenolone be taken with DHEA?",
     "Some prescribers include both in a hormone plan, sometimes in one compounded product. Your prescriber decides."
    ]
+  ],
+  "pron": "preg NEN oh lone",
+  "sideList": [
+   "Headache",
+   "Irritability",
+   "Acne",
+   "Trouble sleeping"
   ]
  },
  {
@@ -12871,6 +14376,13 @@
     "Why is prilocaine not used in young infants?",
     "Infants are more prone to methemoglobinemia, a condition that lowers the blood's ability to carry oxygen."
    ]
+  ],
+  "pron": "PRIL oh kane",
+  "sideList": [
+   "Local irritation",
+   "Redness",
+   "Numbness",
+   "Paleness where applied"
   ]
  },
  {
@@ -12948,6 +14460,15 @@
     "Can men use progesterone?",
     "Progesterone hormone therapy is mainly prescribed for women. Your prescriber decides whether it fits your plan."
    ]
+  ],
+  "pron": "proe JES ter one",
+  "sideList": [
+   "Drowsiness",
+   "Dizziness",
+   "Breast tenderness",
+   "Bloating",
+   "Headache",
+   "Mood changes"
   ]
  },
  {
@@ -13011,6 +14532,14 @@
     "Can dogs recover from myasthenia gravis?",
     "Some dogs with the acquired form go into remission over months. Your veterinarian will guide treatment and testing."
    ]
+  ],
+  "pron": "peer id oh STIG meen",
+  "sideList": [
+   "Diarrhea",
+   "Cramping",
+   "Drooling",
+   "Nausea",
+   "Sweating"
   ]
  },
  {
@@ -13063,6 +14592,14 @@
     "Why does quetiapine cause weight gain?",
     "It can increase appetite and affect blood sugar and fat levels. Your prescriber may check labs and talk with you about diet and activity."
    ]
+  ],
+  "pron": "kwe TYE a peen",
+  "sideList": [
+   "Drowsiness",
+   "Dizziness",
+   "Weight gain",
+   "Dry mouth",
+   "Constipation"
   ]
  },
  {
@@ -13133,6 +14670,13 @@
     "Is rivaroxaban used in cats?",
     "Veterinarians sometimes prescribe it off-label for cats at risk of blood clots. Your veterinarian decides the dose."
    ]
+  ],
+  "pron": "riv a ROX a ban",
+  "sideList": [
+   "Bruising",
+   "Minor bleeding",
+   "Nosebleeds",
+   "Bleeding gums"
   ]
  },
  {
@@ -13186,6 +14730,11 @@
     "Can I use pure rosemary essential oil on my scalp?",
     "Undiluted essential oil can irritate the skin. Compounded serums are diluted and blended for scalp use."
    ]
+  ],
+  "sideList": [
+   "Scalp irritation",
+   "Redness",
+   "Itching"
   ]
  },
  {
@@ -13246,6 +14795,12 @@
     "Can cats take rutin?",
     "Veterinarians use it off-label in cats. Your veterinarian decides whether it is appropriate for your cat, so use only the product and dose your veterinarian prescribes."
    ]
+  ],
+  "pron": "ROO tin",
+  "sideList": [
+   "Mild stomach upset",
+   "Headache",
+   "Flushing"
   ]
  },
  {
@@ -13309,6 +14864,12 @@
     "How long does sacubitril/valsartan take to work?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "sideList": [
+   "Low blood pressure",
+   "Dizziness",
+   "High potassium",
+   "Cough"
   ]
  },
  {
@@ -13369,6 +14930,13 @@
     "Should people with diabetes use salicylic acid on their feet?",
     "People with diabetes or poor circulation should ask their prescriber first, since skin injuries on the feet can heal slowly."
    ]
+  ],
+  "pron": "sal i SIL ik AS id",
+  "sideList": [
+   "Irritation",
+   "Dryness",
+   "Peeling",
+   "Stinging"
   ]
  },
  {
@@ -13436,6 +15004,13 @@
     "Can dogs and cats take SAM-e?",
     "Veterinarians often recommend it for dogs and cats. Your veterinarian decides whether it is appropriate for your pet, so use only the product and dose your veterinarian recommends."
    ]
+  ],
+  "pron": "SAM ee",
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Headache",
+   "Trouble sleeping"
   ]
  },
  {
@@ -13490,6 +15065,12 @@
     "Can partners be affected by the cream?",
     "Small amounts could transfer during contact. Ask your prescriber about timing and whether to wash the area."
    ]
+  ],
+  "sideList": [
+   "Warmth",
+   "Tingling",
+   "Redness where applied",
+   "Headache"
   ]
  },
  {
@@ -13545,6 +15126,13 @@
     "Is selegiline used for Cushing's in all dogs?",
     "No. It is considered only for some dogs with uncomplicated pituitary-dependent Cushing's, and your veterinarian decides whether it fits your dog."
    ]
+  ],
+  "pron": "se LE ji leen",
+  "sideList": [
+   "Restlessness",
+   "Vomiting",
+   "Diarrhea",
+   "Trouble sleeping"
   ]
  },
  {
@@ -13602,6 +15190,15 @@
     "Can dogs and cats take sertraline?",
     "Veterinarians do prescribe it off-label for anxiety in dogs and cats, and your veterinarian decides whether it is appropriate for your pet. Use only the dose your vet prescribes and never give a pet a person's tablets."
    ]
+  ],
+  "pron": "SER tra leen",
+  "sideList": [
+   "Nausea",
+   "Diarrhea",
+   "Sleep changes",
+   "Dry mouth",
+   "Sweating",
+   "Sexual side effects"
   ]
  },
  {
@@ -13685,6 +15282,14 @@
     "Why would a dog take sildenafil?",
     "Veterinarians use it off-label in dogs with pulmonary hypertension. It acts to relax blood vessels in the lungs, and your veterinarian decides whether it fits your dog."
    ]
+  ],
+  "pron": "sil DEN a fil",
+  "sideList": [
+   "Headache",
+   "Flushing",
+   "Nasal congestion",
+   "Upset stomach",
+   "Low blood pressure"
   ]
  },
  {
@@ -13738,6 +15343,13 @@
     "Why does sirolimus need blood tests?",
     "The amount in the blood can vary a lot between people and with other medicines, so prescribers often measure levels to keep them in the intended range."
    ]
+  ],
+  "pron": "sir OH li mus",
+  "sideList": [
+   "Mouth sores",
+   "Stomach upset",
+   "Diarrhea",
+   "Skin irritation"
   ]
  },
  {
@@ -13789,6 +15401,12 @@
     "Is sodium butyrate the same as butyrate supplements I can buy?",
     "They contain the same compound, but oral supplements are mostly absorbed before reaching the lower colon. Rectal suppositories deliver it directly to the area being treated."
    ]
+  ],
+  "pron": "SOE dee um BYOO ti rate",
+  "sideList": [
+   "Local irritation",
+   "Mild stomach upset",
+   "Unpleasant odor"
   ]
  },
  {
@@ -13855,6 +15473,13 @@
     "Is sotalol a beta-blocker?",
     "Yes, but it also has antiarrhythmic effects that typical beta-blockers like metoprolol don't have, so it is not interchangeable with them."
    ]
+  ],
+  "pron": "SOE ta lol",
+  "sideList": [
+   "Tiredness",
+   "Slow heart rate",
+   "Dizziness",
+   "Shortness of breath"
   ]
  },
  {
@@ -13932,6 +15557,14 @@
     "Do men take spironolactone for acne?",
     "Usually not, because its anti-androgen effects can cause breast enlargement in men. It is mainly used for acne in women."
    ]
+  ],
+  "pron": "speer on oh LAK tone",
+  "sideList": [
+   "High potassium",
+   "Breast tenderness",
+   "Irregular periods",
+   "Increased urination",
+   "Dizziness"
   ]
  },
  {
@@ -13989,6 +15622,12 @@
     "Why must sucralfate be spaced from other medicines?",
     "It forms a coating that can trap other drugs in the gut, so they may not be absorbed as well if taken at the same time."
    ]
+  ],
+  "pron": "soo KRAL fate",
+  "sideList": [
+   "Constipation",
+   "Dry mouth",
+   "Nausea"
   ]
  },
  {
@@ -14072,6 +15711,13 @@
     "What should I watch for in my dog?",
     "Watch for red, goopy or dry eyes, limping, rash, fever or yellow gums, and call your veterinarian if you see them."
    ]
+  ],
+  "sideList": [
+   "Stomach upset",
+   "Nausea",
+   "Decreased appetite",
+   "Dry eye in dogs",
+   "Rash"
   ]
  },
  {
@@ -14129,6 +15775,13 @@
     "Should I take my capsule before my blood test?",
     "Ask your prescriber, because T3 can raise levels for a few hours after a dose and some prescribers want you to wait until after the blood draw."
    ]
+  ],
+  "sideList": [
+   "Fast heartbeat",
+   "Anxiety",
+   "Trouble sleeping",
+   "Sweating",
+   "Weight loss"
   ]
  },
  {
@@ -14187,6 +15840,13 @@
     "Is topical tacrolimus a steroid?",
     "No. It is a calcineurin inhibitor, not a steroid, and it works in a different way."
    ]
+  ],
+  "pron": "ta KROE li mus",
+  "sideList": [
+   "Burning where applied",
+   "Stinging",
+   "Itching",
+   "Redness"
   ]
  },
  {
@@ -14261,6 +15921,15 @@
     "Is tadalafil used for prostate symptoms?",
     "It is prescribed for urinary symptoms of an enlarged prostate, such as weak flow or frequent urination. Your prescriber decides whether it fits you."
    ]
+  ],
+  "pron": "ta DAL a fil",
+  "sideList": [
+   "Headache",
+   "Flushing",
+   "Back pain",
+   "Muscle aches",
+   "Nasal congestion",
+   "Indigestion"
   ]
  },
  {
@@ -14328,6 +15997,13 @@
     "Can cats take tamsulosin?",
     "Veterinarians sometimes prescribe it off-label for cats with urethral spasm. Use only a pet-specific dose from your vet."
    ]
+  ],
+  "pron": "tam SOO loe sin",
+  "sideList": [
+   "Dizziness",
+   "Low blood pressure",
+   "Runny nose",
+   "Ejaculation changes"
   ]
  },
  {
@@ -14397,6 +16073,13 @@
     "How long does telmisartan take to work?",
     "It varies from person to person and pet to pet. Your prescriber or veterinarian will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "tel mi SAR tan",
+  "sideList": [
+   "Dizziness",
+   "Low blood pressure",
+   "Changes in kidney values",
+   "Back pain"
   ]
  },
  {
@@ -14467,6 +16150,14 @@
     "Can I drink alcohol with terbinafine?",
     "Because terbinafine is processed by the liver, many prescribers advise limiting alcohol during treatment."
    ]
+  ],
+  "pron": "TER bin a feen",
+  "sideList": [
+   "Stomach upset",
+   "Taste changes",
+   "Diarrhea",
+   "Headache",
+   "Rash"
   ]
  },
  {
@@ -14531,6 +16222,13 @@
     "Can cats take terbutaline?",
     "Veterinarians commonly prescribe it off-label for feline asthma, sometimes along with inhaled or oral steroids."
    ]
+  ],
+  "pron": "ter BYOO ta leen",
+  "sideList": [
+   "Fast heartbeat",
+   "Tremor",
+   "Nervousness",
+   "Headache"
   ]
  },
  {
@@ -14582,6 +16280,13 @@
     "Can I use terconazole during my period?",
     "Yes, keep using it as directed. Use pads rather than tampons during treatment."
    ]
+  ],
+  "pron": "ter KON a zole",
+  "sideList": [
+   "Local irritation",
+   "Burning",
+   "Itching",
+   "Headache"
   ]
  },
  {
@@ -14658,6 +16363,14 @@
     "Can women use testosterone?",
     "Some prescribers prescribe low doses off-label for women, often for low libido after menopause, with careful monitoring."
    ]
+  ],
+  "pron": "tes TOS ter one",
+  "sideList": [
+   "Skin irritation",
+   "Acne",
+   "Oily skin",
+   "Hair growth",
+   "Mood changes"
   ]
  },
  {
@@ -14725,6 +16438,12 @@
     "Is it safe to use numbing cream over a large area?",
     "No, not without direct medical guidance. Large areas or long times can lead to serious side effects."
    ]
+  ],
+  "pron": "TET ra kane",
+  "sideList": [
+   "Redness",
+   "Local irritation",
+   "Stinging"
   ]
  },
  {
@@ -14782,6 +16501,13 @@
     "Why can't children under 8 take tetracycline?",
     "It can permanently stain developing teeth, so it is usually avoided in young children."
    ]
+  ],
+  "pron": "tet ra SYE kleen",
+  "sideList": [
+   "Stomach upset",
+   "Sun sensitivity",
+   "Nausea",
+   "Diarrhea"
   ]
  },
  {
@@ -14857,6 +16583,14 @@
     "Can I drink coffee while taking theophylline?",
     "Caffeine is closely related to theophylline and can add to nervousness and fast heartbeat, so limit it and ask your prescriber."
    ]
+  ],
+  "pron": "thee OFF i lin",
+  "sideList": [
+   "Nausea",
+   "Restlessness",
+   "Fast heartbeat",
+   "Headache",
+   "Trouble sleeping"
   ]
  },
  {
@@ -14914,6 +16648,12 @@
     "Why is thiamine important for cats?",
     "Cats need more thiamine than dogs and can develop serious nerve signs quickly when they don't get enough."
    ]
+  ],
+  "pron": "THYE a min",
+  "sideList": [
+   "Mild stomach upset",
+   "Nausea",
+   "Mild diarrhea"
   ]
  },
  {
@@ -14973,6 +16713,14 @@
     "How soon are labs checked after a dose change?",
     "Blood tests are usually rechecked about six weeks after a dose change. How you feel after a change varies from person to person, so your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "pron": "THYE roid",
+  "sideList": [
+   "Fast heartbeat",
+   "Anxiety",
+   "Trouble sleeping",
+   "Sweating",
+   "Weight loss"
   ]
  },
  {
@@ -15037,6 +16785,14 @@
     "What is the difference between tinidazole and metronidazole?",
     "They are closely related. Tinidazole lasts longer in the body, so courses can be shorter; your prescriber chooses which fits."
    ]
+  ],
+  "pron": "tye NI da zole",
+  "sideList": [
+   "Nausea",
+   "Metallic taste",
+   "Stomach upset",
+   "Loss of appetite",
+   "Headache"
   ]
  },
  {
@@ -15096,6 +16852,15 @@
     "Can topiramate affect birth control?",
     "Yes, it can make hormonal birth control less effective, so talk with your prescriber about the best method."
    ]
+  ],
+  "pron": "toe PYRE a mate",
+  "sideList": [
+   "Tingling",
+   "Drowsiness",
+   "Word-finding difficulty",
+   "Taste changes",
+   "Decreased appetite",
+   "Dizziness"
   ]
  },
  {
@@ -15161,6 +16926,14 @@
     "How do I count my pet's resting breathing rate?",
     "While your pet sleeps, count breaths (each rise of the chest) for 30 seconds and double it. Tell your vet if it rises above the limit they gave you."
    ]
+  ],
+  "pron": "TORE se mide",
+  "sideList": [
+   "Increased urination",
+   "Dehydration",
+   "Low potassium",
+   "Dizziness",
+   "Headache"
   ]
  },
  {
@@ -15232,6 +17005,12 @@
     "Can I use tranexamic acid cream with other skin products?",
     "It is often combined with other ingredients, but adding products can raise irritation; ask your prescriber before mixing."
    ]
+  ],
+  "pron": "tran ex AM ik AS id",
+  "sideList": [
+   "Skin irritation",
+   "Redness",
+   "Dryness"
   ]
  },
  {
@@ -15308,6 +17087,15 @@
     "Is trazodone addictive?",
     "It is not considered habit-forming, but stopping a long-term dose suddenly may cause unpleasant symptoms, so ask your prescriber how to stop."
    ]
+  ],
+  "pron": "TRAZ oh done",
+  "sideList": [
+   "Drowsiness",
+   "Low blood pressure",
+   "Stomach upset",
+   "Dizziness",
+   "Dry mouth",
+   "Headache"
   ]
  },
  {
@@ -15375,6 +17163,14 @@
     "What is the difference between tretinoin and retinol?",
     "Retinol is an over-the-counter ingredient the skin must convert to retinoic acid, while tretinoin is retinoic acid itself and is prescription only."
    ]
+  ],
+  "pron": "TRET i noyn",
+  "sideList": [
+   "Dryness",
+   "Peeling",
+   "Sun sensitivity",
+   "Redness",
+   "Stinging"
   ]
  },
  {
@@ -15430,6 +17226,12 @@
     "Why does hydroquinone need breaks?",
     "Using it continuously for a long time can, rarely, cause darkening of the skin, so prescribers often plan breaks between courses."
    ]
+  ],
+  "sideList": [
+   "Dryness",
+   "Peeling",
+   "Irritation",
+   "Sun sensitivity"
   ]
  },
  {
@@ -15483,6 +17285,12 @@
     "How long does the neck cream take to work?",
     "It varies from person to person. Your prescriber will tell you what to expect and when to follow up."
    ]
+  ],
+  "sideList": [
+   "Dryness",
+   "Peeling",
+   "Redness",
+   "Sun sensitivity"
   ]
  },
  {
@@ -15537,6 +17345,12 @@
     "Why does it have caffeine?",
     "Caffeine is one of the ingredients your prescriber chose. It narrows small blood vessels for a short time."
    ]
+  ],
+  "sideList": [
+   "Dryness",
+   "Mild peeling",
+   "Redness",
+   "Sun sensitivity"
   ]
  },
  {
@@ -15610,6 +17424,13 @@
     "How long can triamcinolone be used on the skin?",
     "It is usually used for limited periods, especially on thin skin like the face or folds, to avoid thinning. Your prescriber decides how long."
    ]
+  ],
+  "pron": "trye am SIN oh lone",
+  "sideList": [
+   "Skin thinning",
+   "Burning",
+   "Itching",
+   "Dryness"
   ]
  },
  {
@@ -15660,6 +17481,13 @@
     "Why can't TCA be used at home?",
     "It is a strong acid that can cause burns and scarring if not applied correctly, so only trained clinicians should use it."
    ]
+  ],
+  "pron": "trye klor oh a SEE tik AS id",
+  "sideList": [
+   "Burning",
+   "Redness",
+   "Peeling",
+   "Stinging"
   ]
  },
  {
@@ -15726,6 +17554,13 @@
     "Should trilostane be given with food?",
     "Yes. It is absorbed better with food, so give it with a meal."
    ]
+  ],
+  "pron": "trye LOE stane",
+  "sideList": [
+   "Lethargy",
+   "Decreased appetite",
+   "Vomiting",
+   "Diarrhea"
   ]
  },
  {
@@ -15788,6 +17623,13 @@
     "Can dogs take tylosin long term?",
     "Some dogs take it for long periods for chronic diarrhea under veterinary supervision; your vet weighs this against concerns about antibiotic resistance."
    ]
+  ],
+  "pron": "TYE loe sin",
+  "sideList": [
+   "Stomach upset",
+   "Bitter taste",
+   "Decreased appetite",
+   "Diarrhea"
   ]
  },
  {
@@ -15845,6 +17687,13 @@
     "Is the urea in creams from urine?",
     "No. Urea in skin products is made in a lab, although the same compound is naturally found in skin and urine."
    ]
+  ],
+  "pron": "yoo REE a",
+  "sideList": [
+   "Irritation",
+   "Stinging",
+   "Burning",
+   "Redness"
   ]
  },
  {
@@ -15916,6 +17765,12 @@
     "Can dogs and cats take ursodiol?",
     "Veterinarians use it off-label in dogs and cats with liver and gallbladder conditions. Your veterinarian decides whether it is appropriate for your pet."
    ]
+  ],
+  "pron": "ur soe DYE ol",
+  "sideList": [
+   "Diarrhea",
+   "Nausea",
+   "Stomach discomfort"
   ]
  },
  {
@@ -15973,6 +17828,13 @@
     "What is the difference between valacyclovir and acyclovir?",
     "Valacyclovir turns into acyclovir in the body but is absorbed better, so it can be taken less often."
    ]
+  ],
+  "pron": "val ay SYE kloe veer",
+  "sideList": [
+   "Headache",
+   "Nausea",
+   "Stomach pain",
+   "Dizziness"
   ]
  },
  {
@@ -16036,6 +17898,11 @@
     "Can I use vitamin C with retinol or tretinoin?",
     "Many people use vitamin C in the morning and a retinoid at night to limit irritation; ask your prescriber."
    ]
+  ],
+  "sideList": [
+   "Mild irritation",
+   "Tingling",
+   "Redness"
   ]
  },
  {
@@ -16100,6 +17967,11 @@
     "Can I use vitamin E on scars?",
     "Ask your prescriber first. Vitamin E can cause irritation in some people."
    ]
+  ],
+  "sideList": [
+   "Mild stomach upset",
+   "Nausea",
+   "Diarrhea"
   ]
  },
  {
@@ -16172,6 +18044,14 @@
     "Why is zonisamide used in dogs?",
     "Veterinarians use it off-label as a single or add-on seizure medicine. Your veterinarian decides whether it fits your dog."
    ]
+  ],
+  "pron": "zoe NIS a mide",
+  "sideList": [
+   "Drowsiness",
+   "Loss of appetite",
+   "Wobbliness",
+   "Dizziness",
+   "Nausea"
   ]
  }
 ]

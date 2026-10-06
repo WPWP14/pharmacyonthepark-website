@@ -598,9 +598,9 @@ footer .social svg{color:var(--park-green)}
 .dacc details[open] summary::after{content:"\2013"}
 .dacc details p{padding:0 16px 14px;color:var(--muted)}
 .dfine{font-size:.8rem;color:var(--muted);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
-.darticle{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:start}
+.darticle{display:grid;grid-template-columns:minmax(0,2.2fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:start}
 @media (max-width:900px){.darticle{grid-template-columns:1fr}.dside{display:none}}
-.dbody{display:flex;flex-direction:column;gap:12px;max-width:68ch}
+.dbody{display:flex;flex-direction:column;gap:14px;max-width:none}
 .dbody h2{font-size:1.9rem}.dbody h3{font-size:1.25rem;margin-top:14px}
 .dbody h2,.dbody h3,#d-rx,#d-refs{scroll-margin-top:120px}
 .dbody p,.dbody li{color:var(--muted)}
@@ -609,6 +609,18 @@ footer .social svg{color:var(--park-green)}
 .dcallout{background:#FFF7E6;border-left:4px solid #E7A33E;border-radius:10px;padding:14px 16px;color:#5B4520;font-size:.95rem}
 .dcallout b{color:#3E2E12}
 .dbody h4{font-size:1.05rem;margin-top:6px}
+.dfacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:6px 0}
+.dfacts>div{border:1px solid #CFE6C8;background:#F6FBF4;border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.dfacts span{font:800 .72rem/1.2 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--green-text)}
+.dfacts b,.dfacts i{color:var(--ink);font-weight:600}.dfacts i{font-weight:500}
+.dcard{border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:flex;flex-direction:column;gap:10px;background:var(--paper);scroll-margin-top:120px}
+.dcard h3{display:flex;align-items:center;gap:10px;margin:0;font-size:1.2rem}
+.dcard h3 svg{width:22px;height:22px;flex:none;color:var(--park-blue)}
+.dcard p,.dcard li{margin:0}
+.dcard.warn{background:#FFF8EC;border-color:#F1CF94}.dcard.warn h3,.dcard.warn h3 svg{color:#8A5A12}
+.dcard.alert{background:#FDF1F1;border-color:#EDC2C2}.dcard.alert h3,.dcard.alert h3 svg{color:#9B2C2C}
+.dcard ul.two{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px}
+@media (max-width:520px){.dcard ul.two{grid-template-columns:1fr}}
 .daka{margin:-4px 0 10px;color:var(--muted);font-size:.95rem}
 #d-faq{scroll-margin-top:120px}
 .dside{position:sticky;top:110px;display:flex;flex-direction:column;gap:14px}
@@ -2717,7 +2729,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
       var f0=x.forms[0]||'Capsule', img=x.img?FORMIMG2[x.img]:imgFor(f0,x);
       var hrt = (x.cat==='HRT'||x.cat==='MEN');
       var related=LIB.filter(function(y){ return y.cat===x.cat && y.id!==x.id; }).sort(function(a,b){ return b.n-a.n; }).slice(0,3);
-      var toc=[['d-what','What is '+b+'?'],['d-how','How does it work?'],['d-use','What is it used for?'],['d-used','How is it used?'],['d-side','Side effects and safety'],x.interactions?['d-int','Drug interactions']:null,x.pregnancy?['d-preg','Pregnancy and breastfeeding']:null,x.petNotes?['d-pets','Notes for pet owners']:null,['d-avoid','Who should use caution?'],['d-store','How should it be stored?'],['d-why','Why is it compounded?'],['d-faq','Questions and answers'],['d-rx','For prescribers'],['d-refs','References']].filter(Boolean);
+      var toc=[['d-what','What is '+b+'?'],['d-use','What is it used for?'],['d-how','Mechanism of action'],['d-used','Administration and dosing'],x.interactions?['d-int','Drug interactions']:null,['d-side','Adverse effects'],x.pregnancy?['d-preg','Pregnancy and breastfeeding']:null,x.petNotes?['d-pets','Notes for pet owners']:null,['d-avoid','Who should use caution?'],['d-store','Storage'],['d-why','Why is it compounded?'],['d-faq','Questions and answers'],['d-rx','For prescribers'],['d-refs','References']].filter(Boolean);
       var aka=(x.aka||[]).filter(function(v){ return v && v.toLowerCase()!==base(x.name).toLowerCase(); });
       var usedHtml=x.forms.map(function(f){ return USE[f]?'<li><b>'+esc(f)+'.</b> '+esc(USE[f])+'</li>':''; }).join('');
       var storeExtra=x.forms.map(function(f){ return STORE[f]; }).filter(Boolean);
@@ -2754,23 +2766,25 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         '<ol class="steps s3 flow"><li><b>Send us the prescription</b><span>Your '+who+' e-prescribes, faxes or calls it in to Pharmacy on the Park.</span></li><li><b>A pharmacist reviews it</b><span>We verify it, confirm the price and timing, and call you.</span></li><li><b>We compound it for you</b><span>Pick up in Oviedo or we ship to Florida, Maine and Colorado.</span></li></ol></div></section>';
       // article + toc
       h+='<section class="band"><div class="wrap darticle"><article class="dbody">'+
+        '<div class="dfacts">'+(x.pron?'<div><span>Pronunciation</span><i>'+esc(x.pron)+'</i></div>':'')+
+          '<div><span>Brand and other names</span><b>'+esc(aka.length?aka.join(', '):(x.isCombo?'Compounded combination; no brand name':'No common brand name'))+'</b></div>'+
+          '<div><span>Drug class</span><b>'+esc(x.drugClass||x.catName)+'</b></div></div>'+
         '<h2 id="d-what">What is '+nm+'?</h2>'+(x.about?'<p>'+esc(x.about)+'</p>':'<p>'+esc(x.uses)+'</p>')+'<p>At Pharmacy on the Park, '+b+' is compounded in our pharmacy from a prescription, in the strength and form your '+who+' orders.</p>'+
-        (aka.length?'<p><b>Other names:</b> '+esc(aka.join(', '))+'. Brand names are listed only to help you identify the ingredient. Our compounded preparations are not the same as these FDA-approved products.</p>':'')+
-        '<div class="dcallout"><b>Compounded medications are not FDA-approved.</b> They are prepared for one patient from a valid prescription. Any use may be off-label, and your '+who+' decides whether it is right '+(petsOnly(x)?'for your pet':'for you')+'.</div>'+
-        '<h3 id="d-how">How does it work?</h3><p>'+esc(x.how)+'</p>'+
-        '<h3 id="d-use">What is it used for?</h3>'+((x.conditions||[]).length?'<p>'+b+' may be prescribed for:</p><ul>'+x.conditions.map(function(c){ return '<li>'+esc(c)+'</li>'; }).join('')+'</ul>':'')+'<p>'+esc(x.uses)+' Some uses may be off-label. Your '+who+' determines the use, dose and monitoring.</p>'+
-        '<h3 id="d-used">How is it used?</h3><ul>'+usedHtml+'</ul><p>Follow the directions on your label. The strength, amount and schedule are set by your '+who+'.</p>'+
-        ((x.tips||[]).length?'<h4>Tips for '+(petsOnly(x)?'giving':'taking')+' '+b+'</h4><ul>'+x.tips.map(function(t){ return '<li>'+esc(t)+'</li>'; }).join('')+'</ul>':'')+
-        '<h3 id="d-side">Side effects and safety</h3><p>Commonly reported: '+esc(x.side)+' Call your '+who+' or us about any reaction that concerns you.</p>'+
-        (x.serious?'<div class="dcallout"><b>Serious side effects.</b> '+esc(x.serious)+'</div>':'')+
-        (x.interactions?'<h3 id="d-int">Drug interactions</h3><p>'+esc(x.interactions)+'</p>':'')+
-        (x.pregnancy?'<h3 id="d-preg">Pregnancy and breastfeeding</h3><p>'+esc(x.pregnancy)+'</p>':'')+
-        (x.petNotes?'<h3 id="d-pets">Notes for pet owners</h3><p>'+esc(x.petNotes)+'</p>':'')+
-        '<h3 id="d-avoid">Who should use caution?</h3><p>'+esc(x.avoid)+' Share your full medical history and medication list with your '+who+'.</p>'+
-        (x.monitoring?'<h4>Monitoring</h4><p>'+esc(x.monitoring)+'</p>':'')+
-        '<h3 id="d-store">How should it be stored?</h3><p>'+esc(storeExtra.join(' '))+(storeExtra.length?' ':'')+'Always follow the storage directions and beyond-use date on your label, and keep medications out of reach of children and pets.</p>'+
-        '<h3 id="d-why">Why is it compounded?</h3><p>'+esc(whyText(x))+'</p>'+
-        (x.combos.length?(x.isCombo?'<p>This preparation can include: '+esc(x.combos.join(', '))+'. Your prescriber chooses which ingredients and how much of each.</p>':'<p>'+b+' is also prepared in combination with '+esc(x.combos.slice(0,4).join(', '))+'. See <a href="'+(STATIC?'/medications/':'#medications')+'">combination preparations</a> in our library.</p>'):'')+
+
+        '<div class="dcallout"><b>Compounded medications are not FDA-approved.</b> They are prepared for one patient from a valid prescription. Any use may be off-label, and your '+who+' decides whether it is right '+(petsOnly(x)?'for your pet':'for you')+'.'+(aka.length?' Brand names are listed only to help identify the ingredient; our compounded preparations are not the same as those FDA-approved products.':'')+'</div>'+
+        '<div class="dcard" id="d-use"><h3><svg><use href="#i-steth"/></svg>What is it used for?</h3>'+((x.conditions||[]).length?'<p>'+b+' may be prescribed for:</p><ul>'+x.conditions.map(function(c){ return '<li>'+esc(c)+'</li>'; }).join('')+'</ul>':'')+'<p>'+esc(x.uses)+' Some uses may be off-label. Your '+who+' determines the use, dose and monitoring.</p></div>'+
+        '<div class="dcard" id="d-how"><h3><svg><use href="#i-flask"/></svg>Mechanism of action</h3><p>'+esc(x.how)+'</p></div>'+
+        '<div class="dcard" id="d-used"><h3><svg><use href="#i-syringe"/></svg>Administration and dosing</h3><ul>'+usedHtml+((x.tips||[]).map(function(t){ return '<li>'+esc(t)+'</li>'; }).join(''))+'</ul><p><b>Dosing:</b> the strength, amount and schedule are set by your '+who+' and printed on your label. Follow those directions and ask us if anything is unclear.</p>'+(x.monitoring?'<p><b>Monitoring:</b> '+esc(x.monitoring)+'</p>':'')+'</div>'+
+        (x.interactions?'<div class="dcard warn" id="d-int"><h3><svg><use href="#i-shield"/></svg>Drug interactions</h3><p>'+esc(x.interactions)+'</p></div>':'')+
+        '<div class="dcard alert" id="d-side"><h3><svg><use href="#i-shield"/></svg>Adverse effects</h3><p><b>Common side effects:</b></p>'+((x.sideList||[]).length?'<ul class="two">'+x.sideList.map(function(t){ return '<li>'+esc(t)+'</li>'; }).join('')+'</ul>':'<p>'+esc(x.side)+'</p>')+
+          (x.serious?(function(m){ return m?'<p><b>'+esc(m[1])+':</b> '+esc(m[2])+'</p>':'<p>'+esc(x.serious)+'</p>'; })(x.serious.match(/^(Get medical or veterinary help right away for|Get medical help right away for|Call your veterinarian right away for)\s*(.*)$/)):'')+
+          '<p>Call your '+who+' or us about any reaction that concerns you.</p></div>'+
+        (x.pregnancy?'<div class="dcard" id="d-preg"><h3><svg><use href="#i-person"/></svg>Pregnancy and breastfeeding</h3><p>'+esc(x.pregnancy)+'</p></div>':'')+
+        (x.petNotes?'<div class="dcard" id="d-pets"><h3><svg><use href="#i-paw"/></svg>Notes for pet owners</h3><p>'+esc(x.petNotes)+'</p></div>':'')+
+        '<div class="dcard" id="d-avoid"><h3><svg><use href="#i-badge"/></svg>Who should use caution?</h3><p>'+esc(x.avoid)+' Share your full medical history and medication list with your '+who+'.</p></div>'+
+        '<div class="dcard" id="d-store"><h3><svg><use href="#i-pack"/></svg>Storage</h3><p>'+esc(storeExtra.join(' '))+(storeExtra.length?' ':'')+'Always follow the storage directions and beyond-use date on your label, and keep medications out of reach of children and pets.</p></div>'+
+        '<div class="dcard" id="d-why"><h3><svg><use href="#i-mortar"/></svg>Why is it compounded?</h3><p>'+esc(whyText(x))+'</p>'+
+        (x.combos.length?(x.isCombo?'<p>This preparation can include: '+esc(x.combos.join(', '))+'. Your prescriber chooses which ingredients and how much of each.</p>':'<p>'+b+' is also prepared in combination with '+esc(x.combos.slice(0,4).join(', '))+'. See <a href="'+(STATIC?'/medications/':'#medications')+'">combination preparations</a> in our library.</p>'):'')+'</div>'+
         '</article><aside class="dside"><img src="'+img+'" alt="" width="480" height="360"><nav class="dtoc" aria-label="On this page"><span>On this page</span>'+toc.map(function(t){ return '<a href="#'+t[0]+'" data-toc="'+t[0]+'">'+esc(t[1])+'</a>'; }).join('')+'</nav></aside></div></section>';
       // pharmacist quote + quality
       h+='<section class="band surface"><div class="wrap stack" style="gap:20px"><div class="dquote"><div><h2>Personalized compounding from a pharmacy that <span class="g">knows your name</span>.</h2><blockquote>“The pharmacy world needs people who are fair, and I want to be as fair to as many people as possible.”</blockquote><p class="dby"><b>Ian Tasman, PharmD</b><br>Owner and pharmacist, Pharmacy on the Park</p></div><div class="avatar dq-av">IT</div></div>'+
