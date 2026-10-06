@@ -40,11 +40,11 @@ pages={}
 for b in re.split(r'(?=<!-- ================= [A-Z ]+ ================= -->)',body):
   m=re.search(r'<div class="page" id="p-([a-z-]+)">',b)
   if m: pages[m.group(1)]=b.replace(m.group(0),'<div class="page on" id="p-'+m.group(1)+'">')
-URL={'home':'/','retail':'/retail-pharmacy/','supplements':'/retail-pharmacy/supplements/','discount':'/retail-pharmacy/discount-program/','insurance':'/retail-pharmacy/insurance/','service':'/retail-pharmacy/fast-service/','otc':'/retail-pharmacy/otc-products/','compounding':'/compounding/','hormone-therapy':'/compounding/hormone-therapy/','mcas':'/compounding/mast-cell-activation-syndrome/','veterinary':'/veterinary/','fip':'/veterinary/fip-medication/','vet-lunch':'/veterinary/lunch-and-learn/','prescribers':'/prescribers/','about':'/about/','quality':'/about/quality/','choose':'/how-to-choose-a-compounding-pharmacy/','contact':'/contact/','privacy':'/privacy-policy/','medications':'/medications/','ldn':'/low-dose-naltrexone/'}
+URL={'home':'/','retail':'/retail-pharmacy/','supplements':'/retail-pharmacy/supplements/','discount':'/retail-pharmacy/discount-program/','insurance':'/retail-pharmacy/insurance/','service':'/retail-pharmacy/fast-service/','otc':'/retail-pharmacy/otc-products/','compounding':'/compounding/','hormone-therapy':'/compounding/hormone-therapy/','mcas':'/compounding/mast-cell-activation-syndrome/','veterinary':'/veterinary/','fip':'/veterinary/fip-medication/','vet-lunch':'/veterinary/lunch-and-learn/','prescribers':'/prescribers/','about':'/about/','quality':'/about/quality/','choose':'/how-to-choose-a-compounding-pharmacy/','contact':'/contact/','privacy':'/privacy-policy/','hipaa':'/notice-of-privacy-practices/','terms':'/terms-of-use/','shipping':'/shipping-policy/','returns':'/returns-and-refunds/','accessibility':'/accessibility/','notfound':'/404/','medications':'/medications/','ldn':'/low-dose-naltrexone/'}
 EXTRA={'send':'/contact/#send-sec','about-quality':'/about/#about-quality-sec'}
 TOP={'ldn':'compounding','supplements':'retail','discount':'retail','insurance':'retail','service':'retail','otc':'retail','mcas':'compounding','vet-lunch':'veterinary','hormone-therapy':'compounding','fip':'veterinary','quality':'about','choose':'about'}
 META={
-'ldn':("Low-Dose Naltrexone (LDN) Tablets $60 for 90 | Florida Pharmacy","Low-dose naltrexone (LDN) 1.5 mg, 3 mg and 4.5 mg tablets: $60 for 90 tablets. Compounded in Oviedo near Orlando. Transfers welcome; shipping across Florida. Call 407-977-9779."),
+'ldn':("Low-Dose Naltrexone (LDN) Tablets $60 for 90 | Florida Pharmacy","Low-dose naltrexone (LDN) 1.5 mg, 3 mg and 4.5 mg tablets: $60 for 90 tablets. Compounded in Oviedo near Orlando. Transfers welcome; shipping to Florida, Maine and Colorado. Call 407-977-9779."),
 'medications':("Compounded Medication Library | Pharmacy on the Park","Search 230+ medications we compound for people and pets in Oviedo, FL: dosage forms, flavors, common uses, side effects and research links."),
 'home':("Pharmacy on the Park | Compounding Pharmacy in Oviedo, FL","Family-owned compounding pharmacy in Oviedo, FL. LDN 1.5, 3 and 4.5 mg tablets $60 for 90. Hormone therapy, pet medications and FIP treatment. Accredited. Call 407-977-9779."),
 'retail':("Retail Pharmacy in Oviedo, FL | Transfers & Refills","Switch to Pharmacy on the Park in Oviedo, FL. We handle prescription transfers and refills, accept most insurance plans, and a real person answers the phone."),
@@ -57,22 +57,28 @@ META={
 'vet-lunch':("Lunch and Learn for Veterinary Teams | Pharmacy on the Park","Veterinary practices: book a lunch and learn and we'll come to your clinic to share compounded pet medications, flavors, pricing and same-day to 24-hour turnaround. Oviedo, FL."),
 'compounding':("Compounding Pharmacy in Oviedo, FL | Pharmacy on the Park","Custom compounded medications in Oviedo, FL: capsules, creams, troches, rapid-dissolve tablets and more. Accredited, USP <800> compliant, nonsterile and select sterile."),
 'hormone-therapy':("Compounded Hormone Therapy in Oviedo, FL","Compounded bioidentical hormone therapy in Oviedo, FL: estradiol, estriol, Biest, progesterone, testosterone and DHEA, prepared as your clinician prescribes."),
-'veterinary':("Veterinary Compounding Pharmacy in Oviedo, FL","Compounded pet medications for dogs, cats and exotics: flavored liquids, treats, transdermals and more. Pickup in Oviedo or shipping across Florida."),
-'fip':("GS-441524 for Cats with FIP | Florida Pharmacy","Pharmacy on the Park fills veterinary prescriptions for GS-441524 to treat FIP in cats. Pickup in Oviedo or shipping within Florida. Call 407-977-9779."),
+'veterinary':("Veterinary Compounding Pharmacy in Oviedo, FL","Compounded pet medications for dogs, cats and exotics: flavored liquids, treats, transdermals and more. Pickup in Oviedo or shipping to Florida, Maine and Colorado."),
+'fip':("GS-441524 for Cats with FIP | Florida Pharmacy","Pharmacy on the Park fills veterinary prescriptions for GS-441524 to treat FIP in cats. Pickup in Oviedo or shipping to Florida, Maine and Colorado. Call 407-977-9779."),
 'prescribers':("For Prescribers | Compounding Partner in Central Florida","Human and veterinary prescribers: talk formulations with a pharmacist. Fax 407-977-0079, phone 407-977-9779. Accredited, USP <800> compliant compounding pharmacy."),
 'about':("About Pharmacy on the Park | Family-Owned in Oviedo, FL","Family-owned pharmacy in Oviedo, FL, opened in 2022 and led by Ian Tasman, PharmD. Accredited and USP <800> compliant, and active with Orlando Science Center, Girl Scouts and local teams."),
 'quality':("Quality & Sourcing | USP <795>, <797> & <800> | Pharmacy on the Park","Pharmacy on the Park exceeds Florida compounding standards: USP <800> compliant, meets USP <795> and <797>, every sterile batch tested by Pharmetric Labs and a certified clean room."),
 'choose':("How to Choose a Compounding Pharmacy | Pharmacy on the Park","What to look for in a compounding pharmacy: accreditation, USP <795>, <797> and <800>, lab standards, ingredient sourcing, independent testing and written procedures, plus questions to ask."),
 'privacy':("Privacy Policy | Pharmacy on the Park, Oviedo FL","How Pharmacy on the Park handles information on pharmacyonthepark.com: contact form messages, Google Analytics, and how your prescription information is protected under HIPAA."),
+'hipaa':("Notice of Privacy Practices (HIPAA) | Pharmacy on the Park","How Pharmacy on the Park may use and share your health information, your rights under HIPAA, and how to contact our Privacy Officer or file a complaint."),
+'terms':("Terms of Use | Pharmacy on the Park, Oviedo FL","Terms for using pharmacyonthepark.com: general information, not medical advice; emergencies; prescriptions; and links to other websites."),
+'shipping':("Shipping Policy | Florida, Maine & Colorado | Pharmacy on the Park","Pick up in Oviedo, FL or we ship prescriptions and compounded medications to Florida, Maine and Colorado. Costs, timing, cold packing and lost or damaged packages."),
+'returns':("Returns & Refunds | Pharmacy on the Park, Oviedo FL","Why prescription medications can't be returned once dispensed, what we do if we make a mistake, and returns for over-the-counter products and supplements."),
+'accessibility':("Accessibility Statement | Pharmacy on the Park","Pharmacy on the Park works to make its website accessible to everyone (WCAG 2.1 AA). Call 407-977-9779 if anything is hard to use."),
+'notfound':("Page Not Found | Pharmacy on the Park","The page you were looking for couldn't be found. Visit our home page or call 407-977-9779."),
 'contact':("Contact & Directions | Pharmacy on the Park, Oviedo FL","784 S. Central Ave, Oviedo, FL 32765. Phone 407-977-9779, fax 407-977-0079. Hours, directions, reviews and how to send a prescription."),
 }
-NAMES={'ldn':'Low-Dose Naltrexone (LDN)','medications':'Medication Library','supplements':'Supplements','discount':'$9 for 90 Days','insurance':'Insurance','service':'Fast, Reliable Service','otc':'Over-the-Counter Products','mcas':'Mast Cell Activation Syndrome (MCAS)','vet-lunch':'Lunch and Learn for Veterinary Teams','retail':'Retail Pharmacy','compounding':'Human Compounding','hormone-therapy':'Hormone Therapy','veterinary':'Veterinary Pharmacy','fip':'FIP Medication','prescribers':'For Prescribers','about':'About Us','quality':'Quality and Sourcing','choose':'How to Choose a Compounding Pharmacy','contact':'Contact','privacy':'Privacy Policy'}
+NAMES={'ldn':'Low-Dose Naltrexone (LDN)','medications':'Medication Library','supplements':'Supplements','discount':'$9 for 90 Days','insurance':'Insurance','service':'Fast, Reliable Service','otc':'Over-the-Counter Products','mcas':'Mast Cell Activation Syndrome (MCAS)','vet-lunch':'Lunch and Learn for Veterinary Teams','retail':'Retail Pharmacy','compounding':'Human Compounding','hormone-therapy':'Hormone Therapy','veterinary':'Veterinary Pharmacy','fip':'FIP Medication','prescribers':'For Prescribers','about':'About Us','quality':'Quality and Sourcing','choose':'How to Choose a Compounding Pharmacy','contact':'Contact','privacy':'Privacy Policy','hipaa':'Notice of Privacy Practices','terms':'Terms of Use','shipping':'Shipping Policy','returns':'Returns and Refunds','accessibility':'Accessibility','notfound':'Page Not Found'}
 business={"@context":"https://schema.org","@type":"Pharmacy","@id":DOMAIN+"/#pharmacy","name":"Pharmacy on the Park","url":DOMAIN+"/","logo":DOMAIN+"/logo.svg","image":DOMAIN+"/og-image.png",
  "description":"Family-owned retail and compounding pharmacy in Oviedo, Florida serving patients, pet owners and prescriber offices.",
  "telephone":"+1-407-977-9779","faxNumber":"+1-407-977-0079","email":"info@pharmacyonthepark.com",
  "address":{"@type":"PostalAddress","streetAddress":"784 S Central Ave","addressLocality":"Oviedo","addressRegion":"FL","postalCode":"32765","addressCountry":"US"},
  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"12:00"}],
- "areaServed":[{"@type":"City","name":"Oviedo"},{"@type":"State","name":"Florida"}],
+ "areaServed":[{"@type":"City","name":"Oviedo"},{"@type":"State","name":"Florida"},{"@type":"State","name":"Maine"},{"@type":"State","name":"Colorado"}],
  "sameAs":["https://www.facebook.com/oviedopharmacyonthepark/","https://www.instagram.com/pharmacyonthepark/"],
  "founder":{"@type":"Person","name":"Ian Tasman","jobTitle":"Owner and Pharmacist"},"foundingDate":"2022"}
 def fix_links(h):
@@ -85,9 +91,10 @@ faq=[{"@type":"Question","name":unhtml(q),"acceptedAnswer":{"@type":"Answer","te
 esc=lambda x:x.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('"','&quot;')
 for key,html in pages.items():
   title,desc=META[key]; url=DOMAIN+URL[key]; ld=[business]
+  robots='noindex' if key=='notfound' else 'index,follow'
   if key=='ldn':
     for st in ('1.5 mg','3 mg','4.5 mg'):
-      ld.append({"@context":"https://schema.org","@type":"Product","name":"Low-Dose Naltrexone (LDN) "+st+" Tablets, 90 count","description":"Compounded low-dose naltrexone "+st+" tablets prepared from a prescription at Pharmacy on the Park in Oviedo, Florida.","image":DOMAIN+"/forms/tablet.svg","brand":{"@type":"Organization","name":"Pharmacy on the Park"},"offers":{"@type":"Offer","price":"60.00","priceCurrency":"USD","availability":"https://schema.org/InStock","url":DOMAIN+"/low-dose-naltrexone/","seller":{"@id":DOMAIN+"/#pharmacy"},"eligibleRegion":{"@type":"State","name":"Florida"}}})
+      ld.append({"@context":"https://schema.org","@type":"Product","name":"Low-Dose Naltrexone (LDN) "+st+" Tablets, 90 count","description":"Compounded low-dose naltrexone "+st+" tablets prepared from a prescription at Pharmacy on the Park in Oviedo, Florida.","image":DOMAIN+"/forms/tablet.svg","brand":{"@type":"Organization","name":"Pharmacy on the Park"},"offers":{"@type":"Offer","price":"60.00","priceCurrency":"USD","availability":"https://schema.org/InStock","url":DOMAIN+"/low-dose-naltrexone/","seller":{"@id":DOMAIN+"/#pharmacy"},"eligibleRegion":[{"@type":"State","name":"Florida"},{"@type":"State","name":"Maine"},{"@type":"State","name":"Colorado"}]}})
     ld.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":unhtml(q),"acceptedAnswer":{"@type":"Answer","text":unhtml(a)}} for q,a in re.findall(r'<details><summary>(.*?)</summary><p>(.*?)</p></details>',html)]})
   if key=='home':
     ld.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faq})
@@ -104,7 +111,7 @@ for key,html in pages.items():
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{url}">
-<meta name="robots" content="index,follow">
+<meta name="robots" content="{robots}">
 <meta name="theme-color" content="#005687">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
@@ -174,6 +181,8 @@ for old_id,new_id in {'scream-cream':'topical-sildenafil-cream-for-women'}.items
 shutil.copytree('src/logos','_site/logos'); shutil.copytree('src/forms','_site/forms'); shutil.copytree('src/photos','_site/photos')
 os.makedirs('_site/media',exist_ok=True); open('_site/media/README.txt','w').write('Retail page background video: save a short, silent, looping clip of your nonsterile compounding lab here as compounding-nonsterile.mp4 (MP4/H.264, 10-30 seconds, under 10 MB, 1920x1080). It plays softly behind the Retail Pharmacy banner. Until the file is here, the banner shows without video.\n')
 os.makedirs('_site/downloads',exist_ok=True); shutil.copy('src/downloads/hrt-order-form.pdf','_site/downloads/hrt-order-form.pdf')
+# GitHub Pages shows /404.html for any missing page
+shutil.move('_site/404/index.html','_site/404.html'); os.rmdir('_site/404')
 open('_site/robots.txt','w').write(f"User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n")
-open('_site/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{DOMAIN}{u}</loc><lastmod>2026-10-05</lastmod><priority>{"1.0" if u in ("/","/low-dose-naltrexone/") else ("0.6" if u.count("/")>2 and u.startswith("/medications/") else "0.8")}</priority></url>\n' for u in list(URL.values())+MEDURLS)+'</urlset>\n')
+open('_site/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{DOMAIN}{u}</loc><lastmod>2026-10-06</lastmod><priority>{"1.0" if u in ("/","/low-dose-naltrexone/") else ("0.6" if u.count("/")>2 and u.startswith("/medications/") else "0.8")}</priority></url>\n' for u in [v for k,v in URL.items() if k!='notfound']+MEDURLS)+'</urlset>\n')
 print('built')
