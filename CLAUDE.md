@@ -23,7 +23,7 @@ Hours: Mon–Fri 9 a.m.–6 p.m., Sat 9 a.m.–noon, Sun closed. Domain: pharmac
 ## Content rules (agreed with the owner)
 - Compounded medications are not FDA-approved; keep that disclaimer. Uses are general and may be off-label; the prescriber/veterinarian decides.
 - Do not list GLP-1s (tirzepatide/semaglutide), phentermine, ketamine, opioids or benzodiazepines publicly.
-- No free delivery (removed). Compound turnaround: same day to 24 hours. FIP cases are prioritized.
+- Shipping: Florida, Maine and Colorado only (owner, 10/6/26); pickup in Oviedo. No free delivery (removed). Compound turnaround: same day to 24 hours. FIP cases are prioritized.
 - Quality claims allowed: accredited by The Compliance Team; USP <800> compliant; meets USP <795> (nonsterile) and USP <797> (sterile); every sterile batch tested by Pharmetric Labs (sterility, endotoxin, potency); certified clean room, environmental monitoring, equipment calibration, tested hoods (do not publish certificates); exceeds Florida compounding standards; written procedures for compounding, cleaning, labeling and quality checks; Pharmacon veterinary compounding certification.
 - Do not mention batch or potency adjustments (formulas adjusted to each lot's potency); the owner removed them from the site. Ingredient certificates of analysis and potency testing of sterile batches are still fine.
 - Suppliers shown: Medisca, Fagron, PCCA, Specialized Rx (Darmerica removed).
@@ -32,6 +32,7 @@ Hours: Mon–Fri 9 a.m.–6 p.m., Sat 9 a.m.–noon, Sun closed. Domain: pharmac
 - Retail claims (owner confirmed 10/2/26): hundreds of medications are $9 for a 90-day supply, no insurance needed, no discount card or sign-up; competitive cash prices; price matching; most insurance plans accepted (don't name plans); same-day filling, short wait times, text notifications and texting with the team. OTC categories carried: cold and flu, pain and fever, allergy, first aid, baby care (NOT braces/compression or diabetic supplies). Don't claim we find hard-to-get products or specific manufacturers (owner removed for now).
 - Weight loss: only "call us to discuss our weight loss options"; never name the medications.
 - MCAS page (/compounding/mast-cell-activation-syndrome/) lists only MCAS-related medications already in library.json (ketotifen, H1 antihistamines, famotidine, montelukast, LDN). Don't add cromolyn unless the owner confirms they make it. Resource links: TMS, Cleveland Clinic, Mast Cell Action, AAAAI 2019 work group report.
+- Policy pages (added 10/6/26): /notice-of-privacy-practices/ (HIPAA notice; standard text pending owner's own version), /terms-of-use/, /shipping-policy/, /returns-and-refunds/ (OTC/supplement 30-day unopened return is a default awaiting owner OK), /accessibility/, and /404.html (built from the `notfound` page, noindex, not in the sitemap).
 - Keep phone numbers from wrapping (`<span class="nw">`).
 - "Last updated" date appears in the library, drug pages and footer; update it when content changes.
 - Never commit internal data: fill counts, prices paid, the compound export, or the pharmacist review spreadsheet.
