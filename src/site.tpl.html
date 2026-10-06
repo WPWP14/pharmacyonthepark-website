@@ -535,7 +535,7 @@ footer .social svg{color:var(--park-green)}
 .ldn img{width:200px;height:auto;aspect-ratio:4/3;border-radius:16px;display:block;max-width:100%}
 .ldn h2{font-size:clamp(1.5rem,2.8vw,2.1rem)}
 .ldn p{color:var(--muted);margin-top:6px}
-.price{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--park-blue);color:#fff;border-radius:20px;padding:18px 24px;min-width:170px}
+.price{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--park-blue);color:var(--on-blue);border-radius:20px;padding:18px 24px;min-width:170px}
 .price b{font:900 3rem/1 var(--display);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .price span{font-weight:700;opacity:.92}
 .price small{font-size:.75rem;opacity:.8;margin-top:6px}
@@ -626,6 +626,26 @@ footer .social svg{color:var(--park-green)}
 .dcard.alert{background:#FDF1F1;border-color:#EDC2C2}.dcard.alert h3,.dcard.alert h3 svg{color:#9B2C2C}
 .dcard ul.two{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px}
 @media (max-width:520px){.dcard ul.two{grid-template-columns:1fr}}
+/* dark mode: tinted cards keep light text readable */
+@media (prefers-color-scheme: dark){
+:root:not([data-theme="light"]) .dcallout{background:#2A2112;color:#F3DDB3}
+:root:not([data-theme="light"]) .dcallout b{color:#FBE9C6}
+:root:not([data-theme="light"]) .dfacts>div{background:#15281C;border-color:#2C4A35}
+:root:not([data-theme="light"]) .dcard.warn,:root:not([data-theme="light"]) .combonote{background:#2A2112;border-color:#5C4520}
+:root:not([data-theme="light"]) .dcard.warn h3,:root:not([data-theme="light"]) .dcard.warn h3 svg,:root:not([data-theme="light"]) .combonote svg{color:#F0C27A}
+:root:not([data-theme="light"]) .dcard.alert{background:#2D1818;border-color:#5E2E2E}
+:root:not([data-theme="light"]) .dcard.alert h3,:root:not([data-theme="light"]) .dcard.alert h3 svg{color:#F2A7A7}
+:root:not([data-theme="light"]) .catchips button.combo{color:#F0C27A}
+:root:not([data-theme="light"]) .catchips button.combo[aria-pressed="true"]{background:#2A2112}}
+:root[data-theme="dark"] .dcallout{background:#2A2112;color:#F3DDB3}
+:root[data-theme="dark"] .dcallout b{color:#FBE9C6}
+:root[data-theme="dark"] .dfacts>div{background:#15281C;border-color:#2C4A35}
+:root[data-theme="dark"] .dcard.warn,:root[data-theme="dark"] .combonote{background:#2A2112;border-color:#5C4520}
+:root[data-theme="dark"] .dcard.warn h3,:root[data-theme="dark"] .dcard.warn h3 svg,:root[data-theme="dark"] .combonote svg{color:#F0C27A}
+:root[data-theme="dark"] .dcard.alert{background:#2D1818;border-color:#5E2E2E}
+:root[data-theme="dark"] .dcard.alert h3,:root[data-theme="dark"] .dcard.alert h3 svg{color:#F2A7A7}
+:root[data-theme="dark"] .catchips button.combo{color:#F0C27A}
+:root[data-theme="dark"] .catchips button.combo[aria-pressed="true"]{background:#2A2112}
 .daka{margin:-4px 0 10px;color:var(--muted);font-size:.95rem}
 #d-faq{scroll-margin-top:120px}
 .dside{position:sticky;top:110px;display:flex;flex-direction:column;gap:14px}
@@ -1562,7 +1582,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
       </div>
       <div class="card" style="gap:14px">
         <img class="medhero-img" src="{{FORM:tablet}}" alt="Compounded low-dose naltrexone tablets" width="480" height="360">
-        <div class="price" style="background:var(--park-blue);color:#fff"><b>$60</b><span>for 90 LDN tablets</span><small>1.5, 3 or 4.5 mg · Rx required</small></div>
+        <div class="price" style="background:var(--park-blue);color:var(--on-blue)"><b>$60</b><span>for 90 LDN tablets</span><small>1.5, 3 or 4.5 mg · Rx required</small></div>
         <p style="font-size:.9rem;color:var(--muted)">Price applies to 1.5, 3 and 4.5 mg tablets. Other strengths, capsules, liquid and cream: call for pricing.</p>
       </div>
     </div>
