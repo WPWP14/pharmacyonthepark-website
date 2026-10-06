@@ -10,8 +10,13 @@ html{scroll-padding-top:110px}
 header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--paper);border-bottom:1px solid var(--line)}
 .top .wrap,.utility .wrap{max-width:1360px}
 .top .wrap{display:flex;align-items:center;gap:18px;padding-block:10px}
-.brand{display:flex;align-items:center;background:#fff;border-radius:14px;padding:4px 10px;flex:none}
+.brand{display:flex;align-items:center;flex:none}
 .brand img{height:50px;width:auto;display:block}
+/* logo with white lettering for dark mode, so the logo needs no white box */
+.brand .logo-dark{display:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .brand .logo-light{display:none}:root:not([data-theme="light"]) .brand .logo-dark{display:block}}
+:root[data-theme="dark"] .brand .logo-light{display:none}
+:root[data-theme="dark"] .brand .logo-dark{display:block}
 nav.main{display:flex;gap:2px;align-items:center;margin-left:auto}
 nav.main > .item{position:relative}
 nav.main a.nl{white-space:nowrap;display:inline-flex;align-items:center;min-height:40px;font:700 .92rem/1 var(--body);color:var(--ink);text-decoration:none;padding:10px 11px;border-radius:var(--pill)}
@@ -782,7 +787,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
 </div>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#home" aria-label="Pharmacy on the Park home"><img src="data:image/svg+xml;base64,{{LOGO}}" alt="Pharmacy on the Park"></a>
+    <a class="brand" href="#home" aria-label="Pharmacy on the Park home"><img class="logo-light" src="data:image/svg+xml;base64,{{LOGO}}" alt="Pharmacy on the Park"><img class="logo-dark" src="data:image/svg+xml;base64,{{LOGODARK}}" alt="Pharmacy on the Park"></a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
     <nav class="main" id="mainNav" aria-label="Main">
       <div class="item"><a class="nl" href="#retail">Retail Pharmacy</a><div class="sub"><div><a href="#retail">Transfers and refills</a><a href="#discount">$9 for 90 days</a><a href="#insurance">Insurance</a><a href="#service">Fast, reliable service</a><a href="#otc">Over-the-counter products</a><a href="#supplements">Supplements</a></div></div></div>
