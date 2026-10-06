@@ -10628,7 +10628,7 @@
   "aud": [
    "people"
   ],
-  "uses": "Low-dose naltrexone (LDN) is prescribed off-label for chronic pain, inflammation and autoimmune conditions; standard doses treat alcohol and opioid dependence.",
+  "uses": "Low-dose naltrexone (LDN) is prescribed off-label for chronic pain, inflammation and autoimmune conditions.",
   "side": "Vivid dreams, trouble sleeping, headache, nausea. Blocks opioid pain relievers.",
   "forms": [
    "Tablet",
@@ -10646,7 +10646,7 @@
    "Bupropion"
   ],
   "n": 240,
-  "how": "At standard doses it blocks opioid receptors. At low doses it briefly blocks them, which is thought to prompt the body to make more of its own endorphins and to calm certain immune cells.",
+  "how": "At low doses, naltrexone briefly blocks opioid receptors. Researchers think this may prompt the body to make more of its own endorphins and may act on certain immune cells.",
   "avoid": "Anyone taking opioid pain medicine or who needs opioids for surgery, and people with liver disease.",
   "flavorMore": [],
   "drugClass": "Opioid receptor antagonist",
@@ -10655,10 +10655,8 @@
    "Low-dose naltrexone",
    "ReVia"
   ],
-  "about": "Naltrexone is an opioid blocker approved in the 1980s for alcohol or opioid dependence. In much smaller amounts, called low-dose naltrexone or LDN, it is prescribed off-label for chronic pain and immune-related conditions. Because no commercial product comes in these low strengths, LDN is compounded into tablets, capsules, liquids and topical forms, and the prescriber decides the dose.",
+  "about": "Low-dose naltrexone (LDN) is naltrexone, an opioid receptor blocker, used in much smaller amounts than commercial tablets. It is prescribed off-label for chronic pain and immune-related conditions. Because no commercial product comes in these low strengths, LDN is compounded into tablets, capsules, liquids and topical forms, and the prescriber decides the dose.",
   "conditions": [
-   "Alcohol use disorder",
-   "Opioid dependence (after detox)",
    "Fibromyalgia (off-label LDN)",
    "Chronic pain conditions (off-label LDN)",
    "Autoimmune conditions (off-label LDN)",
@@ -10673,7 +10671,7 @@
    "Carry a card or note saying you take naltrexone in case of emergency care.",
    "Stop it only as your prescriber directs before any planned surgery."
   ],
-  "monitoring": "At standard doses your prescriber may check liver tests; with LDN, follow-up visits focus on how symptoms change.",
+  "monitoring": "Follow-up visits with your prescriber focus on how your symptoms change and whether to adjust the dose.",
   "faqs": [
    [
     "How long does LDN take to work?",
@@ -10685,7 +10683,7 @@
    ],
    [
     "What is the difference between LDN and regular naltrexone?",
-    "They are the same medicine, but LDN uses a much smaller amount and is prescribed off-label for different reasons than standard naltrexone."
+    "They are the same medicine, but LDN uses a much smaller amount and is prescribed off-label."
    ]
   ]
  },
