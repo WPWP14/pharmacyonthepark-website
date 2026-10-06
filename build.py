@@ -187,7 +187,8 @@ def card(x,f=None):
           f'<h3><a href="/medications/{x["id"]}/">{esc(x["name"])}</a></h3></div><div class="aud">{aud}</div></div><p>{esc(x["uses"])}</p>'
           '<div class="minichips">'+''.join(f'<span>{esc(v)}</span>' for v in x['forms'][:4])+(f'<span>+{len(x["forms"])-4} more</span>' if len(x['forms'])>4 else '')+'</div></div></article>')
 def linkrow(items,cur=None):
-  return '<div class="catchips browse">'+''.join(f'<a href="{u}"{" aria-current=\"page\"" if u==cur else ""}>{esc(n)}<small>{c}</small></a>' for n,u,c in items)+'</div>'
+  cur_attr=' aria-current="page"'
+  return '<div class="catchips browse">'+''.join(f'<a href="{u}"{cur_attr if u==cur else ""}>{esc(n)}<small>{c}</small></a>' for n,u,c in items)+'</div>'
 CATS=[]
 for code,info in BR['cats'].items():
   L=[x for x in LIB if x.get('isCombo')] if code=='__combo' else [x for x in LIB if x['cat']==code]
