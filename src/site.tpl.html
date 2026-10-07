@@ -1586,7 +1586,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <p>Anyone taking opioid pain medicine (including tramadol) or who may need opioids for a procedure, since naltrexone blocks their effect. Tell your prescriber about liver disease and all medicines you take.</p>
         <h3>How to get LDN from Pharmacy on the Park</h3>
         <ol class="dsteps" style="margin-top:6px">
-          <li><b>Have your prescriber send it</b><p>E-prescribe to Pharmacy on the Park (NCPDP 5747239), fax <span class="nw">407-977-0079</span> or call <span class="nw">407-977-9779</span>. Already on LDN elsewhere? Call us and we'll transfer it.</p></li>
+          <li><b>Have your prescriber send it</b><p>E-prescribe to Pharmacy on the Park (NCPDP 5747235), fax <span class="nw">407-977-0079</span> or call <span class="nw">407-977-9779</span>. Already on LDN elsewhere? Call us and we'll transfer it.</p></li>
           <li><b>We compound and check it</b><p>Your tablets are made to your strength, and a pharmacist verifies every batch.</p></li>
           <li><b>Pick up or ship</b><p>Pick up at 784 S. Central Ave in Oviedo, or we ship to Florida, Maine and Colorado. We'll call you when it's ready.</p></li>
         </ol>
@@ -1841,7 +1841,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
           <dt>Email</dt><dd>info@pharmacyonthepark.com</dd>
         </dl>
         <p style="margin-top:6px">For e-prescribing, search for:</p>
-        <div class="erx">Pharmacy on the Park<br>784 S Central Ave<br>Oviedo, FL 32765<br>NCPDP 5747239 · NPI 1720664709</div>
+        <div class="erx">Pharmacy on the Park<br>784 S Central Ave<br>Oviedo, FL 32765<br>NCPDP 5747235 · NPI 1720664709</div>
         <div class="chips" style="margin-top:4px"><span>Accredited</span><span>USP &lt;800&gt; compliant</span><span>Meets USP &lt;795&gt;</span><span>Meets USP &lt;797&gt;</span></div>
       </div>
     </div>
@@ -2193,7 +2193,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
       <div class="grid g3">
         <div class="card"><span class="badge b">Patients</span><h3>Transfer or new prescription</h3><p>Call <span class="nw">407-977-9779</span> with your current pharmacy's name and phone number, or ask your doctor to send the prescription to Pharmacy on the Park. We'll handle the rest.</p><a class="textlink" href="#retail">How transfers work <svg><use href="#i-arrow"/></svg></a></div>
         <div class="card"><span class="badge">Pet owners</span><h3>Your pet's prescription</h3><p>Ask your veterinarian to fax it to <span class="nw">407-977-0079</span> or call it in. We'll call you when we receive it.</p><a class="textlink" href="#veterinary">Veterinary pharmacy <svg><use href="#i-arrow"/></svg></a></div>
-        <div class="card"><span class="badge b">Offices</span><h3>Prescribers and staff</h3><p>E-prescribe to Pharmacy on the Park, 784 S Central Ave, Oviedo, FL 32765 (NCPDP 5747239, NPI 1720664709), fax <span class="nw">407-977-0079</span>, or call to speak with a pharmacist.</p><a class="textlink" href="#prescribers">Prescriber information <svg><use href="#i-arrow"/></svg></a></div>
+        <div class="card"><span class="badge b">Offices</span><h3>Prescribers and staff</h3><p>E-prescribe to Pharmacy on the Park, 784 S Central Ave, Oviedo, FL 32765 (NCPDP 5747235, NPI 1720664709), fax <span class="nw">407-977-0079</span>, or call to speak with a pharmacist.</p><a class="textlink" href="#prescribers">Prescriber information <svg><use href="#i-arrow"/></svg></a></div>
       </div>
     </div>
   </section>
@@ -2728,7 +2728,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
       r.push(['FDA: human drug compounding','https://www.fda.gov/drugs/human-drug-compounding/consumer-and-health-care-professional-information']);
       return r;
     }
-    function rxText(x,f){ return 'Rx: '+base(x.name)+' ___ ('+f.toLowerCase()+')'+(x.flavors[0]&&/suspension|liquid|treat|troche|rapid/i.test(f)?' flavor: '+x.flavors[0]:'')+'\nQuantity: ___\nSig: ___\nRefills: ___\nPharmacy: Pharmacy on the Park, 784 S Central Ave, Oviedo, FL 32765 · NCPDP 5747239 · Fax 407-977-0079'; }
+    function rxText(x,f){ return 'Rx: '+base(x.name)+' ___ ('+f.toLowerCase()+')'+(x.flavors[0]&&/suspension|liquid|treat|troche|rapid/i.test(f)?' flavor: '+x.flavors[0]:'')+'\nQuantity: ___\nSig: ___\nRefills: ___\nPharmacy: Pharmacy on the Park, 784 S Central Ave, Oviedo, FL 32765 · NCPDP 5747235 · Fax 407-977-0079'; }
     window.renderDrug = function(x){
       var nm=esc(x.name), b=esc(base(x.name)), who=petsOnly(x)?'veterinarian':'prescriber';
       var f0=x.forms[0]||'Capsule', img=x.img?FORMIMG2[x.img]:imgFor(f0,x);
@@ -2802,13 +2802,13 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
       // prescribers
       var rx0=x.forms[0]||'Capsule';
       h+='<section class="band surface" id="d-rx"><div class="wrap stack" style="gap:18px;max-width:900px"><div class="head" style="margin:0;text-align:center;align-items:center;max-width:none"><span class="eyebrow">For '+(petsOnly(x)?'veterinarians':'prescribers')+'</span><h2>How to e-prescribe '+b+'</h2><p class="lede">Compounded preparations have no NDC, so they won’t appear in a standard drug search. Use your system’s compound or free-text entry.</p></div>'+
-        '<ol class="dsteps"><li><b>Find Pharmacy on the Park in your pharmacy directory</b><p>Search by NCPDP or by name and ZIP. Save us as a favorite.</p><div class="chips"><span>NCPDP 5747239</span><span>NPI 1720664709</span><span>784 S Central Ave, Oviedo, FL 32765</span><span>Phone 407-977-9779</span><span>Fax 407-977-0079</span></div></li>'+
+        '<ol class="dsteps"><li><b>Find Pharmacy on the Park in your pharmacy directory</b><p>Search by NCPDP or by name and ZIP. Save us as a favorite.</p><div class="chips"><span>NCPDP 5747235</span><span>NPI 1720664709</span><span>784 S Central Ave, Oviedo, FL 32765</span><span>Phone 407-977-9779</span><span>Fax 407-977-0079</span></div></li>'+
         '<li><b>Choose the preparation</b><div class="chips">'+x.forms.map(function(f){ return '<span>'+b+' '+esc(f.toLowerCase())+'</span>'; }).join('')+'</div><pre class="drx" id="dRx">'+esc(rxText(x,rx0))+'</pre><button type="button" class="btn primary sm" data-copy2="dRx">Copy prescription template</button></li>'+
         '<li><b>Enter it as a compound</b><p>Use compound, non-formulary or free-text entry and paste the details into the prescription body. Include strength, form, directions, quantity'+(petsOnly(x)?', species, weight':'')+' and flavor if needed.</p></li>'+
         '<li><b>Send it</b><p>Transmit from your EHR, fax it to <span class="nw">407-977-0079</span>, or call <span class="nw">407-977-9779</span> to speak with a pharmacist. We’ll call the '+(petsOnly(x)?'owner':'patient')+' when it’s received.</p></li></ol>'+
         '<div class="dcallout">Put the formula in the prescription itself, not in “Notes to pharmacy.” Some systems don’t transmit that field.</div></div></section>';
       // FAQ
-      var faqs=(x.faqs||[]).concat([['What is '+base(x.name)+'?',x.how],['What is it used for?',x.uses],['What forms and flavors are available?','We have prepared it as '+x.forms.join(', ').toLowerCase()+'.'+(flavAll.length?' Flavors include '+flavAll.join(', ')+'.':'')],['What are the common side effects?',x.side],['Who should use caution?',x.avoid],['Are compounded medications FDA-approved?','No. Compounded medications are prepared for an individual patient from a prescription and are not FDA-approved or commercially manufactured.'],['Do I need a prescription?','Yes. Your '+who+' sends the prescription to us and decides the strength and schedule.'],['Can you fill a prescription from my own '+who+'?','Yes. Ask them to e-prescribe to Pharmacy on the Park (NCPDP 5747239), fax 407-977-0079 or call 407-977-9779.'],['Do you ship?','Yes, to Florida, Maine and Colorado. You can also pick up at 784 S. Central Ave in Oviedo.'],['What is compounding?','Preparing a medication for one patient from a prescription when a commercial product isn’t the right strength, form or flavor.']]);
+      var faqs=(x.faqs||[]).concat([['What is '+base(x.name)+'?',x.how],['What is it used for?',x.uses],['What forms and flavors are available?','We have prepared it as '+x.forms.join(', ').toLowerCase()+'.'+(flavAll.length?' Flavors include '+flavAll.join(', ')+'.':'')],['What are the common side effects?',x.side],['Who should use caution?',x.avoid],['Are compounded medications FDA-approved?','No. Compounded medications are prepared for an individual patient from a prescription and are not FDA-approved or commercially manufactured.'],['Do I need a prescription?','Yes. Your '+who+' sends the prescription to us and decides the strength and schedule.'],['Can you fill a prescription from my own '+who+'?','Yes. Ask them to e-prescribe to Pharmacy on the Park (NCPDP 5747235), fax 407-977-0079 or call 407-977-9779.'],['Do you ship?','Yes, to Florida, Maine and Colorado. You can also pick up at 784 S. Central Ave in Oviedo.'],['What is compounding?','Preparing a medication for one patient from a prescription when a commercial product isn’t the right strength, form or flavor.']]);
       h+='<section class="band" id="d-faq"><div class="wrap stack" style="gap:18px;max-width:900px"><h2 style="text-align:center">Frequently asked questions about '+b+'</h2><div class="faq dfaq">'+faqs.map(function(q){ return '<details><summary>'+esc(q[0])+'</summary><p>'+esc(q[1])+'</p></details>'; }).join('')+'</div></div></section>';
       // pickup & shipping
       h+='<section class="band surface"><div class="wrap stack" style="gap:18px;max-width:900px"><h2 style="text-align:center">Pickup and shipping</h2><div class="qa-wrap"><table class="qa dtable"><thead><tr><th>Option</th><th>Where</th><th>Timing</th></tr></thead><tbody><tr><td><b>Pickup</b></td><td>784 S. Central Ave, Oviedo</td><td>Most compounds same day to 24 hours</td></tr><tr><td><b>Shipping</b></td><td>Florida, Maine and Colorado</td><td>We confirm timing when your prescription arrives</td></tr></tbody></table></div><p class="note">Questions? Call 407-977-9779. A person will answer.</p></div></section>';
