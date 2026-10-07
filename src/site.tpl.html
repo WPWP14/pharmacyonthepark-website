@@ -2771,7 +2771,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         '<ol class="steps s3 flow"><li><b>Send us the prescription</b><span>Your '+who+' e-prescribes, faxes or calls it in to Pharmacy on the Park.</span></li><li><b>A pharmacist reviews it</b><span>We verify it, confirm the price and timing, and call you.</span></li><li><b>We compound it for you</b><span>Pick up in Oviedo or we ship to Florida, Maine and Colorado.</span></li></ol></div></section>';
       // article + toc
       h+='<section class="band"><div class="wrap darticle"><article class="dbody">'+
-        '<div class="dfacts">'+(x.pron?'<div><span>Pronunciation</span><i>'+esc(x.pron)+'</i></div>':'')+
+        '<div class="dfacts">'+
           '<div><span>Brand and other names</span><b>'+esc(aka.length?aka.join(', '):(x.isCombo?'Compounded combination; no brand name':'No common brand name'))+'</b></div>'+
           '<div><span>Drug class</span><b>'+esc(x.drugClass||x.catName)+'</b></div></div>'+
         '<h2 id="d-what">What is '+nm+'?</h2>'+(x.about?'<p>'+esc(x.about)+'</p>':'<p>'+esc(x.uses)+'</p>')+'<p>At Pharmacy on the Park, '+b+' is compounded in our pharmacy from a prescription, in the strength and form your '+who+' orders.</p>'+
