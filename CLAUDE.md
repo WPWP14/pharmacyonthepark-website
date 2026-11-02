@@ -2,7 +2,7 @@
 
 Family-owned retail and compounding pharmacy at 784 S. Central Ave, Oviedo, FL 32765.
 Owner/pharmacist: Ian Tasman, PharmD. Pharmacists: Cristina Treskovich, Melissa Nadal.
-Phone 407-977-9779 · Fax 407-977-0079 · info@pharmacyonthepark.com · NCPDP 5747239 · NPI 1720664709
+Phone 407-977-9779 · Fax 407-977-0079 · info@pharmacyonthepark.com · NCPDP 5747235 · NPI 1720664709
 Hours: Mon–Fri 9 a.m.–6 p.m., Sat 9 a.m.–noon, Sun closed. Domain: pharmacyonthepark.com
 
 ## How the site is built
@@ -27,7 +27,7 @@ Hours: Mon–Fri 9 a.m.–6 p.m., Sat 9 a.m.–noon, Sun closed. Domain: pharmac
 - Quality claims allowed: accredited by The Compliance Team; USP <800> compliant; meets USP <795> (nonsterile) and USP <797> (sterile); every sterile batch tested by Pharmetric Labs (sterility, endotoxin, potency); certified clean room, environmental monitoring, equipment calibration, tested hoods (do not publish certificates); exceeds Florida compounding standards; written procedures for compounding, cleaning, labeling and quality checks; Pharmacon veterinary compounding certification.
 - Do not mention batch or potency adjustments (formulas adjusted to each lot's potency); the owner removed them from the site. Ingredient certificates of analysis and potency testing of sterile batches are still fine.
 - Suppliers shown: Medisca, Fagron, PCCA, Specialized Rx (Darmerica removed).
-- LDN: 1.5 mg, 3 mg and 4.5 mg tablets are $60 for 90 tablets; other strengths/forms "call for pricing". This is a key SEO page (/low-dose-naltrexone/).
+- LDN: 1 mg, 1.5 mg, 3 mg and 4.5 mg tablets (1 mg added 11/2/26) are $60 for 90 tablets; other strengths/forms "call for pricing". This is a key SEO page (/low-dose-naltrexone/).
 - Patients never need to call us after a prescriber sends one; we call them.
 - Retail claims (owner confirmed 10/2/26): hundreds of medications are $9 for a 90-day supply, no insurance needed, no discount card or sign-up; competitive cash prices; price matching; most insurance plans accepted (don't name plans); same-day filling, short wait times, text notifications and texting with the team. OTC categories carried: cold and flu, pain and fever, allergy, first aid, baby care (NOT braces/compression or diabetic supplies). Don't claim we find hard-to-get products or specific manufacturers (owner removed for now).
 - Weight loss: only "call us to discuss our weight loss options"; never name the medications.
