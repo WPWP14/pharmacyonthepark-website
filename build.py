@@ -44,9 +44,9 @@ URL={'home':'/','retail':'/retail-pharmacy/','supplements':'/retail-pharmacy/sup
 EXTRA={'send':'/contact/#send-sec','about-quality':'/about/#about-quality-sec'}
 TOP={'ldn':'compounding','supplements':'retail','discount':'retail','insurance':'retail','service':'retail','otc':'retail','mcas':'compounding','vet-lunch':'veterinary','hormone-therapy':'compounding','fip':'veterinary','quality':'about','choose':'about'}
 META={
-'ldn':("Compounded Low-Dose Naltrexone (LDN) Tablets $60 for 90 | Florida","Compounded low-dose naltrexone (LDN) 1.5 mg, 3 mg and 4.5 mg tablets: $60 for 90 tablets. Compounded in Oviedo near Orlando. Transfers welcome; shipping to Florida, Maine and Colorado. Call 407-977-9779."),
+'ldn':("Compounded Low-Dose Naltrexone (LDN) Tablets $60 for 90 | Florida","Compounded low-dose naltrexone (LDN) 1 mg, 1.5 mg, 3 mg and 4.5 mg tablets: $60 for 90 tablets. Compounded in Oviedo near Orlando. Transfers welcome; shipping to Florida, Maine and Colorado. Call 407-977-9779."),
 'medications':("Compounded Medication Library | Pharmacy on the Park","Search 230+ medications we compound for people and pets in Oviedo, FL: dosage forms, flavors, common uses, side effects and research links."),
-'home':("Pharmacy on the Park | Compounding Pharmacy in Oviedo, FL","Family-owned compounding pharmacy in Oviedo, FL. Compounded LDN 1.5, 3 and 4.5 mg tablets $60 for 90. Hormone therapy, pet medications and FIP treatment. Accredited. Call 407-977-9779."),
+'home':("Pharmacy on the Park | Compounding Pharmacy in Oviedo, FL","Family-owned compounding pharmacy in Oviedo, FL. Compounded LDN 1, 1.5, 3 and 4.5 mg tablets $60 for 90. Hormone therapy, pet medications and FIP treatment. Accredited. Call 407-977-9779."),
 'retail':("Retail Pharmacy in Oviedo, FL | Transfers & Refills","Switch to Pharmacy on the Park in Oviedo, FL. We handle prescription transfers and refills, accept most insurance plans, and a real person answers the phone."),
 'supplements':("Professional Supplements in Oviedo, FL | Pharmacy on the Park","Shop Pure Encapsulations, Ortho Molecular Products, Genestra, MaryRuth's and more in Oviedo, FL. We special order supplements and keep them stocked for you."),
 'discount':("$9 for 90 Days: Low-Cost Medications in Oviedo, FL","Hundreds of medications for $9 for a 90-day supply at Pharmacy on the Park in Oviedo, FL. No insurance, no discount card and no sign-up. Competitive cash prices and price matching."),
@@ -93,7 +93,7 @@ for key,html in pages.items():
   title,desc=META[key]; url=DOMAIN+URL[key]; ld=[business]
   robots='noindex' if key=='notfound' else 'index,follow'
   if key=='ldn':
-    for st in ('1.5 mg','3 mg','4.5 mg'):
+    for st in ('1 mg','1.5 mg','3 mg','4.5 mg'):
       ld.append({"@context":"https://schema.org","@type":"Product","name":"Low-Dose Naltrexone (LDN) "+st+" Tablets, 90 count","description":"Compounded low-dose naltrexone "+st+" tablets prepared from a prescription at Pharmacy on the Park in Oviedo, Florida.","image":DOMAIN+"/forms/tablet.svg","brand":{"@type":"Organization","name":"Pharmacy on the Park"},"offers":{"@type":"Offer","price":"60.00","priceCurrency":"USD","availability":"https://schema.org/InStock","url":DOMAIN+"/low-dose-naltrexone/","seller":{"@id":DOMAIN+"/#pharmacy"},"eligibleRegion":[{"@type":"State","name":"Florida"},{"@type":"State","name":"Maine"},{"@type":"State","name":"Colorado"}]}})
     ld.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":unhtml(q),"acceptedAnswer":{"@type":"Answer","text":unhtml(a)}} for q,a in re.findall(r'<details><summary>(.*?)</summary><p>(.*?)</p></details>',html)]})
   if key=='home':
@@ -251,5 +251,5 @@ os.makedirs('_site/downloads',exist_ok=True); shutil.copy('src/downloads/hrt-ord
 # GitHub Pages shows /404.html for any missing page
 shutil.move('_site/404/index.html','_site/404.html'); os.rmdir('_site/404')
 open('_site/robots.txt','w').write(f"User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n")
-open('_site/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{DOMAIN}{u}</loc><lastmod>2026-10-07</lastmod><priority>{"1.0" if u in ("/","/low-dose-naltrexone/") else ("0.6" if u.count("/")>2 and u.startswith("/medications/") else "0.8")}</priority></url>\n' for u in [v for k,v in URL.items() if k!='notfound']+MEDURLS)+'</urlset>\n')
+open('_site/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{DOMAIN}{u}</loc><lastmod>2026-11-02</lastmod><priority>{"1.0" if u in ("/","/low-dose-naltrexone/") else ("0.6" if u.count("/")>2 and u.startswith("/medications/") else "0.8")}</priority></url>\n' for u in [v for k,v in URL.items() if k!='notfound']+MEDURLS)+'</urlset>\n')
 print('built')
