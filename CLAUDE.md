@@ -17,6 +17,7 @@ Hours: Mon–Fri 9 a.m.–6 p.m., Sat 9 a.m.–noon, Sun closed. Domain: pharmac
   - `logos/`: supplier and supplement brand logos (from each company's site; get rep permission).
   - `downloads/hrt-order-form.pdf`: prescriber HRT order form.
 - Contact form ("Send us a message"): posts to the "Website messages" Google Form owned by info@pharmacyonthepark.com (ian.tasman@ is an editor); responses land in its linked Google Sheet, "Website messages (Responses)", and info@ gets an email notification for each one. The form URL and `entry.*` field IDs are in the `contactForm` script in `site.tpl.html`; if questions in the Google Form change, update those IDs.
+- Google Analytics (GA_ID in `build.py`). Click events are sent by the small tracking script just above `{{MAP}}` in `site.tpl.html`: phone_click, send_rx_click, directions_click, reviews_click, refill_click, social_click, email_click, file_download_click (each with link_location and link_text), plus generate_lead when the contact or lunch-and-learn form is sent. phone_click, send_rx_click, directions_click and generate_lead should be marked as key events in GA. New buttons are tracked automatically if they use tel:, #send, Google Maps or mailto: links.
 - Page titles and meta descriptions: `META` in `build.py`. Structured data (Pharmacy, FAQ, LDN Product offers, breadcrumbs) is also added there.
 - After any change: run `python build.py`, open a few pages in `_site/` (desktop and 390px mobile widths), then commit and push.
 

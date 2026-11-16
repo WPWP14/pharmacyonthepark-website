@@ -91,8 +91,9 @@ nav.main a.nl[aria-current="page"]{background:var(--park-blue);color:var(--on-bl
 .promise span{color:var(--muted)}
 
 /* ---------- paths ---------- */
-.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-@media (max-width:900px){.paths{grid-template-columns:1fr}}
+.paths{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:1200px){.paths{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:700px){.paths{grid-template-columns:1fr}}
 .path{display:flex;flex-direction:column;gap:12px;padding:26px;border-radius:var(--r-lg);text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--paper);min-width:0;transition:transform .15s,box-shadow .15s}
 .path:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
 .path .who{font:800 .78rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--green-text)}
@@ -102,7 +103,11 @@ nav.main a.nl[aria-current="page"]{background:var(--park-blue);color:var(--on-bl
 .path li{display:flex;gap:8px;font-weight:600;font-size:.95rem}
 .path li svg{width:18px;height:18px;color:var(--green-text);flex:none;margin-top:3px}
 .path .go{margin-top:auto;padding-top:8px}
-.path.p1{border-top:6px solid var(--park-blue)}.path.p2{border-top:6px solid var(--park-green)}.path.p3{border-top:6px solid var(--deep)}
+.path.p1{border-top:6px solid var(--park-blue)}.path.p2{border-top:6px solid var(--park-green)}.path.p3{border-top:6px solid var(--deep)}.path.p4{border-top:6px solid var(--park-green)}
+.quickinfo{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:14px;font-size:.95rem;font-weight:600}
+.quickinfo span,.quickinfo a{display:inline-flex;align-items:center;gap:7px;color:inherit}
+.quickinfo a{text-decoration:underline;text-underline-offset:3px}
+.quickinfo svg{width:17px;height:17px;flex:none}
 
 /* ---------- steps (real sequences only) ---------- */
 .steps{list-style:none;margin:0;padding:0;display:grid;gap:16px;counter-reset:s}
@@ -823,6 +828,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
           <a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Call 407-977-9779</a>
           <a class="btn ghost" href="#send"><svg><use href="#i-send"/></svg>Send a Prescription</a>
         </div>
+        <div class="quickinfo"><span><svg><use href="#i-clock"/></svg><span data-today>Mon–Fri 9–6 · Sat 9–noon</span></span><a href="https://www.google.com/maps/dir/?api=1&destination=784+S+Central+Ave+Oviedo+FL+32765" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>784 S. Central Ave · Get directions</a></div>
         <div class="trust">
           <span><svg><use href="#i-shield"/></svg>Accredited</span>
           <span><svg><use href="#i-check"/></svg>Meets national USP standards</span>
@@ -870,7 +876,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
       <div class="ldn">
         <img src="{{FORM:tablet}}" alt="Low-dose naltrexone tablets from Pharmacy on the Park" width="480" height="360">
         <div><span class="eyebrow">Low-dose naltrexone (LDN)</span><h2>Compounded LDN tablets: $60 for 90 tablets.</h2><p>1 mg, 1.5 mg, 3 mg and 4.5 mg low-dose naltrexone tablets, compounded in our Oviedo pharmacy. Pick up in Oviedo or ship to Florida, Maine and Colorado.</p>
-          <div class="btns" style="margin-top:14px"><a class="btn primary" href="#ldn">Learn about LDN <svg><use href="#i-arrow"/></svg></a><a class="btn ghost" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Transfer your LDN</a></div></div>
+          <div class="btns" style="margin-top:14px"><a class="btn primary" href="#ldn">Learn about LDN <svg><use href="#i-arrow"/></svg></a><a class="btn ghost" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Start or transfer your LDN</a></div></div>
         <div class="price" aria-label="Price: 60 dollars for 90 tablets"><b>$60</b><span>90 compounded tablets</span><small>1, 1.5, 3 or 4.5 mg · Rx required</small></div>
       </div>
     </div>
@@ -898,6 +904,16 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
             <p>Switch to a pharmacy that knows your name. We do the transfer work for you.</p>
             <ul><li><svg><use href="#i-check"/></svg>Transfers and refills</li><li><svg><use href="#i-check"/></svg>Most insurance plans accepted</li><li><svg><use href="#i-check"/></svg>Professional-grade supplements</li></ul>
             <span class="go textlink">Retail pharmacy <svg><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+        <a class="path p4" href="#compounding">
+          <div class="media"><svg><use href="#s-jar"/></svg></div>
+          <div class="body">
+            <span class="who">Custom medication</span>
+            <h3>Human compounding</h3>
+            <p>When a commercial product isn't the right strength, form or flavor, we make it in our Oviedo lab from your prescription.</p>
+            <ul><li><svg><use href="#i-check"/></svg>Hormone therapy and LDN</li><li><svg><use href="#i-check"/></svg>Creams, capsules, troches and liquids</li><li><svg><use href="#i-check"/></svg>Dye-free and allergen-free options</li></ul>
+            <span class="go textlink">Human compounding <svg><use href="#i-arrow"/></svg></span>
           </div>
         </a>
         <a class="path p2" href="#veterinary">
@@ -1557,7 +1573,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         <span class="eyebrow">Low-dose naltrexone (LDN) · Oviedo, Florida</span>
         <h1>Compounded low-dose naltrexone tablets, <span class="g">$60 for 90</span>.</h1>
         <p class="lede">Pharmacy on the Park compounds low-dose naltrexone (LDN) tablets in our Oviedo pharmacy. 1 mg, 1.5 mg, 3 mg and 4.5 mg compounded tablets are $60 for 90. Pick up near Orlando or have it shipped to Florida, Maine and Colorado.</p>
-        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Transfer your LDN: <span class="nw">407-977-9779</span></a><a class="btn ghost" href="#send"><svg><use href="#i-send"/></svg>Send a Prescription</a></div>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Start or transfer LDN: <span class="nw">407-977-9779</span></a><a class="btn ghost" href="#send"><svg><use href="#i-send"/></svg>Send a Prescription</a></div>
         <div class="trust"><span><svg><use href="#i-check"/></svg>Accredited pharmacy</span><span><svg><use href="#i-person"/></svg>A pharmacist answers</span></div>
       </div>
       <div class="card" style="gap:14px">
@@ -1705,7 +1721,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
       </div>
       <div class="combonote"><svg><use href="#i-mortar"/></svg><div><b>We make combination preparations</b><p>Many ingredients can be combined into one preparation when your prescriber orders it. Hormones including estriol, estradiol, estrone, progesterone, testosterone, DHEA and pregnenolone can be combined in a single cream, troche or capsule. Other combinations include T4/T3 thyroid capsules, BEG nasal spray, BLT numbing cream and topical sildenafil cream for women.</p></div></div>
       <div class="catchips" id="libChips" aria-label="Browse by category"></div>
-      <div class="libmeta"><span><span id="libCount"></span> · Last updated 11/2/26</span><button type="button" class="textlink" id="libReset" hidden>Clear filters</button></div>
+      <div class="libmeta"><span><span id="libCount"></span> · Last updated 11/16/26</span><button type="button" class="textlink" id="libReset" hidden>Clear filters</button></div>
       <div class="libgrid" id="libGrid"></div>
       <p class="pad" id="libEmpty" hidden style="padding:0">No matches. Call us at <span class="nw">407-977-9779</span>. We can often compound or source medications that aren't listed.</p>
       <p class="note">General information about each active ingredient, not a description of any specific preparation. Compounded medications are not FDA-approved and are not commercially manufactured products and are prepared from a prescription. Uses listed may be off-label. Your prescriber or veterinarian decides whether a medication is right, the dose and the monitoring. Strengths, forms and flavors depend on the prescription. Information pending pharmacist review.</p>
@@ -2526,7 +2542,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         </div>
       </div>
     </div>
-    <div class="fine"><span>© 2026 Pharmacy on the Park. All rights reserved. · Last updated 11/2/26</span><a class="vendor" href="https://datascanpharmacy.com/" target="_blank" rel="noopener">Pharmacy software by <img src="{{LG:datascan}}" alt="Datascan" width="94" height="36" loading="lazy"></a><span><a href="#privacy">Privacy policy</a> · <a href="#hipaa">Notice of privacy practices</a> · <a href="#terms">Terms of use</a> · <a href="#shipping">Shipping</a> · <a href="#returns">Returns</a> · <a href="#accessibility">Accessibility</a></span><span>Family owned in Oviedo, Florida</span></div>
+    <div class="fine"><span>© 2026 Pharmacy on the Park. All rights reserved. · Last updated 11/16/26</span><a class="vendor" href="https://datascanpharmacy.com/" target="_blank" rel="noopener">Pharmacy software by <img src="{{LG:datascan}}" alt="Datascan" width="94" height="36" loading="lazy"></a><span><a href="#privacy">Privacy policy</a> · <a href="#hipaa">Notice of privacy practices</a> · <a href="#terms">Terms of use</a> · <a href="#shipping">Shipping</a> · <a href="#returns">Returns</a> · <a href="#accessibility">Accessibility</a></span><span>Family owned in Oviedo, Florida</span></div>
   </div>
 </footer>
 <div class="cookie" id="cookieNote" role="region" aria-label="Privacy notice" hidden>
@@ -2542,6 +2558,27 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
 })();
 </script>
 
+<script>
+// Google Analytics click events. Mark phone_click, send_rx_click, directions_click and generate_lead as key events in GA (Admin > Events).
+(function(){
+  function ev(name,p){ try{ if(typeof window.gtag==='function') window.gtag('event',name,p||{}); }catch(e){} }
+  window.__potpEvent=ev;
+  function where(el){ if(el.closest('.callbar')) return 'mobile_call_bar'; if(el.closest('.utility')) return 'top_bar'; if(el.closest('header')) return 'header'; if(el.closest('.quickinfo')) return 'home_quick_info'; if(el.closest('.hero,.dhero')) return 'page_top'; if(el.closest('.cta-band')) return 'bottom_banner'; if(el.closest('footer')) return 'footer'; return 'page_body'; }
+  document.addEventListener('click',function(e){
+    var a=e.target&&e.target.closest?e.target.closest('a'):null; if(!a) return;
+    var h=a.getAttribute('href')||'', p={link_location:where(a), link_text:(a.textContent||'').replace(/\s+/g,' ').trim().slice(0,80)};
+    if(/^tel:/i.test(h)) ev('phone_click',p);
+    else if(/^mailto:/i.test(h)) ev('email_click',p);
+    else if(/#send(-sec)?$/.test(h)) ev('send_rx_click',p);
+    else if(/google\.[a-z.]+\/maps\/dir/i.test(h)) ev('directions_click',p);
+    else if(/google\.[a-z.]+\/maps\/search|facebook\.com\/[^?#]*reviews/i.test(h)) ev('reviews_click',p);
+    else if(/mobilescripts|apps\.apple\.com|play\.google\.com/i.test(h)) ev('refill_click',p);
+    else if(/facebook\.com|instagram\.com/i.test(h)) ev('social_click',p);
+    else if(/\.pdf(\?|#|$)/i.test(h)) ev('file_download_click',p);
+  },true);
+})();
+</script>
+
 {{MAP}}
 
 <script>
@@ -2551,8 +2588,10 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
   var now; try{ now = new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})); }catch(e){ now = new Date(); }
   var dow = now.getDay();
   function fill(el, rows){ rows.forEach(function(r){ var dt=document.createElement('dt'), dd=document.createElement('dd'); dt.textContent=r[0]; dd.textContent=r[1]; if(r[2]){dt.className=dd.className='today';} el.appendChild(dt); el.appendChild(dd); }); }
-  (function(){ var t=document.getElementById('todayHours'); if(!t) return; var hr=now.getHours()+now.getMinutes()/60, close=dow===0?null:(dow===6?12:18);
-    if(close===null) t.textContent='Closed Sundays'; else if(hr>=9&&hr<close) t.textContent='Open until '+(close===12?'noon':'6 p.m.'); else if(hr<9) t.textContent='Opens at 9 a.m.'; else t.textContent=(dow===5?'Open Sat 9 a.m.':(dow===6?'Open Mon 9 a.m.':'Opens tomorrow 9 a.m.')); })();
+  (function(){ var hr=now.getHours()+now.getMinutes()/60, close=dow===0?null:(dow===6?12:18), txt;
+    if(close===null) txt='Closed today · Opens Mon 9 a.m.'; else if(hr>=9&&hr<close) txt='Open now until '+(close===12?'noon':'6 p.m.'); else if(hr<9) txt='Opens today at 9 a.m.'; else txt=(dow===5?'Closed now · Opens Sat 9 a.m.':(dow===6?'Closed now · Opens Mon 9 a.m.':'Closed now · Opens tomorrow 9 a.m.'));
+    var t=document.getElementById('todayHours'); if(t) t.textContent=txt.replace('Open now until','Open until').replace(/^Closed now · /,'').replace(/^Closed today · /,'Closed Sundays · ');
+    document.querySelectorAll('[data-today]').forEach(function(el){ el.textContent=txt; }); })();
   document.querySelectorAll('[data-hours-full]').forEach(function(el){ fill(el,[1,2,3,4,5,6,0].map(function(i){ return [HOURS[i][0],HOURS[i][1],i===dow]; })); });
   document.querySelectorAll('[data-hours-short]').forEach(function(el){ fill(el,[['Mon–Fri','9 a.m.–6 p.m.',dow>=1&&dow<=5],['Saturday','9 a.m.–noon',dow===6],['Sunday','Closed',dow===0]]); });
 
@@ -2748,10 +2787,12 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
         '</div>'+
         '<div class="dinfo"><p class="crumb"><a href="'+(STATIC?'/medications/':'#medications')+'">Medication library</a> / '+(STATIC?'<a href="'+catLink(x)+'">'+esc(x.catName)+'</a> / ':'')+nm+'</p>'+
         '<span class="eyebrow">'+esc(x.catName)+'</span><h1>'+nm+'</h1>'+'<p class="daka"><b>Compounded medication</b>, prepared from a prescription. Not FDA-approved and not a commercially manufactured product.'+(aka.length?' Other names, including brand-name products (not the same as our compounded preparation): '+esc(aka.join(', '))+'.':'')+'</p>'+
-        '<div class="dmeta"><span class="aud">'+(x.isCombo?'<span class="c">Combination</span>':'')+x.aud.map(function(a){return '<span class="'+(a==='pets'?'p':'')+'">'+(a==='pets'?'For pets':'For people')+'</span>';}).join('')+'</span><span>Last updated 11/2/26</span>'+(x.reviewedBy?'<span>Reviewed by '+esc(x.reviewedBy)+'</span>':'')+'</div>'+
+        '<div class="dmeta"><span class="aud">'+(x.isCombo?'<span class="c">Combination</span>':'')+x.aud.map(function(a){return '<span class="'+(a==='pets'?'p':'')+'">'+(a==='pets'?'For pets':'For people')+'</span>';}).join('')+'</span><span>Last updated 11/16/26</span>'+(x.reviewedBy?'<span>Reviewed by '+esc(x.reviewedBy)+'</span>':'')+'</div>'+
         '<div class="dbox">'+(x.drugClass?'<div class="drow"><b>Drug class</b><div class="chips"><span>'+esc(x.drugClass)+'</span></div></div>':'')+(x.isCombo?'<div class="drow"><b>Can include</b><div class="chips">'+chips(x.combos)+'</div></div>':'')+'<div class="drow"><b>Available as</b><div class="chips">'+chips(x.forms.length?x.forms:['Ask us'])+'</div></div>'+
         (flavAll.length?'<div class="drow"><b>Flavors</b><div class="chips">'+chips(flavAll)+'</div></div>':'')+
         '<div class="btns" style="margin-top:6px"><a class="btn primary" href="'+(STATIC?'/contact/#send-sec':'#send')+'"><svg><use href="#i-send"/></svg>Start with a prescription</a><a class="btn ghost" href="#d-rx">'+(petsOnly(x)?'Veterinarians':'Prescribers')+': how to send it</a></div>'+
+        '<a class="textlink" href="tel:+14079779779"><span>Questions about '+b+'? Call a pharmacist at <span class="nw">407-977-9779</span></span> <svg><use href="#i-arrow"/></svg></a>'+
+        (function(){ var k=hrt?'hormone-therapy':(x.id==='naltrexone'?'ldn':(petsOnly(x)?'veterinary':'compounding')), u={'hormone-therapy':'/compounding/hormone-therapy/',ldn:'/low-dose-naltrexone/',veterinary:'/veterinary/',compounding:'/compounding/'}[k], t={'hormone-therapy':'Our hormone therapy service',ldn:'Low-dose naltrexone: $60 for 90 tablets',veterinary:'Our veterinary pharmacy',compounding:'How our compounding works'}[k]; return '<a class="textlink" href="'+(STATIC?u:'#'+k)+'">'+t+' <svg><use href="#i-arrow"/></svg></a>'; })()+
         (hrt&&STATIC?'<a class="textlink" href="/downloads/hrt-order-form.pdf">Prescribers: download the HRT order form <svg><use href="#i-arrow"/></svg></a>':'')+
         (x.id==='naltrexone'?'<a class="price" href="'+(STATIC?'/low-dose-naltrexone/':'#ldn')+'" style="text-decoration:none"><b>$60</b><span>for 90 compounded LDN tablets</span><small>1, 1.5, 3 or 4.5 mg · see details</small></a>':'')+
         '<p class="dsmall">Pick up in Oviedo or ship to Florida, Maine and Colorado. Most compounds ready same day to 24 hours.</p></div>'+
@@ -2815,7 +2856,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
       // related
       if(related.length) h+='<section class="band"><div class="wrap stack" style="gap:18px"><div class="head" style="margin:0"><span class="eyebrow">Explore similar medications</span><h2>Related formulations</h2>'+(STATIC?'<a class="textlink" href="'+catLink(x)+'">All '+esc(x.catName.toLowerCase())+' medications <svg><use href="#i-arrow"/></svg></a>':'')+'</div><div class="libgrid">'+related.map(function(y){ return '<a class="med rel" href="'+link(y)+'"><img class="thumb" src="'+(y.img?FORMIMG2[y.img]:imgFor(y.forms[0]||'Capsule',y))+'" alt="" width="480" height="360"><div class="mb"><div class="cat">'+esc(y.catName)+'</div><h3>'+esc(y.name)+'</h3><p>'+esc(y.uses)+'</p><span class="textlink">View formulation <svg><use href="#i-arrow"/></svg></span></div></a>'; }).join('')+'</div></div></section>';
       // references
-      h+='<section class="band surface" id="d-refs"><div class="wrap stack" style="gap:12px;max-width:900px"><h2>References</h2><ol class="drefs">'+refs(x).map(function(r){ return '<li><a href="'+r[1]+'" target="_blank" rel="noopener">'+esc(r[0])+'</a></li>'; }).join('')+'</ol><p class="note">General information about '+b+' as an active ingredient, pending pharmacist review. Last updated 11/2/26. Pharmacy on the Park does not decide whether a medication is right for you; your '+who+' makes that call.</p></div></section>';
+      h+='<section class="band surface" id="d-refs"><div class="wrap stack" style="gap:12px;max-width:900px"><h2>References</h2><ol class="drefs">'+refs(x).map(function(r){ return '<li><a href="'+r[1]+'" target="_blank" rel="noopener">'+esc(r[0])+'</a></li>'; }).join('')+'</ol><p class="note">General information about '+b+' as an active ingredient, pending pharmacist review. Last updated 11/16/26. Pharmacy on the Park does not decide whether a medication is right for you; your '+who+' makes that call.</p></div></section>';
       return h;
     };
     // artifact routing for #med-<id>
@@ -2850,7 +2891,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
     var btn = form.querySelector('button[type=submit]');
     btn.disabled = true; out.textContent = 'Sending…';
     fetch('https://docs.google.com/forms/d/e/1FAIpQLSe2iczAUgRvjVE3Jba9FlBm-mD4kBabRvUjGl25FuBYZNtiFQ/formResponse', {method:'POST', mode:'no-cors', body:data})
-      .then(function(){ form.reset(); out.textContent='Thanks, '+first+'. Your message was sent. We’ll get back to you soon.'; })
+      .then(function(){ if(window.__potpEvent) window.__potpEvent('generate_lead',{form_name:'contact',inquiry_type:type}); form.reset(); out.textContent='Thanks, '+first+'. Your message was sent. We’ll get back to you soon.'; })
       .catch(function(){ out.textContent='Sorry, your message didn’t go through. Please call 407-977-9779 or email info@pharmacyonthepark.com.'; })
       .then(function(){ btn.disabled = false; });
   });
@@ -2872,7 +2913,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
     var btn = lnl.querySelector('button[type=submit]');
     btn.disabled = true; lout.textContent = 'Sending…';
     fetch('https://docs.google.com/forms/d/e/1FAIpQLSe2iczAUgRvjVE3Jba9FlBm-mD4kBabRvUjGl25FuBYZNtiFQ/formResponse', {method:'POST', mode:'no-cors', body:data})
-      .then(function(){ lnl.reset(); lout.textContent='Thanks, '+first+'. We received your request and will reach out to schedule a visit.'; })
+      .then(function(){ if(window.__potpEvent) window.__potpEvent('generate_lead',{form_name:'lunch_and_learn'}); lnl.reset(); lout.textContent='Thanks, '+first+'. We received your request and will reach out to schedule a visit.'; })
       .catch(function(){ lout.textContent='Sorry, your request didn’t go through. Please call 407-977-9779 or email info@pharmacyonthepark.com.'; })
       .then(function(){ btn.disabled = false; });
   });
