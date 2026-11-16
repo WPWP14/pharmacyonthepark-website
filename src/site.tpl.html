@@ -90,6 +90,17 @@ nav.main a.nl[aria-current="page"]{background:var(--park-blue);color:var(--on-bl
 .promise b{font-family:var(--display);font-size:1.05rem;display:block}
 .promise span{color:var(--muted)}
 
+/* ---------- articles ---------- */
+.article{max-width:760px;display:flex;flex-direction:column;gap:14px}
+.article h2{font-size:clamp(1.35rem,2.4vw,1.7rem);margin-top:18px}
+.article p,.article li{color:var(--muted);font-size:1.03rem;line-height:1.65}
+.article li b,.article p b{color:var(--ink)}
+.article ul,.article ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px}
+.article .btns{margin-top:6px}
+.article .faq{margin-top:4px}
+.byline{font-size:.95rem;color:var(--muted)}.byline b{color:inherit}
+.hero .byline{opacity:.9}
+
 /* ---------- paths ---------- */
 .paths{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 @media (max-width:1200px){.paths{grid-template-columns:repeat(2,1fr)}}
@@ -799,7 +810,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
       <div class="item"><a class="nl" href="#compounding">Human Compounding</a><div class="sub"><div><a href="#hormone-therapy">Hormone therapy</a><a href="#ldn">Low-dose naltrexone (LDN)</a><a href="#mcas">Mast cell activation (MCAS)</a><a href="#medications">Medication library</a><span class="subhead">Browse by condition</span><div class="cond"><a href="/medications/#people-skin">Skin and hair</a><a href="/medications/#people-men">Men's and sexual health</a><a href="/medications/#people-pain">Pain and inflammation</a><a href="/medications/#people-thy">Thyroid</a><a href="/medications/#people-endo">Endocrine and metabolic</a><a href="/medications/#people-heart">Heart and blood pressure</a><a href="/medications/#people-gi">Stomach and digestion</a><a href="/medications/#people-behav">Behavior, mood and sleep</a><a href="/medications/#people-neuro">Seizures and nerve pain</a><a href="/medications/#people-allergy">Allergy and breathing</a><a href="/medications/#people-abx">Infections and parasites</a><a href="/medications/#people-immune">Immune and cancer care</a><a href="/medications/#people-uro">Kidney and urinary</a><a href="/medications/#people-liver">Liver support</a><a href="/medications/#people-nutr">Vitamins and nutrients</a><a href="/medications/#people-numb">Numbing and anesthetics</a><a href="/medications/#people-eent">Eye, ear and nose</a><a href="/medications/#people-oral">Mouth and throat</a></div></div></div></div>
       <div class="item"><a class="nl" href="#veterinary">Veterinary Pharmacy</a><div class="sub"><div><a href="#fip">FIP medication</a><a href="#vet-lunch">Lunch and learn for vet teams</a><a href="#medications">Medication library</a><span class="subhead">Browse by condition</span><div class="cond"><a href="/medications/#pets-heart">Heart and blood pressure</a><a href="/medications/#pets-uro">Kidney and urinary</a><a href="/medications/#pets-endo">Endocrine and metabolic</a><a href="/medications/#pets-gi">Stomach and digestion</a><a href="/medications/#pets-liver">Liver support</a><a href="/medications/#pets-abx">Infections and parasites</a><a href="/medications/#pets-immune">Immune and cancer care</a><a href="/medications/#pets-neuro">Seizures and nerve pain</a><a href="/medications/#pets-behav">Behavior, mood and sleep</a><a href="/medications/#pets-pain">Pain and inflammation</a><a href="/medications/#pets-skin">Skin and hair</a><a href="/medications/#pets-allergy">Allergy and breathing</a><a href="/medications/#pets-nutr">Vitamins and nutrients</a><a href="/medications/#pets-eent">Eye, ear and nose</a></div></div></div></div>
       <div class="item"><a class="nl" href="#prescribers">For Prescribers</a></div>
-      <div class="item"><a class="nl" href="#about">About Us</a><div class="sub"><div><a href="#about">Our team</a><a href="#quality">Quality and sourcing</a><a href="#choose">How to choose a compounding pharmacy</a></div></div></div>
+      <div class="item"><a class="nl" href="#about">About Us</a><div class="sub"><div><a href="#about">Our team</a><a href="#quality">Quality and sourcing</a><a href="#choose">How to choose a compounding pharmacy</a><a href="#learn">Health articles</a><a href="#areas">Areas we serve</a></div></div></div>
       <div class="item"><a class="nl" href="#contact">Contact</a></div>
     </nav>
     <div class="head-actions">
@@ -2233,6 +2244,539 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
     </div>
   </section>
 </div>
+<!-- ================= AREAS ================= -->
+<div class="page" id="p-areas">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#home">Home</a> / Areas we serve</p>
+        <span class="eyebrow">Areas we serve</span>
+        <h1>Your Oviedo pharmacy, serving Central Florida and beyond.</h1>
+        <p class="lede">Patients and pet owners come to us from across Orlando and Seminole County for compounded medications, hormone therapy, low-dose naltrexone and everyday prescriptions. If you'd rather not make the drive, we ship to addresses in Florida, Maine and Colorado.</p>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Call <span class="nw">407-977-9779</span></a><a class="btn ghost" href="#send"><svg><use href="#i-send"/></svg>Send a Prescription</a></div>
+      </div>
+      <div class="panel deep">
+        <span class="eyebrow">Find us</span>
+        <ul class="ticks">
+          <li><svg><use href="#i-pin"/></svg><div><b>784 S. Central Ave, Oviedo, FL 32765</b><span>On S. Central Ave, just north of UCF.</span></div></li>
+          <li><svg><use href="#i-clock"/></svg><div><b>Mon–Fri 9 a.m.–6 p.m. · Sat 9 a.m.–noon</b><span>Closed Sunday.</span></div></li>
+          <li><svg><use href="#i-truck"/></svg><div><b>Shipping to Florida, Maine and Colorado</b><span>Shipping isn't free; we tell you the cost before anything ships.</span></div></li>
+        </ul>
+        <a class="btn ghost sm" style="align-self:flex-start" href="https://www.google.com/maps/dir/?api=1&destination=784+S+Central+Ave+Oviedo+FL+32765" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Get directions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:24px">
+      <div class="head" style="margin:0"><span class="eyebrow">Choose your area</span><h2>Pharmacy services near you.</h2></div>
+      <div class="grid g2">
+        <a class="card" href="#area-orlando" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-pin"/></svg></span><h3>Orlando and Winter Park</h3><p>Compounding, hormone therapy, LDN and pet medications for Orlando, Winter Park, Maitland and nearby neighborhoods.</p><span class="textlink">Orlando and Winter Park <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#area-east-orlando" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-pin"/></svg></span><h3>East Orlando and UCF</h3><p>The closest compounding pharmacy for many UCF, Waterford Lakes, Avalon Park and Alafaya residents.</p><span class="textlink">East Orlando and UCF <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#area-seminole" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-pin"/></svg></span><h3>Seminole County</h3><p>Winter Springs, Casselberry, Longwood, Lake Mary, Sanford, Chuluota and the rest of Seminole County, including pet compounding.</p><span class="textlink">Seminole County <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#area-florida" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-truck"/></svg></span><h3>Anywhere in Florida</h3><p>A compounding pharmacy that ships across Florida, for people and pets. We also ship to Maine and Colorado.</p><span class="textlink">Shipping in Florida <svg><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= AREA ORLANDO ================= -->
+<div class="page" id="p-area-orlando">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#areas">Areas we serve</a> / Orlando and Winter Park</p>
+        <span class="eyebrow">Orlando · Winter Park · Maitland</span>
+        <h1>A compounding pharmacy for Orlando and Winter Park.</h1>
+        <p class="lede">Pharmacy on the Park is a family-owned compounding and retail pharmacy in Oviedo, a short drive from Winter Park and Orlando. We prepare medications in our own lab from your prescription, and when you call, a pharmacist answers. Pick up in Oviedo, or we ship to your Florida address.</p>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Call <span class="nw">407-977-9779</span></a><a class="btn ghost" href="#send"><svg><use href="#i-send"/></svg>Send a Prescription</a></div>
+      </div>
+      <div class="panel deep">
+        <span class="eyebrow">Why Orlando patients choose us</span>
+        <ul class="ticks">
+          <li><svg><use href="#i-check"/></svg><div><b>Made in our Oviedo lab</b><span>Nonsterile and select sterile compounding, accredited and USP &lt;800&gt; compliant.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Ready same day to 24 hours</b><span>For most compounds, once we have the prescription.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>No need to drive back</b><span>We ship to Florida addresses, so refills can come to you.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>A pharmacist answers</b><span>Talk through your medication with the people who make it.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:24px">
+      <div class="head" style="margin:0"><span class="eyebrow">What we do for Orlando and Winter Park</span><h2>Compounded medications, made for you.</h2><p class="lede">Compounding means preparing a medication for one person, from a prescription, when a commercial product doesn't fit: a strength that isn't made, a different form, or a version without a dye or ingredient you react to.</p></div>
+      <div class="grid g3">
+        <a class="card" href="#hormone-therapy" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-person"/></svg></span><h3>Hormone therapy</h3><p>Estradiol, estriol, Biest, progesterone, testosterone and DHEA as creams, capsules, troches and more, prepared as your clinician prescribes.</p><span class="textlink">Hormone therapy <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#ldn" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-tag"/></svg></span><h3>Low-dose naltrexone</h3><p>Compounded LDN tablets in 1, 1.5, 3 and 4.5 mg are $60 for 90 tablets. Other strengths and forms on request.</p><span class="textlink">About LDN <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#compounding" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-mortar"/></svg></span><h3>Dermatology and more</h3><p>Topical creams in gentle bases, dye-free capsules, flavored liquids for kids and rapid-dissolve tablets.</p><span class="textlink">Human compounding <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#veterinary" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-paw"/></svg></span><h3>Pet medications</h3><p>Flavored liquids, chewable treats and transdermal gels for dogs, cats and exotics, plus GS-441524 for cats with FIP.</p><span class="textlink">Veterinary pharmacy <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#retail" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-pack"/></svg></span><h3>Everyday prescriptions</h3><p>Hundreds of medications for $9 for a 90-day supply, most insurance plans accepted, and transfers handled for you.</p><span class="textlink">Retail pharmacy <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#prescribers" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-steth"/></svg></span><h3>For Orlando prescribers</h3><p>Human and veterinary offices can e-prescribe, fax or call, and talk formulations directly with a pharmacist.</p><span class="textlink">For prescribers <svg><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band surface">
+    <div class="wrap stack" style="gap:22px">
+      <div class="head" style="margin:0"><span class="eyebrow">How it works</span><h2>Getting your prescription from Orlando to us.</h2></div>
+      <ol class="steps s3">
+        <li><b>Your prescriber sends it</b><span>E-prescribe to Pharmacy on the Park in Oviedo (NCPDP 5747235), fax 407-977-0079, or call 407-977-9779. Already filling somewhere else? We'll transfer it.</span></li>
+        <li><b>We call you</b><span>You don't need to call us. A pharmacist reviews the prescription, and we call to confirm the price and timing.</span></li>
+        <li><b>Pick up or ship</b><span>Pick up at 784 S. Central Ave in Oviedo, or we ship it to your Florida address.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:20px;max-width:900px">
+      <div class="head" style="margin:0"><span class="eyebrow">Questions</span><h2>Orlando and Winter Park FAQ</h2></div>
+      <div class="faq">
+        <details><summary>Is there a compounding pharmacy near Winter Park?</summary><p>Pharmacy on the Park is at 784 S. Central Ave in Oviedo, a short drive east of Winter Park and Maitland. We compound nonsterile and select sterile preparations in our own lab, and we ship to Florida addresses if you'd rather not make the trip.</p></details>
+        <details><summary>Can my Orlando doctor send a prescription to an Oviedo pharmacy?</summary><p>Yes. Any prescriber can e-prescribe to Pharmacy on the Park (NCPDP 5747235), fax 407-977-0079 or call 407-977-9779. We call you once we have it.</p></details>
+        <details><summary>How fast are compounded prescriptions ready?</summary><p>Most compounds are ready the same day or within 24 hours after we receive the prescription. We confirm timing when we call you.</p></details>
+        <details><summary>Do you deliver in Orlando?</summary><p>We don't offer local delivery, but we ship to Florida addresses, including Orlando and Winter Park. Shipping isn't free, and we tell you the cost before anything ships.</p></details>
+      </div>
+      <p class="note">Compounded medications are not FDA-approved and are not commercially manufactured products. They are prepared for an individual patient from a valid prescription. Your prescriber decides whether a medication is right for you.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= AREA EAST ORLANDO ================= -->
+<div class="page" id="p-area-east-orlando">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#areas">Areas we serve</a> / East Orlando and UCF</p>
+        <span class="eyebrow">UCF · Alafaya · Waterford Lakes · Avalon Park</span>
+        <h1>Your neighborhood pharmacy for East Orlando and UCF.</h1>
+        <p class="lede">We're just north of UCF on S. Central Ave in Oviedo, so for many East Orlando families we're the closest independent pharmacy and compounding lab. Transfer your everyday prescriptions, get a medication made the way you need it, or bring your pet's prescription. A real person answers the phone.</p>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Call <span class="nw">407-977-9779</span></a><a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=784+S+Central+Ave+Oviedo+FL+32765" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Get directions</a></div>
+      </div>
+      <div class="panel deep">
+        <span class="eyebrow">Close to home</span>
+        <ul class="ticks">
+          <li><svg><use href="#i-check"/></svg><div><b>Same-day fills and short waits</b><span>And a text when your prescription is ready.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>$9 for a 90-day supply</b><span>Hundreds of medications, no insurance or discount card needed.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Compounding lab on site</b><span>Most compounds ready the same day to 24 hours.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Immunizations</b><span>Flu, COVID, shingles, pneumonia, Tdap and more. Call to check availability.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:24px">
+      <div class="head" style="margin:0"><span class="eyebrow">For East Orlando and UCF</span><h2>Everything from refills to custom compounds.</h2></div>
+      <div class="grid g3">
+        <a class="card" href="#retail" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-pack"/></svg></span><h3>Switch your prescriptions</h3><p>Give us your current pharmacy's name and the medications to move. We call them and your prescriber, and call you when it's ready.</p><span class="textlink">How transfers work <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#discount" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-tag"/></svg></span><h3>Low cash prices</h3><p>Hundreds of medications for $9 for 90 days, competitive cash prices on others, and we match a lower cash price.</p><span class="textlink">$9 for 90 days <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#compounding" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-mortar"/></svg></span><h3>Compounded medications</h3><p>Custom strengths, dye-free and allergen-free versions, flavored liquids for kids, creams, troches and more.</p><span class="textlink">Human compounding <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#ldn" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-tag"/></svg></span><h3>LDN for $60</h3><p>Compounded low-dose naltrexone tablets in 1, 1.5, 3 and 4.5 mg: $60 for 90 tablets.</p><span class="textlink">About LDN <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#veterinary" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-paw"/></svg></span><h3>Pet prescriptions</h3><p>Medication your dog or cat will actually take, in flavors like chicken, tuna and bacon. FIP prescriptions are prioritized.</p><span class="textlink">Veterinary pharmacy <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#supplements" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-leaf"/></svg></span><h3>Professional supplements</h3><p>Pure Encapsulations, Ortho Molecular Products, Genestra and more, special ordered and kept in stock for you.</p><span class="textlink">Supplements <svg><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band surface">
+    <div class="wrap stack" style="gap:20px;max-width:900px">
+      <div class="head" style="margin:0"><span class="eyebrow">Questions</span><h2>East Orlando and UCF FAQ</h2></div>
+      <div class="faq">
+        <details><summary>Where is the closest compounding pharmacy to UCF?</summary><p>Pharmacy on the Park is at 784 S. Central Ave in Oviedo, just north of the UCF campus. We compound in our own lab and most compounds are ready the same day or within 24 hours.</p></details>
+        <details><summary>Can I transfer my prescriptions from a chain pharmacy?</summary><p>Yes. Call 407-977-9779 with your name, date of birth, your current pharmacy's name and phone number, and the medications you want moved. We handle the calls and let you know when everything is ready.</p></details>
+        <details><summary>Do you take insurance?</summary><p>We accept most prescription insurance plans. Call with your insurance card and we'll check your plan. Without insurance, hundreds of medications are $9 for a 90-day supply.</p></details>
+        <details><summary>Can I text the pharmacy?</summary><p>Yes. You can reach our team by text, and we text you when your prescription is ready.</p></details>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= AREA SEMINOLE ================= -->
+<div class="page" id="p-area-seminole">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#areas">Areas we serve</a> / Seminole County</p>
+        <span class="eyebrow">Winter Springs · Casselberry · Longwood · Lake Mary · Sanford · Chuluota</span>
+        <h1>Compounding and pet pharmacy for Seminole County.</h1>
+        <p class="lede">Family owned in Oviedo since 2022, we compound medications for people and pets across Seminole County. Veterinary offices and pet owners from Winter Springs to Sanford use us for flavored liquids, chewable treats and transdermal gels, and patients come to us for hormone therapy, LDN and everyday prescriptions.</p>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Call <span class="nw">407-977-9779</span></a><a class="btn ghost" href="#send"><svg><use href="#i-send"/></svg>Send a Prescription</a></div>
+      </div>
+      <div class="panel deep">
+        <span class="eyebrow">Pet compounding in Seminole County</span>
+        <ul class="ticks">
+          <li><svg><use href="#i-check"/></svg><div><b>Forms pets will take</b><span>Flavored suspensions, treats, tiny capsules, transdermal gels and ear packs.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Flavors they like</b><span>Chicken, beef, tuna, grilled salmon, duck, bacon, peanut butter, marshmallow and catnip.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>FIP cases come first</b><span>We prioritize GS-441524 prescriptions for cats with FIP.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Certified in veterinary compounding</b><span>Our pharmacists hold Pharmacon's Veterinary Compounding Specialty certification.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:24px">
+      <div class="head" style="margin:0"><span class="eyebrow">For pets and their people</span><h2>What Seminole County families come to us for.</h2></div>
+      <div class="grid g3">
+        <a class="card" href="#veterinary" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-paw"/></svg></span><h3>Veterinary compounding</h3><p>Dogs, cats and exotics. Common requests include methimazole, gabapentin, pimobendan, prednisolone and metronidazole in pet-friendly forms.</p><span class="textlink">Veterinary pharmacy <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#fip" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3>FIP medication</h3><p>GS-441524 for cats with FIP, by veterinary prescription. We understand the urgency and move these to the front of the line.</p><span class="textlink">FIP medication <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#vet-lunch" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-steth"/></svg></span><h3>For Seminole County vets</h3><p>Fax or call prescriptions, ask formulation questions, or book a lunch and learn at your clinic.</p><span class="textlink">Lunch and learn <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#hormone-therapy" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-person"/></svg></span><h3>Hormone therapy</h3><p>Compounded estradiol, estriol, progesterone, testosterone and DHEA, prepared as your clinician prescribes.</p><span class="textlink">Hormone therapy <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#ldn" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-tag"/></svg></span><h3>Low-dose naltrexone</h3><p>1, 1.5, 3 and 4.5 mg compounded LDN tablets for $60 for 90.</p><span class="textlink">About LDN <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#retail" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-pack"/></svg></span><h3>Your everyday pharmacy</h3><p>Transfers, refills, med sync, bubble packs and immunizations, with most insurance plans accepted.</p><span class="textlink">Retail pharmacy <svg><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band surface">
+    <div class="wrap stack" style="gap:20px;max-width:900px">
+      <div class="head" style="margin:0"><span class="eyebrow">Questions</span><h2>Seminole County FAQ</h2></div>
+      <div class="faq">
+        <details><summary>Is there a pet compounding pharmacy in Seminole County?</summary><p>Yes. Pharmacy on the Park in Oviedo compounds medications for dogs, cats and exotic animals from a veterinary prescription, in flavored liquids, treats, capsules, transdermal gels and more. Most are ready the same day or within 24 hours.</p></details>
+        <details><summary>How does my vet send a pet prescription?</summary><p>Your veterinarian can fax it to 407-977-0079 or call 407-977-9779 with the species, weight, drug, strength, dosage form, flavor, directions and quantity. We call you when it's ready.</p></details>
+        <details><summary>Which Seminole County areas do you serve?</summary><p>Everyone is welcome at our Oviedo pharmacy, including Winter Springs, Casselberry, Longwood, Lake Mary, Sanford, Altamonte Springs, Geneva and Chuluota. We also ship to Florida addresses.</p></details>
+        <details><summary>What if my pet won't take the medicine?</summary><p>Call us. We can often change the flavor or the form, for example from a tablet to a flavored liquid or a transdermal gel, with your veterinarian's OK. See our <a href="#learn-pets">tips for giving pets medicine</a>.</p></details>
+      </div>
+      <p class="note">Compounded medications are not FDA-approved and are not commercially manufactured products. They are prepared for an individual patient from a valid prescription. Your prescriber or veterinarian decides whether a medication is right.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= AREA FLORIDA ================= -->
+<div class="page" id="p-area-florida">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#areas">Areas we serve</a> / Shipping in Florida</p>
+        <span class="eyebrow">Tampa · Jacksonville · Miami · Gainesville · anywhere in Florida</span>
+        <h1>A compounding pharmacy that ships across Florida.</h1>
+        <p class="lede">You don't have to live near Oviedo to use us. We compound medications for people and pets from your prescriber's or veterinarian's prescription and ship them to your Florida address. We also ship to Maine and Colorado.</p>
+        <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Call <span class="nw">407-977-9779</span></a><a class="btn ghost" href="#send"><svg><use href="#i-send"/></svg>Send a Prescription</a></div>
+      </div>
+      <div class="panel deep">
+        <span class="eyebrow">What we ship</span>
+        <ul class="ticks">
+          <li><svg><use href="#i-check"/></svg><div><b>Low-dose naltrexone</b><span>1, 1.5, 3 and 4.5 mg tablets, $60 for 90, plus capsules, liquid and cream.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Hormone therapy</b><span>Creams, capsules, troches and more, prepared as your clinician prescribes.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Pet medications</b><span>Flavored liquids, treats and transdermal gels, including FIP medication.</span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b>Custom compounds</b><span>Dye-free, allergen-free and hard-to-find strengths.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:22px">
+      <div class="head" style="margin:0"><span class="eyebrow">How shipping works</span><h2>From your prescriber to your door.</h2></div>
+      <ol class="steps s4">
+        <li><b>Your prescriber sends it</b><span>E-prescribe (NCPDP 5747235), fax 407-977-0079 or call 407-977-9779. Already on a compound elsewhere? We can transfer it.</span></li>
+        <li><b>We call you</b><span>We confirm your address, the price and the shipping cost before anything ships.</span></li>
+        <li><b>We compound it</b><span>Most compounds are ready the same day or within 24 hours, and a pharmacist checks every one.</span></li>
+        <li><b>It ships to you</b><span>Medications that must stay cold are packed with insulation and cold packs.</span></li>
+      </ol>
+      <p class="note">Shipping is not free. We tell you the cost before your order ships. Delivery time depends on the carrier and your location. See our <a href="#shipping">shipping policy</a>.</p>
+    </div>
+  </section>
+
+  <section class="band surface">
+    <div class="wrap stack" style="gap:24px">
+      <div class="head" style="margin:0"><span class="eyebrow">Why choose us from a distance</span><h2>Quality you can check, and a pharmacist you can call.</h2></div>
+      <div class="grid g3">
+        <div class="card"><span class="ic"><svg><use href="#i-shield"/></svg></span><h3>Accredited</h3><p>Accredited by The Compliance Team, USP &lt;800&gt; compliant, and we meet USP &lt;795&gt; and &lt;797&gt; standards. Every sterile batch is tested by an outside lab.</p><a class="textlink" href="#quality">Our quality standards <svg><use href="#i-arrow"/></svg></a></div>
+        <div class="card"><span class="ic g"><svg><use href="#i-chat"/></svg></span><h3>Real answers by phone</h3><p>Call 407-977-9779 and a person answers. Our pharmacists can talk with you and your prescriber about forms, ingredients and timing.</p></div>
+        <div class="card"><span class="ic"><svg><use href="#i-search"/></svg></span><h3>Know what you're buying</h3><p>Not sure how to compare compounding pharmacies? We wrote a guide on the questions to ask any pharmacy.</p><a class="textlink" href="#choose">How to choose a compounding pharmacy <svg><use href="#i-arrow"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:20px;max-width:900px">
+      <div class="head" style="margin:0"><span class="eyebrow">Questions</span><h2>Florida shipping FAQ</h2></div>
+      <div class="faq">
+        <details><summary>Do you ship compounded medications anywhere in Florida?</summary><p>Yes. We ship to addresses throughout Florida, and also to Maine and Colorado. We can't ship to other states.</p></details>
+        <details><summary>Can I get LDN shipped to me in Florida?</summary><p>Yes. Have your prescriber send the prescription to Pharmacy on the Park. Compounded LDN tablets in 1, 1.5, 3 and 4.5 mg are $60 for 90 tablets, plus shipping. We tell you the total before it ships.</p></details>
+        <details><summary>Do you ship pet medications?</summary><p>Yes. We ship compounded medications for dogs, cats and other animals to Florida, Maine and Colorado addresses, from a veterinary prescription.</p></details>
+        <details><summary>What if my package is late or arrives warm?</summary><p>Call us at 407-977-9779 the same day. Don't use a medication that looks damaged or wasn't kept at the right temperature. We work with the carrier and make it right.</p></details>
+      </div>
+      <p class="note">Compounded medications are not FDA-approved and are not commercially manufactured products. They are prepared for an individual patient from a valid prescription. Your prescriber or veterinarian decides whether a medication is right.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= LEARN ================= -->
+<div class="page" id="p-learn">
+  <section class="hero">
+    <div class="wrap">
+      <div class="lead">
+        <p class="crumb"><a href="#home">Home</a> / Health articles</p>
+        <span class="eyebrow">From our pharmacists</span>
+        <h1>Plain answers to the questions we hear every day.</h1>
+        <p class="lede">Short, practical guides written for patients and pet owners, reviewed by our pharmacist. They're general information, not medical advice. For anything about your own medication, call us at <span class="nw">407-977-9779</span>.</p>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap stack" style="gap:24px">
+      <div class="grid g2">
+        <a class="card" href="#learn-ldn" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-tag"/></svg></span><span class="eyebrow">Low-dose naltrexone</span><h3>Starting LDN: what to expect and questions to ask</h3><p>What low-dose naltrexone is, how prescribers usually start it, the first few weeks, and how to fill it for less.</p><span class="textlink">Read the guide <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#learn-pets" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-paw"/></svg></span><span class="eyebrow">Pets</span><h3>How to give your cat or dog liquid medicine (and other tricks)</h3><p>Step-by-step oral syringe technique, pill tips, transdermal gels, and what to do when your pet refuses.</p><span class="textlink">Read the guide <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#learn-hormones" style="text-decoration:none;color:inherit"><span class="ic"><svg><use href="#i-person"/></svg></span><span class="eyebrow">Hormone therapy</span><h3>Compounded hormone therapy: the basics</h3><p>What bioidentical hormones are, when compounding makes sense, creams vs. capsules vs. troches, and safe use at home.</p><span class="textlink">Read the guide <svg><use href="#i-arrow"/></svg></span></a>
+        <a class="card" href="#learn-switch" style="text-decoration:none;color:inherit"><span class="ic g"><svg><use href="#i-pack"/></svg></span><span class="eyebrow">Switching pharmacies</span><h3>How to switch pharmacies (it takes one phone call)</h3><p>What to have ready, what the new pharmacy does for you, and how to save with $9 for a 90-day supply.</p><span class="textlink">Read the guide <svg><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= LEARN LDN ================= -->
+<div class="page" id="p-learn-ldn">
+  <section class="hero">
+    <div class="wrap" style="grid-template-columns:1fr">
+      <div class="lead" style="max-width:820px">
+        <p class="crumb"><a href="#learn">Health articles</a> / Starting LDN</p>
+        <span class="eyebrow">Low-dose naltrexone</span>
+        <h1>Starting low-dose naltrexone (LDN): what to expect and questions to ask.</h1>
+        <p class="lede">A practical guide for patients whose prescriber has suggested LDN, or who are already taking it and want to understand it better.</p>
+        <p class="byline">Reviewed by <b>Ian Tasman, PharmD</b>, owner and pharmacist · Updated November 16, 2026</p>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap article">
+      <h2>What LDN is</h2>
+      <p>Naltrexone is a medication that blocks opioid receptors. Low-dose naltrexone, or LDN, uses a much smaller amount, usually between 0.5 mg and 4.5 mg. No commercial tablet is made in these strengths, so LDN is prepared by a compounding pharmacy from your prescription.</p>
+      <p>LDN is prescribed off-label. Low doses of naltrexone are not FDA-approved for any condition, and compounded medications are not FDA-approved. Prescribers use it for chronic pain and some inflammatory and autoimmune conditions, and research is still developing. Results vary from person to person, so your prescriber decides whether it's right for you.</p>
+
+      <h2>How prescribers usually start it</h2>
+      <p>Many prescribers start with a low dose and increase it gradually over several weeks, watching how you feel at each step. That's why LDN comes in several strengths, and why some people start with a flavored liquid that makes small, changing doses easy to measure. Follow the exact directions on your label; your prescriber may adjust them.</p>
+      <ul>
+        <li><b>Once a day</b> is typical. Many people take it at bedtime.</li>
+        <li><b>If it affects your sleep,</b> some prescribers suggest taking it in the morning instead. Ask before changing.</li>
+        <li><b>Take it at about the same time</b> each day so it becomes routine.</li>
+      </ul>
+
+      <h2>The first few weeks</h2>
+      <p>The most common side effects are vivid dreams, trouble sleeping, headache and nausea. They often ease over the first few weeks. If a side effect bothers you or doesn't improve, call your prescriber or call us; don't simply stop or double up.</p>
+      <p>Many people need several weeks before they can judge whether LDN is helping. It can help to jot down how you're sleeping and feeling each week so you can share it at your follow-up visit.</p>
+
+      <div class="dcallout"><b>Important:</b> LDN blocks opioid medicines. Don't take it with opioid pain medicine, including tramadol, and tell every doctor, dentist and surgeon that you take LDN before any procedure where you might need pain medicine. Also tell your prescriber about liver disease and every medicine and supplement you take.</div>
+
+      <h2>Questions to ask your prescriber</h2>
+      <ul>
+        <li>What dose should I start with, and how and when should I increase it?</li>
+        <li>Should I take it at night or in the morning?</li>
+        <li>How long should I give it before we decide whether it's working?</li>
+        <li>What should I do before a surgery or dental procedure?</li>
+        <li>Is a tablet, capsule, liquid or cream best for me? (We make all four.)</li>
+      </ul>
+
+      <h2>Filling LDN at Pharmacy on the Park</h2>
+      <p>Our compounded LDN tablets in <b>1 mg, 1.5 mg, 3 mg and 4.5 mg are $60 for 90 tablets</b>. We also make other strengths, dye-free and slow-release capsules, a flavored liquid and a cream (call for pricing).</p>
+      <ul>
+        <li><b>New prescription:</b> your prescriber e-prescribes to Pharmacy on the Park (NCPDP 5747235), faxes 407-977-0079 or calls 407-977-9779. You don't need to call us; we call you.</li>
+        <li><b>Already taking LDN somewhere else?</b> Call us and we'll transfer it.</li>
+        <li><b>Pick up or ship:</b> pick up in Oviedo, or we ship to Florida, Maine and Colorado.</li>
+      </ul>
+      <div class="btns"><a class="btn primary" href="#ldn">LDN prices and details <svg><use href="#i-arrow"/></svg></a><a class="btn ghost" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Start or transfer LDN</a></div>
+
+      <h2>Common questions</h2>
+      <div class="faq">
+        <details><summary>Can I stop LDN suddenly?</summary><p>Talk with your prescriber before stopping or changing your dose. If you need to pause it for a procedure, your prescriber or surgeon will tell you when to stop and restart.</p></details>
+        <details><summary>Is LDN the same as regular naltrexone?</summary><p>It's the same active ingredient at a much lower dose. Regular naltrexone tablets are 50 mg; LDN is usually 0.5 to 4.5 mg, which is why it's compounded.</p></details>
+        <details><summary>Does insurance cover LDN?</summary><p>Many plans don't cover compounded medications. That's why we keep a simple cash price: $60 for 90 tablets in 1, 1.5, 3 or 4.5 mg.</p></details>
+      </div>
+      <p class="note">This article is general information and not medical advice. Compounded medications are not FDA-approved and are not commercially manufactured products. Your prescriber decides whether LDN is right for you, the dose and how to monitor it.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= LEARN PETS ================= -->
+<div class="page" id="p-learn-pets">
+  <section class="hero">
+    <div class="wrap" style="grid-template-columns:1fr">
+      <div class="lead" style="max-width:820px">
+        <p class="crumb"><a href="#learn">Health articles</a> / Giving pets medicine</p>
+        <span class="eyebrow">Pets</span>
+        <h1>How to give your cat or dog liquid medicine (and other tricks that work).</h1>
+        <p class="lede">Step-by-step tips from a veterinary compounding pharmacy, for pet owners who have tried hiding the pill in cheese and lost.</p>
+        <p class="byline">Reviewed by <b>Ian Tasman, PharmD</b>, owner and pharmacist · Updated November 16, 2026</p>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap article">
+      <h2>Giving liquid medicine with an oral syringe</h2>
+      <ol>
+        <li><b>Get ready first.</b> Check the label, shake the bottle if it says to, and draw up the exact dose before you get your pet. Have a treat nearby.</li>
+        <li><b>Hold your pet securely.</b> Small dogs and cats do best on your lap or a counter, facing away from you. Many cats calm down wrapped snugly in a towel with only the head showing.</li>
+        <li><b>Go in from the side.</b> Slide the syringe tip into the corner of the mouth, behind the long canine tooth, into the pouch of the cheek. Keep your pet's head level; don't tip it far back.</li>
+        <li><b>Squeeze slowly.</b> Give a little at a time and let your pet swallow between squirts. Never squirt quickly toward the back of the throat, which can make them choke or inhale the liquid.</li>
+        <li><b>Finish with praise.</b> A treat, a favorite game or a few minutes of attention makes the next dose easier.</li>
+      </ol>
+      <p>If some medicine dribbles out, don't give extra unless your veterinarian tells you to. Call your vet or us if you're not sure how much your pet got.</p>
+
+      <h2>Pills and capsules</h2>
+      <ul>
+        <li><b>Hide it well.</b> A pill pocket or a small piece of a food your vet says is OK works for many dogs. Give a plain treat first, then the one with the pill, then another plain one.</li>
+        <li><b>Follow with water or food.</b> In cats especially, a dry pill can stick in the esophagus and irritate it. A small amount of water from a syringe or a bit of food afterward helps it go down.</li>
+        <li><b>Ask before crushing or opening.</b> Some medicines shouldn't be crushed or mixed into food. Ask your veterinarian or pharmacist first.</li>
+        <li><b>Don't mix into a full bowl</b> unless your vet says it's fine. If your pet doesn't finish, you won't know how much medicine they got.</li>
+      </ul>
+
+      <h2>Transdermal gels for pets who won't swallow anything</h2>
+      <p>For some medications, your veterinarian may order a transdermal gel that's rubbed onto the skin of the inner ear flap and absorbed through the skin. If so:</p>
+      <ul>
+        <li>Wear disposable gloves or a finger cot so the medicine doesn't absorb into your skin.</li>
+        <li>Apply the measured dose to the hairless inside of the ear flap and rub it in gently.</li>
+        <li>Alternate ears with each dose if your vet tells you to, and gently wipe away old residue before the next dose.</li>
+        <li>Keep children and other pets from touching the treated ear right after a dose.</li>
+      </ul>
+
+      <h2>Flavors and forms make a big difference</h2>
+      <p>A compounding pharmacy can prepare many pet medications in a form and flavor your pet is more likely to accept: flavored liquids, chewable treats, tiny capsules, transdermal gels and ear packs. Pet flavors include chicken, beef, tuna, grilled salmon, duck, bacon, peanut butter, marshmallow and, for cats, catnip. Not every medicine works in every form, so we check with your veterinarian.</p>
+      <div class="dcallout"><b>Never give your pet human medicine</b> unless your veterinarian tells you to. Some ingredients that are fine for people are dangerous for pets. Xylitol, a sweetener found in some human liquids and chewables, is toxic to dogs.</div>
+
+      <h2>When your pet keeps refusing</h2>
+      <p>Don't skip doses or stop the medicine on your own. Call your veterinarian or call us at <span class="nw">407-977-9779</span>. With your vet's OK, we can often switch the flavor or the form, for example from a bitter tablet to a chicken-flavored liquid or a transdermal gel.</p>
+      <div class="btns"><a class="btn primary" href="#veterinary">Our veterinary pharmacy <svg><use href="#i-arrow"/></svg></a><a class="btn ghost" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Ask a pharmacist</a></div>
+
+      <h2>Common questions</h2>
+      <div class="faq">
+        <details><summary>My cat foams at the mouth after a dose. Is that normal?</summary><p>Cats sometimes drool or foam when they taste something bitter. It usually passes quickly, but call your veterinarian if it doesn't, or if your cat seems unwell. A different flavor or form may help next time.</p></details>
+        <details><summary>What if I miss a dose?</summary><p>Check your label or ask your veterinarian. For many medicines you give the missed dose when you remember, unless it's almost time for the next one, but don't double up without asking.</p></details>
+        <details><summary>How should I store pet medicine?</summary><p>Follow the storage directions on the label. Some liquids need refrigeration. Keep all medicine, including treats with medicine in them, out of reach of pets and children.</p></details>
+      </div>
+      <p class="note">This article is general information and not veterinary advice. Your veterinarian decides what medication and dose are right for your pet. Compounded medications are not FDA-approved and are not commercially manufactured products.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= LEARN HORMONES ================= -->
+<div class="page" id="p-learn-hormones">
+  <section class="hero">
+    <div class="wrap" style="grid-template-columns:1fr">
+      <div class="lead" style="max-width:820px">
+        <p class="crumb"><a href="#learn">Health articles</a> / Hormone therapy basics</p>
+        <span class="eyebrow">Hormone therapy</span>
+        <h1>Compounded hormone therapy: the basics.</h1>
+        <p class="lede">What "bioidentical" means, when compounding makes sense, how the different forms compare, and how to use hormone creams safely at home.</p>
+        <p class="byline">Reviewed by <b>Ian Tasman, PharmD</b>, owner and pharmacist · Updated November 16, 2026</p>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap article">
+      <h2>What are bioidentical hormones?</h2>
+      <p>"Bioidentical" describes hormones with the same chemical structure as the ones your body makes, such as estradiol, estriol, progesterone, testosterone and DHEA. Some bioidentical hormones are available as FDA-approved commercial products. Others, and many combinations and strengths, are prepared by a compounding pharmacy from a prescription.</p>
+
+      <h2>When compounding makes sense</h2>
+      <p>Your clinician decides whether hormone therapy is right for you and which product to use. When an FDA-approved product fits your needs, it's often the first choice. Compounding can help when one doesn't, for example:</p>
+      <ul>
+        <li>You need a <b>strength that isn't made</b> commercially.</li>
+        <li>You're <b>allergic or sensitive</b> to an ingredient in the commercial version, such as a dye or a peanut-oil base.</li>
+        <li>Your clinician wants a <b>combination</b>, such as estradiol and estriol (Biest), in one preparation.</li>
+        <li>You need a <b>different form</b>, such as a cream or troche instead of a pill.</li>
+      </ul>
+      <p>Compounded hormones are not FDA-approved. Ask your clinician why they've chosen a compounded or a commercial product for you; it's a good question and they'll have a reason.</p>
+
+      <h2>Creams, capsules, troches: how the forms compare</h2>
+      <ul>
+        <li><b>Creams</b> are applied to the skin and absorbed. Metered dispensers such as the Topi-CLICK<sup>®</sup> (one click is 0.25 mL) make it easy to apply the same dose every day.</li>
+        <li><b>Capsules</b> are swallowed, and can be made dye-free, vegetarian or slow-release.</li>
+        <li><b>Troches</b> are soft, flavored lozenges that dissolve between the cheek and gum.</li>
+        <li><b>Rapid-dissolve tablets</b> melt under the tongue.</li>
+        <li><b>Vaginal preparations</b> are applied locally with a measured applicator.</li>
+      </ul>
+      <p>Not every hormone works in every form. Your clinician chooses the form, and we'll show you how to use it.</p>
+
+      <h2>Using hormone creams safely at home</h2>
+      <ul>
+        <li>Apply to clean, dry skin in the area your clinician recommends, and rotate sites if told to.</li>
+        <li>Wash your hands after applying, unless your hands are the application site.</li>
+        <li><b>Protect others.</b> Hormone creams can transfer through skin-to-skin contact. Let the cream dry, cover the area with clothing, and keep children and pets from touching the application site.</li>
+        <li>Store as the label directs and keep out of reach of children and pets.</li>
+      </ul>
+
+      <div class="dcallout"><b>Monitoring matters.</b> Your clinician orders any lab tests, watches how you respond and adjusts the prescription. Report side effects such as unusual bleeding, breast changes, headaches, mood changes or leg pain or swelling to your clinician promptly.</div>
+
+      <h2>Getting your hormone prescription filled</h2>
+      <p>Your clinician can e-prescribe to Pharmacy on the Park (NCPDP 5747235), fax 407-977-0079 or call 407-977-9779. Offices can request our HRT order form and talk formulations directly with a pharmacist. We'll call you with the price, show you how to use your medication, and you can pick up in Oviedo or have it shipped to Florida, Maine or Colorado.</p>
+      <div class="btns"><a class="btn primary" href="#hormone-therapy">Our hormone therapy service <svg><use href="#i-arrow"/></svg></a><a class="btn ghost" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Ask about your prescription</a></div>
+
+      <h2>Common questions</h2>
+      <div class="faq">
+        <details><summary>Are compounded hormones safer or more natural than commercial ones?</summary><p>Not necessarily. "Bioidentical" refers to the chemical structure, and several FDA-approved products are bioidentical too. Compounded hormones are not FDA-approved. The right choice depends on your needs, and your clinician makes that call.</p></details>
+        <details><summary>Can you combine several hormones in one cream?</summary><p>Yes, when your clinician orders it. Estriol, estradiol, estrone, progesterone, testosterone, DHEA and pregnenolone can be combined in a single cream, troche or capsule.</p></details>
+        <details><summary>Will you talk to my clinician?</summary><p>Yes. Our pharmacists regularly talk with prescribers about forms, bases and ingredients, including allergy concerns.</p></details>
+      </div>
+      <p class="note">This article is general information and not medical advice. Compounded hormone preparations are not FDA-approved and are not commercially manufactured products. Your clinician determines whether therapy is appropriate and monitors your treatment.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= LEARN SWITCH ================= -->
+<div class="page" id="p-learn-switch">
+  <section class="hero">
+    <div class="wrap" style="grid-template-columns:1fr">
+      <div class="lead" style="max-width:820px">
+        <p class="crumb"><a href="#learn">Health articles</a> / Switching pharmacies</p>
+        <span class="eyebrow">Switching pharmacies</span>
+        <h1>How to switch pharmacies (it takes one phone call).</h1>
+        <p class="lede">Moving your prescriptions is easier than most people think. Here's what to have ready, what the new pharmacy does for you, and how to save money while you're at it.</p>
+        <p class="byline">Reviewed by <b>Ian Tasman, PharmD</b>, owner and pharmacist · Updated November 16, 2026</p>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap article">
+      <h2>What to have ready</h2>
+      <ul>
+        <li>Your name and date of birth</li>
+        <li>The name and phone number of your current pharmacy</li>
+        <li>The medications you want moved, or simply "all of them"</li>
+        <li>Your insurance card, if you have insurance</li>
+      </ul>
+      <p>That's it. You don't need to call your old pharmacy or your doctor.</p>
+
+      <h2>What the new pharmacy does for you</h2>
+      <p>When you transfer to Pharmacy on the Park, our team:</p>
+      <ol>
+        <li>Calls your old pharmacy and transfers each prescription.</li>
+        <li>Contacts your prescriber if a prescription is out of refills or needs renewing.</li>
+        <li>Runs your insurance and confirms your cost before you pick up.</li>
+        <li>Calls or texts you when everything is ready.</li>
+      </ol>
+      <p>We handle transfers by phone so your health information stays private. Some controlled medications can't be transferred the usual way; if one of yours can't, we'll contact your prescriber for a new prescription.</p>
+
+      <h2>Will it cost more?</h2>
+      <p>Usually not. With insurance, your copay is set by your plan, so it's generally the same wherever you fill. We accept most prescription insurance plans; call with your card and we'll check yours.</p>
+      <p>Without insurance, hundreds of medications are <b>$9 for a 90-day supply</b> at Pharmacy on the Park, with no insurance, discount card or sign-up needed. If yours isn't on the list, we keep cash prices competitive and we'll match a lower cash price.</p>
+
+      <h2>Make refills easier while you're switching</h2>
+      <ul>
+        <li><b>Med sync:</b> ask us to line up your refills so they're all ready on one day.</li>
+        <li><b>Bubble packs</b> and pill organizer help if you take several medicines.</li>
+        <li><b>Refill your way:</b> call or text, refill online, or use the MobileScripts app.</li>
+        <li><b>A text</b> when your prescription is ready, and same-day fills with short waits.</li>
+      </ul>
+
+      <div class="dcallout"><b>Tip:</b> switch a few days before you run out, not on the last pill. That leaves time for us to reach your prescriber if a refill needs approval.</div>
+
+      <h2>Ready to switch?</h2>
+      <p>Call <span class="nw">407-977-9779</span> with the details above, or stop by 784 S. Central Ave in Oviedo. We'll take it from there.</p>
+      <div class="btns"><a class="btn primary" href="tel:+14079779779"><svg><use href="#i-phone"/></svg>Transfer my prescriptions</a><a class="btn ghost" href="#discount">$9 for 90 days <svg><use href="#i-arrow"/></svg></a></div>
+
+      <h2>Common questions</h2>
+      <div class="faq">
+        <details><summary>Can I transfer compounded prescriptions too?</summary><p>Yes, in most cases. Call us with your current pharmacy's details and we'll take care of it, or your prescriber can send a new prescription to us.</p></details>
+        <details><summary>How long does a transfer take?</summary><p>Many transfers are ready the same day. If we need to reach your prescriber for a renewal, it can take a little longer, and we'll keep you posted.</p></details>
+        <details><summary>Can I keep some prescriptions at my old pharmacy?</summary><p>Yes. Move as many or as few as you like, but keeping them in one place lets your pharmacist check all your medicines for interactions.</p></details>
+      </div>
+      <p class="note">Prices and the medications included in $9 for 90 days may change. Call 407-977-9779 to confirm the price of your prescription.</p>
+    </div>
+  </section>
+</div>
+
 <!-- ================= PRIVACY ================= -->
 <div class="page" id="p-privacy">
   <section class="hero">
@@ -2532,7 +3076,7 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
           <a href="https://www.instagram.com/pharmacyonthepark/" target="_blank" rel="noopener"><svg><use href="#i-camera"/></svg>Instagram</a>
           <a href="https://www.google.com/maps/search/?api=1&amp;query=Pharmacy%20on%20the%20Park%20784%20S%20Central%20Ave%20Oviedo%20FL" target="_blank" rel="noopener"><svg><use href="#i-star"/></svg>Google reviews</a>
         </div></div>
-      <div><h4>Services</h4><ul><li><a href="#retail">Retail pharmacy</a></li><li><a href="#discount">$9 for 90 days</a></li><li><a href="#supplements">Supplements</a></li><li><a href="#compounding">Human compounding</a></li><li><a href="#hormone-therapy">Hormone therapy</a></li><li><a href="#ldn">Low-dose naltrexone (LDN)</a></li><li><a href="#mcas">Mast cell activation (MCAS)</a></li><li><a href="#veterinary">Veterinary pharmacy</a></li><li><a href="#fip">FIP medication</a></li><li><a href="#vet-lunch">Lunch and learn for vet teams</a></li><li><a href="#medications">Medication library</a></li><li><a href="#prescribers">For prescribers</a></li><li><a href="#about">About us</a></li><li><a href="#quality">Quality and sourcing</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="#retail">Retail pharmacy</a></li><li><a href="#discount">$9 for 90 days</a></li><li><a href="#supplements">Supplements</a></li><li><a href="#compounding">Human compounding</a></li><li><a href="#hormone-therapy">Hormone therapy</a></li><li><a href="#ldn">Low-dose naltrexone (LDN)</a></li><li><a href="#mcas">Mast cell activation (MCAS)</a></li><li><a href="#veterinary">Veterinary pharmacy</a></li><li><a href="#fip">FIP medication</a></li><li><a href="#vet-lunch">Lunch and learn for vet teams</a></li><li><a href="#medications">Medication library</a></li><li><a href="#prescribers">For prescribers</a></li><li><a href="#about">About us</a></li><li><a href="#quality">Quality and sourcing</a></li><li><a href="#learn">Health articles</a></li><li><a href="#areas">Areas we serve</a></li><li><a href="#contact">Contact</a></li></ul></div>
       <div><h4>FAQ</h4>
         <div class="faq">
           <details><summary>Do you take my insurance?</summary><p>We accept most prescription insurance plans. Call us to check your plan.</p></details>
@@ -2597,9 +3141,9 @@ a.med.rel:hover{box-shadow:var(--shadow-lg)}
 
   document.querySelectorAll('[data-map]').forEach(function(el){ el.appendChild(document.getElementById('mapTpl').content.cloneNode(true)); });
 
-  var routes = {home:'home',retail:'retail',supplements:'supplements',discount:'discount',insurance:'insurance',service:'service',otc:'otc',mcas:'mcas','vet-lunch':'vet-lunch',compounding:'compounding','hormone-therapy':'hormone-therapy',veterinary:'veterinary',fip:'fip',medications:'medications',ldn:'ldn',prescribers:'prescribers',about:'about',quality:'quality',choose:'choose',contact:'contact',privacy:'privacy',send:'contact','about-quality':'about'};
+  var routes = {home:'home',retail:'retail',supplements:'supplements',discount:'discount',insurance:'insurance',service:'service',otc:'otc',mcas:'mcas','vet-lunch':'vet-lunch',compounding:'compounding','hormone-therapy':'hormone-therapy',veterinary:'veterinary',fip:'fip',medications:'medications',ldn:'ldn',prescribers:'prescribers',about:'about',quality:'quality',choose:'choose',contact:'contact',privacy:'privacy','areas':'areas','area-orlando':'area-orlando','area-east-orlando':'area-east-orlando','area-seminole':'area-seminole','area-florida':'area-florida','learn':'learn','learn-ldn':'learn-ldn','learn-pets':'learn-pets','learn-hormones':'learn-hormones','learn-switch':'learn-switch',send:'contact','about-quality':'about'};
   var anchors = {send:'send-sec','about-quality':'about-quality-sec'};
-  var parent = {med:'medications',ldn:'compounding',supplements:'retail',discount:'retail',insurance:'retail',service:'retail',otc:'retail',mcas:'compounding','vet-lunch':'veterinary','hormone-therapy':'compounding',fip:'veterinary',quality:'about',choose:'about'};
+  var parent = {med:'medications',ldn:'compounding',supplements:'retail',discount:'retail',insurance:'retail',service:'retail',otc:'retail',mcas:'compounding','vet-lunch':'veterinary','hormone-therapy':'compounding',fip:'veterinary',quality:'about',choose:'about','areas':'about','area-orlando':'about','area-east-orlando':'about','area-seminole':'about','area-florida':'about','learn':'about','learn-ldn':'about','learn-pets':'about','learn-hormones':'about','learn-switch':'about'};
   var nav = document.getElementById('mainNav'), btn = document.getElementById('menuBtn');
   function show(){
     var h = (location.hash||'#home').slice(1); var pg = routes[h] || 'home';
