@@ -33,7 +33,19 @@ shutil.copy('src/logo.svg','_site/logo.svg'); shutil.copy('src/logo-dark.svg','_
 s=s.replace('data:image/svg+xml;base64,'+LOGO_B64,'/logo.svg').replace('data:image/svg+xml;base64,'+LOGO_DARK_B64,'/logo-dark.svg')
 lg=Image.open('src/logo.png').convert('RGB'); og=Image.new('RGB',(1200,630),'white')
 lg.thumbnail((980,420)); og.paste(lg,((1200-lg.width)//2,(630-lg.height)//2)); og.save('_site/og-image.png',optimize=True)
-open('_site/favicon.svg','w').write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect x="4" y="18" width="30" height="28" rx="14" fill="#5FBA51"/><rect x="18" y="18" width="16" height="28" fill="#5FBA51"/><rect x="30" y="18" width="30" height="28" rx="14" fill="#005687"/><rect x="30" y="18" width="16" height="28" fill="#005687"/></svg>')
+shutil.copy('src/favicon.svg','_site/favicon.svg')   # branded icon (capsule + P + leaf); Google search shows it next to the site name
+def favicons():   # raster copies: Google wants a multiple of 48 px; Apple and older browsers want PNG/ICO
+  import io
+  from playwright.sync_api import sync_playwright
+  with sync_playwright() as p:
+    b=p.chromium.launch(); pg=b.new_page(viewport={'width':512,'height':512})
+    pg.set_content('<body style="margin:0"><img src="data:image/svg+xml;base64,'+base64.b64encode(open('src/favicon.svg','rb').read()).decode()+'" width=512 height=512 style="display:block">')
+    pg.wait_for_timeout(100); png=pg.screenshot(omit_background=True); b.close()
+  big=Image.open(io.BytesIO(png)).convert('RGBA')
+  for n,sz in [('favicon-48.png',48),('favicon-96.png',96),('favicon-192.png',192),('icon-512.png',512)]: big.resize((sz,sz),Image.LANCZOS).save('_site/'+n,optimize=True)
+  ab=Image.new('RGB',(512,512),'white'); ab.paste(big,(0,0),big); ab.resize((180,180),Image.LANCZOS).save('_site/apple-touch-icon.png',optimize=True)
+  big.save('_site/favicon.ico',sizes=[(16,16),(32,32),(48,48)])
+favicons()
 start=s.index('<!-- ================= HOME ================= -->'); end=s.index('<section class="cta-band">')
 prefix=s[:start]; suffix=s[end:]; body=s[start:end]
 pages={}
@@ -45,7 +57,7 @@ EXTRA={'send':'/contact/#send-sec','about-quality':'/about/#about-quality-sec'}
 TOP={'ldn':'compounding','supplements':'retail','discount':'retail','insurance':'retail','service':'retail','otc':'retail','mcas':'compounding','vet-lunch':'veterinary','hormone-therapy':'compounding','fip':'veterinary','quality':'about','choose':'about','area-orlando':'areas','area-east-orlando':'areas','area-seminole':'areas','area-florida':'areas','learn-ldn':'learn','learn-pets':'learn','learn-hormones':'learn','learn-switch':'learn'}
 META={
 "areas":("Areas We Serve | Pharmacy on the Park, Oviedo FL","Compounding and retail pharmacy in Oviedo serving Orlando, Winter Park, East Orlando, UCF and Seminole County, with shipping across Florida, Maine and Colorado."),
-"area-orlando":("Compounding Pharmacy for Orlando & Winter Park, FL","Compounded medications, hormone therapy, LDN ($60 for 90) and pet meds for Orlando and Winter Park. Ready same day to 24 hours; pick up in Oviedo or ship in Florida."),
+"area-orlando":("Compounding Pharmacy for Orlando & Winter Park, FL","Compounded hormones, LDN ($60 for 90) and pet meds for Orlando & Winter Park, ready same day to 24 hours. 784 S. Central Ave, Oviedo. Call 407-977-9779."),
 "area-east-orlando":("Pharmacy Near UCF & East Orlando | Pharmacy on the Park","Independent pharmacy and compounding lab just north of UCF: transfers, $9 for 90-day meds, same-day fills, LDN and pet compounding for East Orlando and Alafaya."),
 "area-seminole":("Compounding & Pet Pharmacy in Seminole County, FL","Pet and human compounding for Winter Springs, Casselberry, Longwood, Lake Mary, Sanford and Chuluota: flavored pet meds, FIP medication, hormones and LDN."),
 "area-florida":("Compounding Pharmacy That Ships in Florida | LDN & Pet Meds","Compounded LDN, hormone therapy and pet medications shipped to your Florida address, plus Maine and Colorado. Accredited Oviedo pharmacy. Call 407-977-9779."),
@@ -54,9 +66,9 @@ META={
 "learn-pets":("How to Give a Cat or Dog Liquid Medicine: Pharmacist Tips","Step-by-step oral syringe technique, pill tips, transdermal ear gels and flavors that help when your pet refuses medicine, from a veterinary compounding pharmacy."),
 "learn-hormones":("Compounded Bioidentical Hormone Therapy: The Basics","What bioidentical hormones are, when compounding makes sense, creams vs. capsules vs. troches, and how to use hormone creams safely at home."),
 "learn-switch":("How to Switch Pharmacies in One Phone Call | Oviedo, FL","What to have ready, what your new pharmacy handles for you, and how to save with $9 for a 90-day supply. Transfer to Pharmacy on the Park in Oviedo."),
-'ldn':("Compounded Low-Dose Naltrexone (LDN) Tablets $60 for 90 | Florida","Compounded low-dose naltrexone (LDN) 1 mg, 1.5 mg, 3 mg and 4.5 mg tablets: $60 for 90 tablets. Compounded in Oviedo near Orlando. Transfers welcome; shipping to Florida, Maine and Colorado. Call 407-977-9779."),
+'ldn':("Compounded Low-Dose Naltrexone (LDN) Tablets $60 for 90 | Florida","Compounded low-dose naltrexone (LDN) 1, 1.5, 3 and 4.5 mg tablets, $60 for 90. Made in Oviedo near Orlando; ships to FL, ME and CO. Call 407-977-9779."),
 'medications':("Compounded Medication Library | Pharmacy on the Park","Search 230+ medications we compound for people and pets in Oviedo, FL: dosage forms, flavors, common uses, side effects and research links."),
-'home':("Pharmacy on the Park | Compounding Pharmacy in Oviedo, FL","Family-owned compounding pharmacy in Oviedo, FL. Compounded LDN 1, 1.5, 3 and 4.5 mg tablets $60 for 90. Hormone therapy, pet medications and FIP treatment. Accredited. Call 407-977-9779."),
+'home':("Pharmacy on the Park | Compounding Pharmacy in Oviedo, FL","Family-owned compounding pharmacy in Oviedo, FL: LDN tablets $60 for 90, hormone therapy, pet meds and FIP treatment. Accredited. Call 407-977-9779."),
 'retail':("Retail Pharmacy in Oviedo, FL | Transfers & Refills","Switch to Pharmacy on the Park in Oviedo, FL. We handle prescription transfers and refills, accept most insurance plans, and a real person answers the phone."),
 'supplements':("Professional Supplements in Oviedo, FL | Pharmacy on the Park","Shop Pure Encapsulations, Ortho Molecular Products, Genestra, MaryRuth's and more in Oviedo, FL. We special order supplements and keep them stocked for you."),
 'discount':("$9 for 90 Days: Low-Cost Medications in Oviedo, FL","Hundreds of medications for $9 for a 90-day supply at Pharmacy on the Park in Oviedo, FL. No insurance, no discount card and no sign-up. Competitive cash prices and price matching."),
@@ -85,7 +97,7 @@ META={
 NAMES={"areas":"Areas We Serve","area-orlando":"Orlando and Winter Park","area-east-orlando":"East Orlando and UCF","area-seminole":"Seminole County","area-florida":"Shipping in Florida","learn":"Health Articles","learn-ldn":"Starting LDN","learn-pets":"Giving Pets Medicine","learn-hormones":"Hormone Therapy Basics","learn-switch":"Switching Pharmacies",'ldn':'Low-Dose Naltrexone (LDN)','medications':'Medication Library','supplements':'Supplements','discount':'$9 for 90 Days','insurance':'Insurance','service':'Fast, Reliable Service','otc':'Over-the-Counter Products','mcas':'Mast Cell Activation Syndrome (MCAS)','vet-lunch':'Lunch and Learn for Veterinary Teams','retail':'Retail Pharmacy','compounding':'Human Compounding','hormone-therapy':'Hormone Therapy','veterinary':'Veterinary Pharmacy','fip':'FIP Medication','prescribers':'For Prescribers','about':'About Us','quality':'Quality and Sourcing','choose':'How to Choose a Compounding Pharmacy','contact':'Contact','privacy':'Privacy Policy','hipaa':'Notice of Privacy Practices','terms':'Terms of Use','shipping':'Shipping Policy','returns':'Returns and Refunds','accessibility':'Accessibility','notfound':'Page Not Found'}
 business={"@context":"https://schema.org","@type":"Pharmacy","@id":DOMAIN+"/#pharmacy","name":"Pharmacy on the Park","url":DOMAIN+"/","logo":DOMAIN+"/logo.svg","image":DOMAIN+"/og-image.png",
  "description":"Family-owned retail and compounding pharmacy in Oviedo, Florida serving patients, pet owners and prescriber offices.",
- "telephone":"+1-407-977-9779","faxNumber":"+1-407-977-0079","email":"info@pharmacyonthepark.com",
+ "telephone":"+1-407-977-9779","faxNumber":"+1-407-977-0079","hasMap":"https://www.google.com/maps/search/?api=1&query=Pharmacy%20on%20the%20Park%20784%20S%20Central%20Ave%20Oviedo%20FL","email":"info@pharmacyonthepark.com",
  "address":{"@type":"PostalAddress","streetAddress":"784 S Central Ave","addressLocality":"Oviedo","addressRegion":"FL","postalCode":"32765","addressCountry":"US"},
  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"12:00"}],
  "areaServed":[{"@type":"City","name":"Oviedo"},{"@type":"State","name":"Florida"},{"@type":"State","name":"Maine"},{"@type":"State","name":"Colorado"}],
@@ -117,6 +129,7 @@ for key,html in pages.items():
     qa=re.findall(r'<details><summary>(.*?)</summary><p>(.*?)</p></details>',html)
     if qa: ld.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":unhtml(q),"acceptedAnswer":{"@type":"Answer","text":unhtml(a)}} for q,a in qa]})
   if key=='home':
+    ld.append({"@context":"https://schema.org","@type":"WebSite","@id":DOMAIN+"/#website","name":"Pharmacy on the Park","alternateName":["Pharmacy on the Park Oviedo","PharmacyOnThePark"],"url":DOMAIN+"/","publisher":{"@id":DOMAIN+"/#pharmacy"},"inLanguage":"en-US"})   # tells Google to show "Pharmacy on the Park" as the site name instead of the domain
     ld.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faq})
   else:
     c=[{"@type":"ListItem","position":1,"name":"Home","item":DOMAIN+"/"}]
@@ -133,7 +146,12 @@ for key,html in pages.items():
 <link rel="canonical" href="{url}">
 <meta name="robots" content="{robots}">
 <meta name="theme-color" content="#005687">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="application-name" content="Pharmacy on the Park">
+<meta name="apple-mobile-web-app-title" content="Pharmacy on the Park">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Pharmacy on the Park">
 <meta property="og:title" content="{esc(title)}">
