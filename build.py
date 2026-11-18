@@ -5,6 +5,18 @@ import re, json, os, base64, glob, shutil
 from PIL import Image
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 s=open('src/site.tpl.html').read()
+# ---- health articles added by the Article Planner: one JSON file per article in src/articles/ (see CLAUDE.md) ----
+ARTICLES=[json.load(open(f)) for f in sorted(glob.glob('src/articles/*.json'))]
+for a in ARTICLES:
+  k=a['key']; assert re.fullmatch(r'learn-[a-z]+(-[a-z]+)*',k), 'article key must be learn- plus lowercase words: '+k
+  block='<!-- ================= '+k.upper().replace('-',' ')+' ================= -->\n<div class="page" id="p-'+k+'">\n'+a['html'].strip()+'\n</div>\n\n'
+  card=('<a class="card" href="#'+k+'" style="text-decoration:none;color:inherit"><span class="ic'+(' g' if a.get('iconGreen') else '')+'"><svg><use href="#i-'+a.get('icon','check')+'"/></svg></span>'
+        '<span class="eyebrow">'+a['eyebrow']+'</span><h3>'+a['cardTitle']+'</h3><p>'+a['cardText']+'</p><span class="textlink">Read the guide <svg><use href="#i-arrow"/></svg></span></a>\n        ')
+  for old,new in [('<!-- ================= PRIVACY ================= -->',block+'<!-- ================= PRIVACY ================= -->'),
+                  (",send:'contact'",",'"+k+"':'"+k+"',send:'contact'"),
+                  ("'learn-switch':'about'","'learn-switch':'about','"+k+"':'about'"),
+                  ('<!-- ARTICLE CARDS -->',card+'<!-- ARTICLE CARDS -->')]:
+    assert s.count(old)==1, old; s=s.replace(old,new,1)
 for k,f in [('CSS_BASE','css_base.txt'),('ICONS','icons.txt'),('MAP','map.txt'),('LIB','library.json')]:
   s=s.replace('{{'+k+'}}',open('src/'+f).read())
 LOGO_B64=base64.b64encode(open('src/logo.svg','rb').read()).decode()
@@ -83,6 +95,9 @@ META={
 'contact':("Contact & Directions | Pharmacy on the Park, Oviedo FL","784 S. Central Ave, Oviedo, FL 32765. Phone 407-977-9779, fax 407-977-0079. Hours, directions, reviews and how to send a prescription."),
 }
 NAMES={"areas":"Areas We Serve","area-orlando":"Orlando and Winter Park","area-east-orlando":"East Orlando and UCF","area-seminole":"Seminole County","area-florida":"Shipping in Florida","learn":"Health Articles","learn-ldn":"Starting LDN","learn-pets":"Giving Pets Medicine","learn-hormones":"Hormone Therapy Basics","learn-switch":"Switching Pharmacies",'ldn':'Low-Dose Naltrexone (LDN)','medications':'Medication Library','supplements':'Supplements','discount':'$9 for 90 Days','insurance':'Insurance','service':'Fast, Reliable Service','otc':'Over-the-Counter Products','mcas':'Mast Cell Activation Syndrome (MCAS)','vet-lunch':'Lunch and Learn for Veterinary Teams','retail':'Retail Pharmacy','compounding':'Human Compounding','hormone-therapy':'Hormone Therapy','veterinary':'Veterinary Pharmacy','fip':'FIP Medication','prescribers':'For Prescribers','about':'About Us','quality':'Quality and Sourcing','choose':'How to Choose a Compounding Pharmacy','contact':'Contact','privacy':'Privacy Policy','hipaa':'Notice of Privacy Practices','terms':'Terms of Use','shipping':'Shipping Policy','returns':'Returns and Refunds','accessibility':'Accessibility','notfound':'Page Not Found'}
+for a in ARTICLES:
+  URL[a['key']]='/learn/'+a['slug']+'/'; META[a['key']]=(a['metaTitle'],a['metaDesc']); NAMES[a['key']]=a['name']; TOP[a['key']]='learn'
+PUBDATE={a['key']:a['published'] for a in ARTICLES}
 business={"@context":"https://schema.org","@type":"Pharmacy","@id":DOMAIN+"/#pharmacy","name":"Pharmacy on the Park","url":DOMAIN+"/","logo":DOMAIN+"/logo.svg","image":DOMAIN+"/og-image.png",
  "description":"Family-owned retail and compounding pharmacy in Oviedo, Florida serving patients, pet owners and prescriber offices.",
  "telephone":"+1-407-977-9779","faxNumber":"+1-407-977-0079","email":"info@pharmacyonthepark.com",
@@ -109,7 +124,7 @@ for key,html in pages.items():
     ld.append({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":unhtml(q),"acceptedAnswer":{"@type":"Answer","text":unhtml(a)}} for q,a in re.findall(r'<details><summary>(.*?)</summary><p>(.*?)</p></details>',html)]})
   if key.startswith('learn-'):
     h1=unhtml(re.search(r'<h1>(.*?)</h1>',html,re.S).group(1)).strip()
-    ld.append({"@context":"https://schema.org","@type":"MedicalWebPage","headline":h1,"name":h1,"description":desc,"url":url,"datePublished":"2026-11-16","dateModified":"2026-11-16","lastReviewed":"2026-11-16","reviewedBy":{"@type":"Person","name":"Ian Tasman, PharmD","jobTitle":"Owner and pharmacist"},"author":{"@type":"Organization","name":"Pharmacy on the Park","url":DOMAIN+"/"},"publisher":{"@id":DOMAIN+"/#pharmacy"},"image":DOMAIN+"/og-image.png","inLanguage":"en-US"})
+    ld.append({"@context":"https://schema.org","@type":"MedicalWebPage","headline":h1,"name":h1,"description":desc,"url":url,"datePublished":PUBDATE.get(key,"2026-11-16"),"dateModified":PUBDATE.get(key,"2026-11-16"),"lastReviewed":PUBDATE.get(key,"2026-11-16"),"reviewedBy":{"@type":"Person","name":"Ian Tasman, PharmD","jobTitle":"Owner and pharmacist"},"author":{"@type":"Organization","name":"Pharmacy on the Park","url":DOMAIN+"/"},"publisher":{"@id":DOMAIN+"/#pharmacy"},"image":DOMAIN+"/og-image.png","inLanguage":"en-US"})
   if key.startswith('area-'):
     cities=AREAS_SERVED[key]
     ld.append({"@context":"https://schema.org","@type":"Service","serviceType":"Compounding pharmacy","name":title,"description":desc,"url":url,"provider":{"@id":DOMAIN+"/#pharmacy"},"areaServed":([{"@type":"City","name":c,"containedInPlace":{"@type":"State","name":"Florida"}} for c in cities] if cities else [{"@type":"State","name":"Florida"},{"@type":"State","name":"Maine"},{"@type":"State","name":"Colorado"}])})
